@@ -1,4 +1,4 @@
-package com.example.florarie_proiect.controllers;
+package florarie.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.PasswordField;

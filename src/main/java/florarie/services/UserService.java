@@ -1,11 +1,11 @@
-package com.example.florarie_proiect.services;
+package florarie.services;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import florarie.exceptions.CouldNotWriteUsers;
+import florarie.exceptions.UsernameAlreadyExists;
+import florarie.model.User;
 import org.apache.commons.io.FileUtils;
-import com.example.florarie_proiect.exceptions.CouldNotWriteUsers;
-import com.example.florarie_proiect.exceptions.UsernameAlreadyExists;
-import com.example.florarie_proiect.model.User;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
