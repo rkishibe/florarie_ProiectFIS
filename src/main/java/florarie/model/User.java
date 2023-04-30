@@ -1,4 +1,4 @@
-package com.example.florarie_proiect.model;
+package florarie.model;
 
 public class User {
 

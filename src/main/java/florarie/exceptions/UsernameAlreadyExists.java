@@ -1,4 +1,4 @@
-package com.example.florarie_proiect.exceptions;
+package florarie.exceptions;
 
 public class UsernameAlreadyExists extends Exception {
 

@@ -1,12 +1,12 @@
-package com.example.florarie_proiect.controllers;
+package florarie.controllers;
 
+import florarie.exceptions.UsernameAlreadyExists;
+import florarie.services.UserService;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
-import com.example.florarie_proiect.exceptions.UsernameAlreadyExists;
-import com.example.florarie_proiect.services.UserService;
 
 public class RegistrationController {
 
