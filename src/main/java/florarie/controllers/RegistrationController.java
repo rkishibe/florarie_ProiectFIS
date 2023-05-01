@@ -28,7 +28,7 @@ public class RegistrationController {
     public void handleRegisterAction() {
         try {
             UserService.addUser(usernameField.getText(), passwordField.getText(), (String) role.getValue());
-            registrationMessage.setText("Account created successfully!");
+            registrationMessage.setText("Cont creat cu succes!");
         } catch (UsernameAlreadyExists e) {
             registrationMessage.setText(e.getMessage());
         }

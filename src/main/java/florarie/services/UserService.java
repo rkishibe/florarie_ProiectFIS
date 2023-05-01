@@ -13,6 +13,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -39,7 +40,7 @@ public class UserService {
         persistUsers();
     }
 
-    private static void checkUserDoesNotAlreadyExist(String username) throws UsernameAlreadyExists {
+    public static void checkUserDoesNotAlreadyExist(String username) throws UsernameAlreadyExists {
         for (User user : users) {
             if (Objects.equals(username, user.getUsername()))
                 throw new UsernameAlreadyExists(username);
@@ -65,6 +66,40 @@ public class UserService {
         return new String(hashedPassword, StandardCharsets.UTF_8)
                 .replace("\"", ""); //to be able to save in JSON format
     }
+
+    public static boolean checkPassword(String salt, String username, String password) {
+        MessageDigest md = getMessageDigest();
+        md.update(salt.getBytes(StandardCharsets.UTF_8));
+        // Find the user with the given username
+        User user = null;
+        for (User u : users) {
+            if (u.getUsername().equals(username)) {
+                user = u;
+                break;
+            }
+        }
+
+        if (user == null) {
+            // User not found
+            return false;
+        }
+
+        // Hash the input password with the user's salt
+        byte[] hashedPassword = md.digest(password.getBytes(StandardCharsets.UTF_8));
+
+        // Convert the byte array to a String using UTF-8 encoding
+        String hashedPasswordString = new String(hashedPassword, StandardCharsets.UTF_8);
+
+        // Compare the two hashes to see if they match
+        return hashedPasswordString.equals(user.getPassword());
+    }
+
+    private static byte[] hashPassword(String password, String salt) {
+        MessageDigest md = getMessageDigest();
+        md.update(salt.getBytes(StandardCharsets.UTF_8));
+        return md.digest(password.getBytes(StandardCharsets.UTF_8));
+    }
+
 
     private static MessageDigest getMessageDigest() {
         MessageDigest md;

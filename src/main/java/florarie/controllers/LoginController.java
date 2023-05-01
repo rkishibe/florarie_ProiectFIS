@@ -1,6 +1,9 @@
 package florarie.controllers;
 
+import florarie.services.UserService;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
@@ -11,28 +14,45 @@ public class LoginController {
     public PasswordField passwordField;
     @FXML
     public TextField usernameField;
+
+    @FXML
+    private ChoiceBox role;
+    @FXML
+    public void initialize() {
+        role.getItems().addAll("Client", "Admin");
+    }
     @FXML
     public void handleLoginButtonAction() {
         String username = usernameField.getText();
         String password = passwordField.getText();
+
+        try{
+            UserService.checkUserDoesNotAlreadyExist(usernameField.getText());
+            if(UserService.checkPassword(usernameField.getText(), passwordField.getText(), usernameField.getText())){
+                if(role.getValue()=="Client"){
+                    loginMessage.setText("Logat ca si client.");
+                } else if(role.getValue()=="Admin"){
+                    loginMessage.setText("Logat ca si admin.");
+                }
+            }
+        }catch (Exception e){
+
+        }
+
+
         if (username == null || username.isEmpty()) {
-            loginMessage.setText("Please type in a username!");
+            loginMessage.setText("Tastati un username!");
             return;
         }
         if (password == null || password.isEmpty()) {
-            loginMessage.setText("Password cannot be empty");
+            loginMessage.setText("Tastati o parola!");
             return;
         }
-        if (username.equals("student") &&
-                password.equals("student")) {
-            loginMessage.setText("Logged in as student!");
-            return;
-        }
-        if (username.equals("teacher") &&
-                password.equals("teacher")) {
-            loginMessage.setText("Logged in as teacher!");
-            return;
-        }
-        loginMessage.setText("Incorrect login!");
+
+        loginMessage.setText("Parola sau username gresite!");
+    }
+
+    public void handleCancelButtonAction() {
+        CancelController.initialize();
     }
 }
