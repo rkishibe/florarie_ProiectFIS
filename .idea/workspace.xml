@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e359216e-95e7-4a92-a6bd-cea2dfc6eaae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controller/SaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/SaveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/addBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/addBouquet.fxml" afterDir="false" />
+
+    <list default="true" id="48f0cbe7-b434-4378-b737-d45d07ca2be5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.workspace.xml.swp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.workspace_BASE_731.xml.swp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.workspace_LOCAL_731.xml.swp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.workspace_REMOTE_731.xml.swp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace_BACKUP_731.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace_BASE_731.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace_LOCAL_731.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace_REMOTE_731.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,10 +100,20 @@
       <workItem from="1683620252556" duration="8129000" />
       <workItem from="1683714279118" duration="931000" />
     </task>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="TaskManager">
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
