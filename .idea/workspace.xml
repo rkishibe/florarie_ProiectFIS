@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
+  <component name="AutoImportSettings">   
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-
     <list default="true" id="48f0cbe7-b434-4378-b737-d45d07ca2be5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.workspace.xml.swp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.workspace_BASE_731.xml.swp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.workspace_LOCAL_731.xml.swp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.workspace_REMOTE_731.xml.swp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace_BACKUP_731.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace_BASE_731.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace_LOCAL_731.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace_REMOTE_731.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/SaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/SaveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/florarie/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/addBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/addBouquet.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +36,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2OrgPLCp1XmkY1kA3W3VLiPqbR6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -66,7 +62,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.florarie.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.florarie_proiect.Main" />
       <module name="florarie_ProiectFIS" />
@@ -80,8 +76,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="florarie.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="florarie.Main" />
+      <module name="florarie_ProiectFIS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="florarie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.florarie.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
@@ -89,31 +99,7 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="e359216e-95e7-4a92-a6bd-cea2dfc6eaae" name="Changes" comment="" />
-      <created>1682324090046</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1682324090046</updated>
-      <workItem from="1682324091041" duration="3000" />
-      <workItem from="1683614624112" duration="4557000" />
-      <workItem from="1683620252556" duration="8129000" />
-      <workItem from="1683714279118" duration="931000" />
-    </task>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="TaskManager">
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

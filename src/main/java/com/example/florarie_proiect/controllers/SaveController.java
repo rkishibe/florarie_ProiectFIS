@@ -6,6 +6,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import com.google.gson.Gson;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 
 import java.io.FileWriter;
@@ -24,6 +26,11 @@ public class SaveController {
     private Button saveButton;
 
     @FXML
+    private AnchorPane scenePane;
+
+    Stage stage;
+
+    @FXML
     public void handleSaveButton(ActionEvent event) throws IOException {
         String name = nameField.getText();
         int quantity = Integer.parseInt(quantityField.getText());
@@ -34,9 +41,15 @@ public class SaveController {
         String json = gson.toJson(bouquet);
 
         try (FileWriter fileWriter = new FileWriter("bouquet.json")) {
-            fileWriter.write(json);
+            //fileWriter.write(json);
+            fileWriter.append(json);
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    public void handleCancelButtonAction(ActionEvent event) throws IOException{
+
     }
 }
