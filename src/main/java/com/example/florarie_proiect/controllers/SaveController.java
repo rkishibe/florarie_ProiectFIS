@@ -1,5 +1,5 @@
 
-package com.example.florarie_proiect.controller;
+package com.example.florarie_proiect.controllers;
 import com.example.florarie_proiect.model.Bouquet;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
