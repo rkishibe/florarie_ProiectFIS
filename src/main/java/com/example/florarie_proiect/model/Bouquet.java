@@ -1,2 +1,3 @@
-package com.example.florarie_proiect.model;public class Bouquet {
+package com.example.florarie_proiect.model;
+public class Bouquet {
 }
