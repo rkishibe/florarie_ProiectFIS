@@ -36,5 +36,3 @@ public class Bouquet {
             this.quantity=quantity;
         }
     }
-
-
