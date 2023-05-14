@@ -1,4 +1,4 @@
-package florarie.services;
+package com.example.florarie_proiect.services;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;

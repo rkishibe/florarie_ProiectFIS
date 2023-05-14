@@ -1,7 +1,6 @@
-package florarie.controllers;
+package com.example.florarie_proiect.controllers;
 
-import florarie.services.UserService;
-import javafx.event.ActionEvent;
+import com.example.florarie_proiect.services.UserService;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.PasswordField;
