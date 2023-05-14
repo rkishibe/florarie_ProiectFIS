@@ -7,7 +7,7 @@
 
 <AnchorPane prefHeight="381.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.Modify">
    <children>
-      <Button layoutX="200.0" layoutY="315.0" mnemonicParsing="false" text="Save Changes" />
+      <Button onAction="#handleSaveButtonAction" layoutX="200.0" layoutY="315.0" mnemonicParsing="false" text="Save Changes" />
       <Label layoutX="168.0" layoutY="39.0" text="Modify Bouquet">
          <font>
             <Font size="18.0" />
