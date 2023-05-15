@@ -2,15 +2,18 @@ package com.example.florarie_proiect.controllers;
 
 import com.example.florarie_proiect.exceptions.UsernameAlreadyExists;
 import com.example.florarie_proiect.services.UserService;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+
 
 public class RegistrationController {
 
@@ -38,6 +41,7 @@ public class RegistrationController {
         }
     }
 
+
     public void handleCancelButtonAction(ActionEvent event) throws Exception {
         // Get the current scene
         Scene currentScene = ((Node) event.getSource()).getScene();
@@ -56,4 +60,5 @@ public class RegistrationController {
             stage.show();
         }
     }
+
 }

@@ -13,6 +13,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Arrays;
+
 import java.util.List;
 import java.util.Objects;
 
@@ -55,7 +57,8 @@ public class UserService {
         }
     }
 
-    public static String encodePassword(String salt, String password) {
+
+    private static String encodePassword(String salt, String password) {
         MessageDigest md = getMessageDigest();
         md.update(salt.getBytes(StandardCharsets.UTF_8));
 
@@ -110,7 +113,9 @@ public class UserService {
         return md;
     }
 
+
     public static List<User> getUsers() {
         return users;
     }
+
 }
