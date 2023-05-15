@@ -1,3 +1,4 @@
+
 package com.example.florarie_proiect.test;
 
 /*import com.example.florarie_proiect.exceptions.UsernameAlreadyExists;
@@ -57,8 +58,4 @@ class UserServiceTest {
     @DisplayName("User can not be added twice")
     void testUserCanNotBeAddedTwice() {
         assertThrows(UsernameAlreadyExists.class, () -> {
-            UserService.addUser(ADMIN, ADMIN, ADMIN);
-            UserService.addUser(ADMIN, ADMIN, ADMIN);
-        });
-    }
-}*/
+

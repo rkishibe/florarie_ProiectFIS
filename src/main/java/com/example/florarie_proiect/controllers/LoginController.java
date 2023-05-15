@@ -1,10 +1,12 @@
 package com.example.florarie_proiect.controllers;
 
 import com.example.florarie_proiect.services.UserService;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -56,6 +58,7 @@ public class LoginController {
         loginMessage.setText("Parola sau username gresite!");
     }
 
+
     public void handleCancelButtonAction(ActionEvent event) throws Exception {
         // Get the current scene
         Scene currentScene = ((Node) event.getSource()).getScene();
@@ -73,5 +76,6 @@ public class LoginController {
             stage.setScene(previousScene);
             stage.show();
         }
+
     }
 }
