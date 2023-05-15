@@ -1,5 +1,7 @@
 package florarie.tests;
 
+import florarie.services.FileSystemService;
+import florarie.services.UserService;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.*;
 import org.loose.fis.sre.exceptions.UsernameAlreadyExistsException;
@@ -26,7 +28,7 @@ class UserServiceTest {
     void setUp() throws Exception {
         FileSystemService.APPLICATION_FOLDER = ".test-registration-example";
         FileUtils.cleanDirectory(FileSystemService.getApplicationHomeFolder().toFile());
-        UserService.initDatabase();
+        UserService.loadUsersFromFile();
     }
 
     @AfterEach
@@ -38,8 +40,8 @@ class UserServiceTest {
     @Test
     @DisplayName("Database is initialized, and there are no users")
     void testDatabaseIsInitializedAndNoUserIsPersisted() {
-        assertThat(UserService.getAllUsers()).isNotNull();
-        assertThat(UserService.getAllUsers()).isEmpty();
+        assertThat(UserService.getUsers()).isNotNull();
+        assertThat(UserService.getUsers()).isEmpty();
     }
 
     @Test

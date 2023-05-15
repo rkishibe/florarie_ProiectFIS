@@ -1,0 +1,37 @@
+Index: src/main/java/com/example/florarie_proiect/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.florarie_proiect;\r\n\r\nimport com.example.florarie_proiect.services.UserService;\r\nimport javafx.application.Application;\r\nimport javafx.fxml.FXMLLoader;\r\nimport javafx.geometry.HPos;\r\nimport javafx.geometry.Pos;\r\nimport javafx.scene.Parent;\r\nimport javafx.scene.Scene;\r\nimport javafx.scene.control.Button;\r\nimport javafx.scene.layout.GridPane;\r\nimport javafx.scene.layout.StackPane;\r\nimport javafx.stage.Stage;\r\n\r\npublic class Main extends Application {\r\n    Scene homeScene;\r\n\r\n    @Override\r\n    public void start(Stage primaryStage) throws Exception {\r\n        Parent homeRoot = FXMLLoader.load(getClass().getClassLoader().getResource(\"home.fxml\"));\r\n        homeScene=new Scene(homeRoot, 600,400);\r\n        primaryStage.setScene(homeScene);\r\n        primaryStage.show();\r\n\r\n    }\r\n\r\n    public static void main(String[] args) {\r\n        launch(args);\r\n    }\r\n\r\n}\r\n
+===================================================================
+diff --git a/src/main/java/com/example/florarie_proiect/Main.java b/src/main/java/com/example/florarie_proiect/Main.java
+--- a/src/main/java/com/example/florarie_proiect/Main.java	
++++ b/src/main/java/com/example/florarie_proiect/Main.java	
+@@ -21,7 +21,6 @@
+         homeScene=new Scene(homeRoot, 600,400);
+         primaryStage.setScene(homeScene);
+         primaryStage.show();
+-
+     }
+ 
+     public static void main(String[] args) {
+Index: target/classes/com/example/florarie_proiect/modifyBouquet.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.*?>\r\n<?import javafx.scene.layout.*?>\r\n<?import javafx.scene.text.*?>\r\n\r\n\r\n<AnchorPane prefHeight=\"381.0\" prefWidth=\"465.0\" xmlns=\"http://javafx.com/javafx/17.0.2-ea\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.florarie_proiect.Modify\">\r\n   <children>\r\n      <Button onAction=\"#handleSaveButtonAction\" layoutX=\"200.0\" layoutY=\"315.0\" mnemonicParsing=\"false\" text=\"Save Changes\" />\r\n      <Label layoutX=\"168.0\" layoutY=\"39.0\" text=\"Modify Bouquet\">\r\n         <font>\r\n            <Font size=\"18.0\" />\r\n         </font>\r\n      </Label>\r\n      <Label layoutX=\"137.0\" layoutY=\"110.0\" text=\"Bouquet\" />\r\n      <Label layoutX=\"130.0\" layoutY=\"158.0\" text=\"New Name\" />\r\n      <Label layoutX=\"133.0\" layoutY=\"200.0\" text=\"New Price\" />\r\n      <Label layoutX=\"123.0\" layoutY=\"242.0\" text=\"New Quantity\" />\r\n      <ChoiceBox layoutX=\"200.0\" layoutY=\"106.0\" prefWidth=\"150.0\" />\r\n      <TextField layoutX=\"200.0\" layoutY=\"154.0\" />\r\n      <TextField layoutX=\"200.0\" layoutY=\"196.0\" />\r\n      <TextField layoutX=\"200.0\" layoutY=\"238.0\" />\r\n   </children>\r\n</AnchorPane>\r\n
+===================================================================
+diff --git a/target/classes/com/example/florarie_proiect/modifyBouquet.fxml b/target/classes/com/example/florarie_proiect/modifyBouquet.fxml
+--- a/target/classes/com/example/florarie_proiect/modifyBouquet.fxml	
++++ b/target/classes/com/example/florarie_proiect/modifyBouquet.fxml	
+@@ -5,9 +5,10 @@
+ <?import javafx.scene.text.*?>
+ 
+ 
+-<AnchorPane prefHeight="381.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.Modify">
++<AnchorPane prefHeight="381.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
++            fx:controller="com.example.florarie_proiect.controllers.SaveController">
+    <children>
+-      <Button onAction="#handleSaveButtonAction" layoutX="200.0" layoutY="315.0" mnemonicParsing="false" text="Save Changes" />
++      <Button onAction="#handleSaveButton" layoutX="200.0" layoutY="315.0" mnemonicParsing="false" text="Save Changes" />
+       <Label layoutX="168.0" layoutY="39.0" text="Modify Bouquet">
+          <font>
+             <Font size="18.0" />

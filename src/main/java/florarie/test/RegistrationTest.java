@@ -24,9 +24,9 @@ class RegistrationTest {
 
     @BeforeEach
     void setUp() throws Exception {
-        FileSystemService.APPLICATION_FOLDER = ".test-registration-example";
-        FileUtils.cleanDirectory(FileSystemService.getApplicationHomeFolder().toFile());
-        UserService.initDatabase();
+        FileSystemService.APPLICATION_FOLDER = ".florarie_proiect";
+        FileUtils.cleanDirectory(FileSystemService.getPathToFile().toFile());
+        UserService.loadUsersFromFile();
     }
 
     @Start
