@@ -1,10 +1,10 @@
-package florarie.services;
+package com.example.florarie_proiect.services;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import florarie.exceptions.CouldNotWriteUsers;
-import florarie.exceptions.UsernameAlreadyExists;
-import florarie.model.User;
+import com.example.florarie_proiect.exceptions.CouldNotWriteUsers;
+import com.example.florarie_proiect.exceptions.UsernameAlreadyExists;
+import com.example.florarie_proiect.model.User;
 import org.apache.commons.io.FileUtils;
 
 import java.io.IOException;
@@ -13,7 +13,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -56,7 +55,7 @@ public class UserService {
         }
     }
 
-    private static String encodePassword(String salt, String password) {
+    public static String encodePassword(String salt, String password) {
         MessageDigest md = getMessageDigest();
         md.update(salt.getBytes(StandardCharsets.UTF_8));
 
@@ -111,5 +110,7 @@ public class UserService {
         return md;
     }
 
-
+    public static List<User> getUsers() {
+        return users;
+    }
 }

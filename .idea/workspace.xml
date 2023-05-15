@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">   
+  <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="e359216e-95e7-4a92-a6bd-cea2dfc6eaae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/modify.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/modify.fxml" afterDir="false" />
-=======
-    <list default="true" id="48f0cbe7-b434-4378-b737-d45d07ca2be5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/SaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/SaveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/florarie/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/addBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/addBouquet.fxml" afterDir="false" />
->>>>>>> main
+      <change beforePath="$PROJECT_DIR$/src/main/java/florarie/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/florarie/controllers/RegistrationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/florarie/exceptions/CouldNotWriteUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/CouldNotWriteUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/florarie/exceptions/UsernameAlreadyExists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/UsernameAlreadyExists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/florarie/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/florarie/services/FileSystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/FileSystemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/florarie/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/florarie/test/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/florarie/test/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/register.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,23 +47,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-<<<<<<< HEAD
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="0bb48a2b-116b-4295-b739-96516006b3cf" />
-        <option name="url" value="https://github.com/rkishibe/florarie_ProiectFIS.git" />
-      </UrlAndAccount>
-    </option>
-=======
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
->>>>>>> main
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2OrgPLCp1XmkY1kA3W3VLiPqbR6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -64,40 +61,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-<<<<<<< HEAD
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\resources\com\example\florarie_proiect" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.florarie_proiect" />
     </key>
-=======
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/#Proiect Florarie/florarie_ProiectFIS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.JavaFX&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
-  <component name="RunManager" selected="Application.florarie.Main">
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.florarie_proiect.Main" />
-      <module name="florarie_ProiectFIS" />
+      <module name="florarie_proiect" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.florarie_proiect.*" />
@@ -121,18 +109,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.florarie.Main" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.florarie.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.florarie.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
->>>>>>> main
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e359216e-95e7-4a92-a6bd-cea2dfc6eaae" name="Changes" comment="" />
+      <created>1684131212307</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684131212307</updated>
+      <workItem from="1684131213766" duration="198000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

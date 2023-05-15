@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="381.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.Modify">
+   <children>
+      <Button onAction="#handleSaveButtonAction" layoutX="200.0" layoutY="315.0" mnemonicParsing="false" text="Save Changes" />
+      <Label layoutX="168.0" layoutY="39.0" text="Modify Bouquet">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="137.0" layoutY="110.0" text="Bouquet" />
+      <Label layoutX="130.0" layoutY="158.0" text="New Name" />
+      <Label layoutX="133.0" layoutY="200.0" text="New Price" />
+      <Label layoutX="123.0" layoutY="242.0" text="New Quantity" />
+      <ChoiceBox layoutX="200.0" layoutY="106.0" prefWidth="150.0" />
+      <TextField layoutX="200.0" layoutY="154.0" />
+      <TextField layoutX="200.0" layoutY="196.0" />
+      <TextField layoutX="200.0" layoutY="238.0" />
+   </children>
+</AnchorPane>
