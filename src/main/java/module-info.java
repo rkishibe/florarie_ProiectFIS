@@ -2,6 +2,7 @@ module com.example.florarie_proiect {
     requires javafx.controls;
     requires javafx.fxml;
     requires com.google.gson;
+    requires nitrite;
 
 
     opens com.example.florarie_proiect to javafx.fxml;

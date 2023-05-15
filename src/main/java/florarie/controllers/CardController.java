@@ -1,3 +1,5 @@
+package florarie.controllers;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -7,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.Calendar;
 
 public class CardController {
@@ -40,7 +43,12 @@ public class CardController {
                 // daca datele sunt valide, ne intoarcem la pagina de home
                 // aici puteti inlocui "Home.fxml" cu numele fisierului FXML al paginii home din aplicatia voastra
                // SceneChanger.changeScene(sendButton, "Home.fxml");
-                Parent root = FXMLLoader.load(getClass().getResource("home.fxml"));
+                Parent root = null;
+                try {
+                    root = FXMLLoader.load(getClass().getResource("home.fxml"));
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
                 Scene scene = new Scene(root, 800, 600);
                 Stage stage = (Stage) sendButton.getScene().getWindow();
                 stage.setScene(scene);
