@@ -1,4 +1,4 @@
-package florarie.controllers;
+package com.example.florarie_proiect.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
