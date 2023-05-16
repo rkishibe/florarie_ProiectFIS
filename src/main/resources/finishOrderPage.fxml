@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FinishOrderPage">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.CardController">
    <children>
       <Label layoutX="41.0" layoutY="28.0" text="Card Details">
          <font>
@@ -22,6 +21,6 @@
       <TextField fx:id="numeDetinator" layoutX="122.0" layoutY="118.0" />
       <TextField fx:id="dataExpirare" layoutX="122.0" layoutY="153.0" />
       <TextField fx:id="codSecuritate" layoutX="122.0" layoutY="188.0" />
-      <Button fx:id="sendButton" layoutX="510.0" layoutY="336.0" mnemonicParsing="false" text="Send" />
+      <Button fx:id="sendButton" layoutX="510.0" layoutY="336.0" mnemonicParsing="false" onAction="#sendButton" text="Send" />
    </children>
 </AnchorPane>

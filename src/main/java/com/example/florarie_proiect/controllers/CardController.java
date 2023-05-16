@@ -31,6 +31,11 @@ public class CardController {
     private Button sendButton;
 
     @FXML
+    public void sendButton(ActionEvent e)
+    {
+        System.out.println("send");
+    }
+    /*
     public void handleSendButton(ActionEvent event) throws IOException {
         String numarCard = numarCardField.getText();
         String numeDetinator = numeDetinatorField.getText();
@@ -105,6 +110,6 @@ public class CardController {
 
         // daca toate verificarile au trecut, inseamna ca datele sunt valide
         return true;
-    }
+    }*/
 
 }
