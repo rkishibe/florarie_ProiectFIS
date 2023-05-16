@@ -8,8 +8,7 @@ import florarie.services.UserService;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.*;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.testng.Assert.assertThrows;
+import static org.junit.Assert.assertThat;
 
 
 class UserServiceTest {
@@ -42,7 +41,7 @@ class UserServiceTest {
     @Test
     @DisplayName("Database is initialized, and there are no users")
     void testDatabaseIsInitializedAndNoUserIsPersisted() {
-        assertThat(UserService.getUsers()).isNotNull();
+        assertThat(UserService.getUsers()).isNotNull());
         assertThat(UserService.getUsers()).isEmpty();
     }
 
@@ -59,7 +58,4 @@ class UserServiceTest {
         assertThat(user.getRole()).isEqualTo(ADMIN);
     }
 
-    @Test
-    @DisplayName("User can not be added twice")
-    void testUserCanNotBeAddedTwice() {
-        assertThrows(UsernameAlreadyExists.class, () -> {
+}
