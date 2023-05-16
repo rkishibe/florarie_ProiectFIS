@@ -1,4 +1,4 @@
-package florarie.model;
+package com.example.florarie_proiect.model;
 
 import com.example.florarie_proiect.model.Bouquet;
 import org.dizitart.no2.Nitrite;

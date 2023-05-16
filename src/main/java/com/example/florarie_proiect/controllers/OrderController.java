@@ -1,4 +1,4 @@
-package florarie.controllers;
+package com.example.florarie_proiect.controllers;
 import com.example.florarie_proiect.model.Bouquet;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListCell;
@@ -47,21 +47,21 @@ public class OrderController {
         return flowers;
     }
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle){
-        flowerListView.setCellFactory(param -> new ListCell<Bouquet>() {
-            @Override
-            protected void updateItem(Bouquet item, boolean empty) {
-                super.updateItem(item, empty);
-
-                if (empty || item == null || item.getWord() == null) {
-                    setText(null);
-                } else {
-                    setText(item.getWord());
-                }
-            }
-        });
-    }
+//    @Override
+//    public void initialize(URL url, ResourceBundle resourceBundle){
+//        flowerListView.setCellFactory(param -> new ListCell<Bouquet>() {
+//            @Override
+//            protected void updateItem(Bouquet item, boolean empty) {
+//                super.updateItem(item, empty);
+//
+//                if (empty || item == null || item.getWord() == null) {
+//                    setText(null);
+//                } else {
+//                    setText(item.getWord());
+//                }
+//            }
+//        });
+//    }
     public void closeDatabase() {
         flowerRepository.close();
     }
