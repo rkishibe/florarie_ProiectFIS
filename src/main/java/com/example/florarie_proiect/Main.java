@@ -12,17 +12,23 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
+
 public class Main extends Application {
     Scene homeScene;
 
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
-        Parent homeRoot = FXMLLoader.load(getClass().getResource("home.fxml"));
-        homeScene=new Scene(homeRoot);
-        primaryStage.setResizable(false);
-        primaryStage.setScene(homeScene);
-        primaryStage.show();
+    public void start(Stage primaryStage) {
+        try {
+            Parent homeRoot = FXMLLoader.load(getClass().getResource("home.fxml"));
+            homeScene = new Scene(homeRoot);
+            primaryStage.setResizable(false);
+            primaryStage.setScene(homeScene);
+            primaryStage.show();
+        }catch(Exception e)
+        {
+            e.printStackTrace();
+        }
 
     }
 
