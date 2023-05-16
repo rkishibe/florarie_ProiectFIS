@@ -7,4 +7,5 @@ module com.example.florarie_proiect {
     exports com.example.florarie_proiect.model;
     exports com.example.florarie_proiect.controllers;
     opens com.example.florarie_proiect.controllers to javafx.fxml;
+    exports com.example.florarie_proiect;
 }

@@ -15,10 +15,12 @@ import javafx.stage.Stage;
 public class Main extends Application {
     Scene homeScene;
 
+
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent homeRoot = FXMLLoader.load(getClass().getClassLoader().getResource("home.fxml"));
-        homeScene=new Scene(homeRoot, 600,400);
+        Parent homeRoot = FXMLLoader.load(getClass().getResource("home.fxml"));
+        homeScene=new Scene(homeRoot);
+        primaryStage.setResizable(false);
         primaryStage.setScene(homeScene);
         primaryStage.show();
 
@@ -26,6 +28,7 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
+
     }
 
 }
