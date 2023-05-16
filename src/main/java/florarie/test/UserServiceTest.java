@@ -1,14 +1,16 @@
-package florarie.tests;
 
+package florarie.test;
+
+import florarie.exceptions.UsernameAlreadyExists;
+import florarie.model.User;
 import florarie.services.FileSystemService;
 import florarie.services.UserService;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.*;
-import org.loose.fis.sre.exceptions.UsernameAlreadyExistsException;
-import org.loose.fis.sre.model.User;
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.testfx.assertions.api.Assertions.assertThat;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.testng.Assert.assertThrows;
+
 
 class UserServiceTest {
 
@@ -27,7 +29,7 @@ class UserServiceTest {
     @BeforeEach
     void setUp() throws Exception {
         FileSystemService.APPLICATION_FOLDER = ".test-registration-example";
-        FileUtils.cleanDirectory(FileSystemService.getApplicationHomeFolder().toFile());
+        FileUtils.cleanDirectory(FileSystemService.getPathToFile().toFile());
         UserService.loadUsersFromFile();
     }
 
@@ -46,11 +48,11 @@ class UserServiceTest {
 
     @Test
     @DisplayName("User is successfully persisted to Database")
-    void testUserIsAddedToDatabase() throws UsernameAlreadyExistsException {
+    void testUserIsAddedToDatabase() throws UsernameAlreadyExists {
         UserService.addUser(ADMIN, ADMIN, ADMIN);
-        assertThat(UserService.getAllUsers()).isNotEmpty();
-        assertThat(UserService.getAllUsers()).size().isEqualTo(1);
-        User user = UserService.getAllUsers().get(0);
+        assertThat(UserService.getUsers()).isNotEmpty();
+        assertThat(UserService.getUsers()).size().isEqualTo(1);
+        User user = UserService.getUsers().get(0);
         assertThat(user).isNotNull();
         assertThat(user.getUsername()).isEqualTo(ADMIN);
         assertThat(user.getPassword()).isEqualTo(UserService.encodePassword(ADMIN, ADMIN));
@@ -60,9 +62,4 @@ class UserServiceTest {
     @Test
     @DisplayName("User can not be added twice")
     void testUserCanNotBeAddedTwice() {
-        assertThrows(UsernameAlreadyExistsException.class, () -> {
-            UserService.addUser(ADMIN, ADMIN, ADMIN);
-            UserService.addUser(ADMIN, ADMIN, ADMIN);
-        });
-    }
-}
+        assertThrows(UsernameAlreadyExists.class, () -> {

@@ -1,4 +1,4 @@
-package florarie.tests;
+package florarie.test;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -46,7 +46,7 @@ class RegistrationTest {
         robot.clickOn("#registerButton");
 
         assertThat(robot.lookup("#registrationMessage").queryText()).hasText("Account created successfully!");
-        assertThat(UserService.getAllUsers()).size().isEqualTo(1);
+        assertThat(UserService.getUsers()).size().isEqualTo(1);
 
         robot.clickOn("#registerButton");
         assertThat(robot.lookup("#registrationMessage").queryText()).hasText(
@@ -58,6 +58,6 @@ class RegistrationTest {
         robot.clickOn("#registerButton");
 
         assertThat(robot.lookup("#registrationMessage").queryText()).hasText("Account created successfully!");
-        assertThat(UserService.getAllUsers()).size().isEqualTo(2);
+        assertThat(UserService.getUsers()).size().isEqualTo(2);
     }
 }

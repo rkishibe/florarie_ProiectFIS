@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48f0cbe7-b434-4378-b737-d45d07ca2be5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15-May-23_9_41_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15-May-23_9_41_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15-May-23_9_41_AM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15-May-23_9_41_AM__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15-May-23_9_42_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15-May-23_9_42_AM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/florarie/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/florarie/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/florarie/services/FileSystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/florarie/services/FileSystemService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/florarie/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/florarie/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/florarie/test/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/florarie/test/RegistrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/florarie/test/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/florarie/test/UserServiceTest.java" afterDir="false" />
@@ -24,11 +24,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <servers />
   </component>
