@@ -1,5 +1,6 @@
 package florarie.controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -30,41 +31,41 @@ public class CardController {
     private Button sendButton;
 
     @FXML
-    void initialize() {
-        sendButton.setOnAction(event -> {
-            String numarCard = numarCardField.getText();
-            String numeDetinator = numeDetinatorField.getText();
-            String dataExpirare = dataExpirareField.getText();
+    public void handleSendButton(ActionEvent event) throws IOException {
+        String numarCard = numarCardField.getText();
+        String numeDetinator = numeDetinatorField.getText();
+        String dataExpirare = dataExpirareField.getText();
 
-            // verificam daca datele sunt valide
-            boolean isDataValid = isCardDataValid(numarCard, numeDetinator, dataExpirare, codSecuritateField.getText());
+        // verificam daca datele sunt valide
+        boolean isDataValid = isCardDataValid(numarCard, numeDetinator, dataExpirare, codSecuritateField.getText());
 
-            if (isDataValid) {
-                // daca datele sunt valide, ne intoarcem la pagina de home
-                // aici puteti inlocui "Home.fxml" cu numele fisierului FXML al paginii home din aplicatia voastra
-               // SceneChanger.changeScene(sendButton, "Home.fxml");
-                Parent root = null;
-                try {
-                    root = FXMLLoader.load(getClass().getResource("home.fxml"));
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
-                Scene scene = new Scene(root, 800, 600);
-                Stage stage = (Stage) sendButton.getScene().getWindow();
-                stage.setScene(scene);
-                stage.show();
-
-
-            } else {
-                // daca datele sunt invalide, afisam un mesaj de eroare
-                Alert alert = new Alert(Alert.AlertType.ERROR);
-                alert.setTitle("Invalid card data");
-                alert.setHeaderText(null);
-                alert.setContentText("Datele cardului sunt invalide!");
-                alert.showAndWait();
+        if (isDataValid) {
+            // daca datele sunt valide, ne intoarcem la pagina de home
+            // aici puteti inlocui "Home.fxml" cu numele fisierului FXML al paginii home din aplicatia voastra
+            // SceneChanger.changeScene(sendButton, "Home.fxml");
+            Parent root = null;
+            try {
+                root = FXMLLoader.load(getClass().getResource("home.fxml"));
+            } catch (IOException e) {
+                throw new RuntimeException(e);
             }
-        });
+            Scene scene = new Scene(root, 800, 600);
+            Stage stage = (Stage) sendButton.getScene().getWindow();
+            stage.setScene(scene);
+            stage.show();
+
+
+        } else {
+            // daca datele sunt invalide, afisam un mesaj de eroare
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Invalid card data");
+            alert.setHeaderText(null);
+            alert.setContentText("Datele cardului sunt invalide!");
+            alert.showAndWait();
+        }
     }
+
+
 
     private boolean isCardDataValid(String numarCard, String numeDetinator, String dataExpirare, String codSecuritate) {
         // verificam daca toate campurile sunt completate
