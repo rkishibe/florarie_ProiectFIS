@@ -58,4 +58,4 @@ class UserServiceTest {
     @DisplayName("User can not be added twice")
     void testUserCanNotBeAddedTwice() {
         assertThrows(UsernameAlreadyExists.class, () -> {
-
+*/
