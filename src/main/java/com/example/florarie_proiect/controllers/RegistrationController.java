@@ -33,13 +33,14 @@ public class RegistrationController {
 
     @FXML
     public void handleRegisterAction() {
-        //try {
+        try {
             UserService.loadUsersFromDatabase();
-           // UserService.addUser(usernameField.getText(), passwordField.getText(), (String) role.getValue());
-            //registrationMessage.setText("Cont creat cu succes!");
-        //} catch (UsernameAlreadyExists e) {
-          //  registrationMessage.setText(e.getMessage());
-        //}
+           UserService.addUser(usernameField.getText(), passwordField.getText(), (String) role.getValue());
+            registrationMessage.setText("Cont creat cu succes!");
+            UserService.closeDatabase();
+        } catch (UsernameAlreadyExists e) {
+            registrationMessage.setText(e.getMessage());
+        }
     }
 
 

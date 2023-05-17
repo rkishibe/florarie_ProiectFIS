@@ -15,7 +15,6 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>org.dizitart</groupId>
             <artifactId>nitrite</artifactId>
@@ -31,7 +30,11 @@
             <artifactId>javafx-fxml</artifactId>
             <version>20-ea+4</version>
         </dependency>
-
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
+        </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -45,42 +48,15 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.10.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.14.2</version>
-        </dependency>
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-core</artifactId>
-            <version>2.14.2</version>
-        </dependency>
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.11.0</version>
-        </dependency>
-        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>2.0.5</version>
         </dependency>
         <dependency>
-            <groupId>com.tersesystems.logback</groupId>
-            <artifactId>logback-turbomarker</artifactId>
-            <version>1.1.1</version>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.4.6</version>
         </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.32</version>
-        </dependency>
-
-
     </dependencies>
 
     <build>
@@ -103,8 +79,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.florarie_proiect/com.example.florarie_proiect.HelloApplication
-                            </mainClass>
+                            <mainClass>com.example.florarie_proiect/com.example.florarie_proiect.Main</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

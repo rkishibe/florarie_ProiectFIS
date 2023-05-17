@@ -34,8 +34,6 @@ public class Database {
         return 0.0; // Sau aruncă o excepție pentru a semnala că floarea nu există în baza de date
     }
 
-    // Poți adăuga și alte metode utile pentru manipularea bazei de date
-
     public void closeDatabase() {
         db.close();
     }

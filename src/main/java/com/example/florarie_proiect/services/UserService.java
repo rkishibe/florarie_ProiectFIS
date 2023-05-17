@@ -1,25 +1,15 @@
 package com.example.florarie_proiect.services;
 
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.example.florarie_proiect.exceptions.CouldNotWriteUsers;
 import com.example.florarie_proiect.exceptions.UsernameAlreadyExists;
 import com.example.florarie_proiect.model.User;
-import org.apache.commons.io.FileUtils;
 import org.dizitart.no2.Nitrite;
 import org.dizitart.no2.objects.ObjectRepository;
 import org.dizitart.no2.objects.filters.ObjectFilters;
 
-import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.Arrays;
-
 import java.util.List;
-import java.util.Objects;
 
 public class UserService {
 
@@ -43,6 +33,7 @@ public class UserService {
 
         // Insert the user into the Nitrite database
         userRepository.insert(user);
+        closeDatabase();
     }
 
 
@@ -62,10 +53,14 @@ public class UserService {
 
         byte[] hashedPassword = md.digest(password.getBytes(StandardCharsets.UTF_8));
 
-        // This is the way a password should be encoded when checking the credentials
-        return new String(hashedPassword, StandardCharsets.UTF_8)
-                .replace("\"", ""); //to be able to save in JSON format
+        StringBuilder encodedPassword = new StringBuilder();
+        for (byte b : hashedPassword) {
+            encodedPassword.append(String.format("%02x", b));
+        }
+
+        return encodedPassword.toString();
     }
+
 
     public static boolean checkPassword(String salt, String username, String password) {
         MessageDigest md = getMessageDigest();
@@ -90,13 +85,6 @@ public class UserService {
     }
 
 
-    private static byte[] hashPassword(String password, String salt) {
-        MessageDigest md = getMessageDigest();
-        md.update(salt.getBytes(StandardCharsets.UTF_8));
-        return md.digest(password.getBytes(StandardCharsets.UTF_8));
-    }
-
-
     private static MessageDigest getMessageDigest() {
         MessageDigest md;
         try {
@@ -110,5 +98,8 @@ public class UserService {
     public static List<User> getUsers() {
         // Retrieve all users from the Nitrite database
         return userRepository.find().toList();
+    }
+    public static void closeDatabase(){
+        db.close();
     }
 }
