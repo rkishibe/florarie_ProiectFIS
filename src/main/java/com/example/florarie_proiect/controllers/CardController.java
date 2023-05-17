@@ -3,6 +3,7 @@ package com.example.florarie_proiect.controllers;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -111,5 +112,14 @@ public class CardController {
         // daca toate verificarile au trecut, inseamna ca datele sunt valide
         return true;
     }*/
+
+    public void switchToSceneClientHome(ActionEvent event) throws IOException
+    {
+        Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/ClientHome.fxml"));
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(homeRoot);
+        stage.setScene(scene);
+        stage.show();
+    }
 
 }

@@ -15,7 +15,7 @@
             <Font name="Berlin Sans FB Demi Bold" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="438.0" layoutY="306.0" mnemonicParsing="false" text="Finish Order" />
+      <Button layoutX="438.0" layoutY="306.0" mnemonicParsing="false" onAction="#switchToSceneClientHome" text="Finish Order" />
       <TableView layoutX="51.0" layoutY="119.0" prefHeight="200.0" prefWidth="238.0">
         <columns>
           <TableColumn prefWidth="75.0" text="Bouquet" />

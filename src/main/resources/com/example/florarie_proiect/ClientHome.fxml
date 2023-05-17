@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.ClientHome">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.ClientHome">
    <children>
       <Label layoutX="-67.0" layoutY="5.0" text="Label" />
       <Label layoutX="43.0" layoutY="22.0" text="Hello Customer">
@@ -17,17 +17,17 @@
       </Label>
       <MenuBar layoutY="71.0" prefHeight="43.0" prefWidth="600.0" style="-fx-background-color: pink;">
         <menus>
-          <Menu mnemonicParsing="false" text="BOUQUET">
+          <Menu mnemonicParsing="false" onAction="#switchToSceneBouquetList" text="BOUQUET">
             <items>
               <MenuItem mnemonicParsing="false" text="Close" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="CART">
+          <Menu mnemonicParsing="false" onAction="#switchToSceneCart" text="CART">
             <items>
               <MenuItem mnemonicParsing="false" text="Delete" />
             </items>
           </Menu>
-            <Menu mnemonicParsing="false" text="HOME LOGIN/REGISTER PAGE">
+            <Menu mnemonicParsing="false" onAction="#switchToSceneHome" text="HOME LOGIN/REGISTER PAGE">
                <items>
                   <MenuItem mnemonicParsing="false" text="Delete" />
                </items>
