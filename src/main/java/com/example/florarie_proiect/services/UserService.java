@@ -1,5 +1,6 @@
 package com.example.florarie_proiect.services;
 
+import com.example.florarie_proiect.exceptions.UserDoesNotExist;
 import com.example.florarie_proiect.exceptions.UsernameAlreadyExists;
 import com.example.florarie_proiect.model.User;
 import org.dizitart.no2.Nitrite;
@@ -47,7 +48,19 @@ public class UserService {
         }
     }
 
-    private static String encodePassword(String salt, String password) {
+    public static boolean checkUserDoesNotExist(String username) throws UserDoesNotExist {
+        // Use Nitrite's API to check if the username already exists in the database
+        User existingUser = userRepository.find(ObjectFilters.eq("username", username))
+                .firstOrDefault();
+
+        if (existingUser == null) {
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    public static String encodePassword(String salt, String password) {
         MessageDigest md = getMessageDigest();
         md.update(salt.getBytes(StandardCharsets.UTF_8));
 
@@ -66,23 +79,24 @@ public class UserService {
         MessageDigest md = getMessageDigest();
         md.update(salt.getBytes(StandardCharsets.UTF_8));
 
-        User user = userRepository.find(ObjectFilters.eq("username", username))
-                .firstOrDefault();
+        User user = userRepository.find(ObjectFilters.eq("username", username)).firstOrDefault();
 
         if (user == null) {
             // User not found
             return false;
         }
 
-        // Hash the input password with the user's salt
         byte[] hashedPassword = md.digest(password.getBytes(StandardCharsets.UTF_8));
 
-        // Convert the byte array to a String using UTF-8 encoding
-        String hashedPasswordString = new String(hashedPassword, StandardCharsets.UTF_8);
+        StringBuilder encodedPassword = new StringBuilder();
+        for (byte b : hashedPassword) {
+            encodedPassword.append(String.format("%02x", b));
+        }
 
-        // Compare the two hashes to see if they match
-        return hashedPasswordString.equals(user.getPassword());
+        return encodedPassword.toString().equals(user.getPassword());
     }
+
+
 
 
     private static MessageDigest getMessageDigest() {
