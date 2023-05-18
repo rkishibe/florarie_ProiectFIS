@@ -5,7 +5,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import com.google.gson.Gson;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -30,7 +29,7 @@ public class SaveController {
 
     Stage stage;
 
-    @FXML
+   /* @FXML
     public void handleSaveButton(ActionEvent event) throws IOException {
         String name = nameField.getText();
         int quantity = Integer.parseInt(quantityField.getText());
@@ -51,5 +50,5 @@ public class SaveController {
     @FXML
     public void handleCancelButtonAction(ActionEvent event) throws IOException{
 
-    }
+    }*/
 }

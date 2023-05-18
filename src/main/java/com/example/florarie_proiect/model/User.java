@@ -2,9 +2,9 @@ package com.example.florarie_proiect.model;
 
 public class User {
 
-    private String username;
-    private String password;
-    private String role;
+    public String username;
+    public String password;
+    public String role;
 
     public User() {
     }
@@ -59,12 +59,4 @@ public class User {
         return result;
     }
 
-    @Override
-    public String toString() {
-        return "UserDTO{" +
-                "username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", role='" + role + '\'' +
-                '}';
-    }
 }
