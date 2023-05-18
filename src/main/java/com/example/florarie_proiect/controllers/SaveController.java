@@ -3,9 +3,12 @@ package com.example.florarie_proiect.controllers;
 import com.example.florarie_proiect.model.Bouquet;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import com.google.gson.Gson;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -30,7 +33,15 @@ public class SaveController {
 
     Stage stage;
 
-    @FXML
+    public void handleSaveButton(ActionEvent event) throws IOException {
+        Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/ClientHome.fxml"));
+        stage=(Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(homeRoot);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+   /* @FXML
     public void handleSaveButton(ActionEvent event) throws IOException {
         String name = nameField.getText();
         int quantity = Integer.parseInt(quantityField.getText());
@@ -51,5 +62,5 @@ public class SaveController {
     @FXML
     public void handleCancelButtonAction(ActionEvent event) throws IOException{
 
-    }
+    }*/
 }
