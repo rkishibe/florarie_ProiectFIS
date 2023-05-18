@@ -16,9 +16,9 @@ import java.util.ResourceBundle;
 public class AdminHome  implements Initializable {
 
         @FXML
-        public void switchToSceneBouquetList(ActionEvent event) throws IOException {
+        public void switchToSceneModify(ActionEvent event) throws IOException {
 
-            Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/BouquetList.fxml"));
+            Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/modifyBouquet.fxml"));
             Stage stage = (Stage) homeRoot.getScene().getWindow();
             Scene scene = new Scene(homeRoot);
             stage.setScene(scene);
@@ -37,15 +37,26 @@ public class AdminHome  implements Initializable {
 
         }
         @FXML
-        public void switchToSceneCart(ActionEvent event) throws IOException {
+        public void switchToSceneRemove(ActionEvent event) throws IOException {
 
-            Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/cartPage.fxml"));
+            Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/RemoveBouquet.fxml"));
             Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
             Scene scene = new Scene(homeRoot);
             stage.setScene(scene);
             stage.show();
 
         }
+
+    @FXML
+    public void switchToSceneAdd(ActionEvent event) throws IOException {
+
+        Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/addBouquet.fxml"));
+        Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(homeRoot);
+        stage.setScene(scene);
+        stage.show();
+
+    }
 
         @Override
         public void initialize(URL url, ResourceBundle resourceBundle) {

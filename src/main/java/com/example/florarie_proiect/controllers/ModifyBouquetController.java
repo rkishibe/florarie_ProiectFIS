@@ -10,9 +10,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class RemoveBouquetController {
+public class ModifyBouquetController {
     @FXML
     private Text mesaj;
+
     @FXML
     public void switchToSceneHome(ActionEvent event) throws IOException {
 
@@ -23,8 +24,8 @@ public class RemoveBouquetController {
         stage.show();
 
     }
-    public void okButton(ActionEvent e) {
-        mesaj.setText("Bouquet removed!");
-        ///////////////sterg din baza de date buchettttttt
+    public void saveButton(ActionEvent e) {
+        mesaj.setText("Bouquet modified!");
+        ///////////////modific in baza de date buchettttttt
     }
 }

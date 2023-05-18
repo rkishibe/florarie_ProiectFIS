@@ -12,9 +12,9 @@
                 <Font name="Bodoni MT" size="28.0" />
             </font>
         </Label>
-        <Button layoutX="17.0" layoutY="136.0" mnemonicParsing="false" onAction="#switchToSceneCart" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="REMOVE" />
+        <Button layoutX="17.0" layoutY="136.0" mnemonicParsing="false" onAction="#switchToSceneRemove" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="REMOVE" />
         <Button layoutX="17.0" layoutY="226.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="HOME LOGIN/REGISTER" />
-        <Button layoutX="17.0" layoutY="92.0" mnemonicParsing="false" onAction="#switchToSceneBouquetList" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="ADD" />
-      <Button layoutX="17.0" layoutY="180.0" mnemonicParsing="false" onAction="#switchToSceneCart" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="MODIFY" />
+        <Button layoutX="17.0" layoutY="92.0" mnemonicParsing="false" onAction="#switchToSceneAdd" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="ADD" />
+      <Button layoutX="17.0" layoutY="180.0" mnemonicParsing="false" onAction="#switchToSceneModify" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="MODIFY" />
     </children>
 </AnchorPane>
