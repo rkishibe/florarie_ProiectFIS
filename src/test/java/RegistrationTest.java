@@ -1,16 +1,13 @@
-
-package com.example.florarie_proiect.test;
-
-/*import javafx.fxml.FXMLLoader;
+import javafx.fxml.FXMLLoader;
 
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.apache.commons.io.FileUtils;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import com.example.florarie_proiect.services.FileSystemService;
 import com.example.florarie_proiect.services.UserService;
 import org.testfx.api.FxRobot;
 import org.testfx.framework.junit5.ApplicationExtension;
@@ -27,16 +24,17 @@ class RegistrationTest {
 
     @BeforeEach
     void setUp() throws Exception {
-        FileSystemService.APPLICATION_FOLDER = ".test-registration-example";
-        FileUtils.cleanDirectory(FileSystemService.getApplicationHomePath().toFile());
-        UserService.loadUsersFromFile();
-
+        UserService.loadUsersFromDatabase();
+    }
+    @AfterAll
+    void tearDown() throws Exception{
+        UserService.closeDatabase();
     }
 
     @Start
     void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("register.fxml"));
-        primaryStage.setTitle("Registration Example");
+        primaryStage.setTitle("Florarie");
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
     }
@@ -49,8 +47,8 @@ class RegistrationTest {
         robot.write(PASSWORD);
         robot.clickOn("#registerButton");
 
-        assertThat(robot.lookup("#registrationMessage").queryText()).hasText("Account created successfully!");
-        assertThat(UserService.getAllUsers()).size().isEqualTo(1);
+        assertThat(robot.lookup("#registrationMessage").queryText()).hasText("Cont creat cu succes!");
+        assertThat(UserService.getUsers()).size().isEqualTo(1);
 
         robot.clickOn("#registerButton");
         assertThat(robot.lookup("#registrationMessage").queryText()).hasText(
@@ -59,11 +57,13 @@ class RegistrationTest {
 
         robot.clickOn("#username");
         robot.write("1");
+        robot.clickOn("#password");
+        robot.write(PASSWORD);
         robot.clickOn("#registerButton");
 
-        assertThat(robot.lookup("#registrationMessage").queryText()).hasText("Account created successfully!");
-        assertThat(UserService.getAllUsers()).size().isEqualTo(2);
+        assertThat(robot.lookup("#registrationMessage").queryText()).hasText("Cont creat cu succes!");
+        assertThat(UserService.getUsers()).size().isEqualTo(2);
     }
 
-}*/
+}
 
