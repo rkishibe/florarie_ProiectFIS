@@ -1,45 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.example.florarie_proiect.controllers.AdminHome">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.ClientHome">
     <children>
-            <Label layoutX="-67.0" layoutY="5.0" text="Label" />
-            <Label layoutX="43.0" layoutY="22.0" text="Hello Seller">
-                <font>
-                    <Font name="System Bold Italic" size="18.0" />
-                </font>
-            </Label>
-            <MenuBar layoutY="71.0" prefHeight="43.0" prefWidth="600.0" style="-fx-background-color: pink;">
-                <menus>
-                    <Menu mnemonicParsing="false" text="ADD BOUQUET">
-                        <items>
-                            <MenuItem mnemonicParsing="false" text="Close" />
-                        </items>
-                    </Menu>
-            <Menu mnemonicParsing="false" text="MODIFY BOUQUET">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Close" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="REMOVE BOUQUET">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Close" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="HOME LOGIN/REGISTER PAGE">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Close" />
-               </items>
-            </Menu>
-                </menus>
-            </MenuBar>
-        </children>
+        <Label layoutX="33.0" layoutY="33.0" text="Hello Admin" textFill="#f8f4f4">
+            <font>
+                <Font name="Bodoni MT" size="28.0" />
+            </font>
+        </Label>
+        <Button layoutX="17.0" layoutY="136.0" mnemonicParsing="false" onAction="#switchToSceneRemove" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="REMOVE" />
+        <Button layoutX="17.0" layoutY="226.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="HOME LOGIN/REGISTER" />
+        <Button layoutX="17.0" layoutY="92.0" mnemonicParsing="false" onAction="#switchToSceneAdd" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="ADD" />
+      <Button layoutX="17.0" layoutY="180.0" mnemonicParsing="false" onAction="#switchToSceneModify" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="MODIFY" />
+    </children>
 </AnchorPane>

@@ -32,7 +32,7 @@ public class LoginController {
         role.getItems().addAll("Client", "Admin");
     }
     @FXML
-    public void handleLoginButtonAction(ActionEvent event) {
+    public void handleLoginButtonAction(ActionEvent event){
         String username = usernameField.getText();
         String password = passwordField.getText();
 
@@ -40,14 +40,14 @@ public class LoginController {
            UserService.loadUsersFromDatabase();
             if(UserService.checkPassword(username, password, username) && UserService.checkUserDoesNotExist(username)){
                 if(role.getValue().equals("Client")){
-                    loginMessage.setText("Logat ca si client.");
+                   // loginMessage.setText("Logat ca si client.");
                     Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/ClientHome.fxml"));
                     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     Scene scene = new Scene(homeRoot);
                     stage.setScene(scene);
                     stage.show();
                 } else if(role.getValue().equals("Admin")){
-                    loginMessage.setText("Logat ca si admin.");
+                    //loginMessage.setText("Logat ca si admin.");
                     Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/AdminHome.fxml"));
                     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     Scene scene = new Scene(homeRoot);
