@@ -1,5 +1,6 @@
 package com.example.florarie_proiect.controllers;
 
+import com.example.florarie_proiect.model.Bouquet;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,6 +11,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import org.dizitart.no2.Nitrite;
+import org.dizitart.no2.objects.ObjectRepository;
 
 import java.io.IOException;
 
@@ -41,31 +44,43 @@ public class AddBouquetController {
         stage.show();
 
     }
-    public void saveButton(ActionEvent e) {
-        mesaj.setText("Bouquet added!");
-        ///////////////adaug in baza de date buchettttttt
-    }
+    @FXML
+    private TextField numeField;
+    @FXML
+    private TextField pretField;
+    @FXML
+    private TextField cantitateField;
 
-       /* @FXML
-    public void handleSaveButton(ActionEvent event) throws IOException {
-        String name = nameField.getText();
-        int quantity = Integer.parseInt(quantityField.getText());
-        int price=Integer.parseInt(priceField.getText());
-        Bouquet bouquet = new Bouquet(name, quantity, price);
+    private Nitrite db;
+    private ObjectRepository<Bouquet> repository;
 
-        Gson gson = new Gson();
-        String json = gson.toJson(bouquet);
+    public void initialize() {
+        // Deschide sau creează baza de date Nitrite
+        db = Nitrite.builder()
+                .compressed()
+                .filePath("baza_de_date.db")
+                .openOrCreate();
 
-        try (FileWriter fileWriter = new FileWriter("bouquet.json")) {
-            //fileWriter.write(json);
-            fileWriter.append(json);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        // Obține repository pentru clasa Buchet
+        repository = db.getRepository(Bouquet.class);
     }
 
     @FXML
-    public void handleCancelButtonAction(ActionEvent event) throws IOException{
+    public void saveButton(ActionEvent e) {
+        mesaj.setText("Bouquet added!");
+        ///////////////adaug in baza de date buchettttttt
 
-    }*/
+        String nume = numeField.getText();
+        int pret = Integer.parseInt(pretField.getText());
+        int cantitate = Integer.parseInt(cantitateField.getText());
+
+        Bouquet buchet = new Bouquet(nume, cantitate, pret);
+        repository.insert(buchet);
+
+        // Închide baza de date
+        db.close();
+
+
+    }
+    
 }
