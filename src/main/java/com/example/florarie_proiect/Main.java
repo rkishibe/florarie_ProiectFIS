@@ -10,6 +10,7 @@ public class Main extends Application {
     Scene homeScene;
 
     @Override
+
     public void start(Stage primaryStage) {
         try {
             Parent homeRoot = FXMLLoader.load(getClass().getResource("home.fxml"));

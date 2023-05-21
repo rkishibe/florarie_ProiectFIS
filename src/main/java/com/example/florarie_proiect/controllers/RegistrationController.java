@@ -1,6 +1,6 @@
 package com.example.florarie_proiect.controllers;
 
-import com.example.florarie_proiect.exceptions.UsernameAlreadyExists;
+import com.example.florarie_proiect.exceptions.UsernameAlreadyExistsException;
 import com.example.florarie_proiect.services.UserService;
 
 import javafx.event.ActionEvent;
@@ -42,7 +42,7 @@ public class RegistrationController {
             UserService.loadUsersFromDatabase();
             UserService.addUser(usernameField.getText(), passwordField.getText(), (String) role.getValue());
             registrationMessage.setText("Cont creat cu succes!");
-        } catch (UsernameAlreadyExists e) {
+        } catch (UsernameAlreadyExistsException e) {
             registrationMessage.setText(e.getMessage());
         }
         finally {
