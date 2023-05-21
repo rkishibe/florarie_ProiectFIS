@@ -1,6 +1,6 @@
 package com.example.florarie_proiect.controllers;
 
-import com.example.florarie_proiect.exceptions.UserDoesNotExist;
+import com.example.florarie_proiect.exceptions.UserDoesNotExistException;
 import com.example.florarie_proiect.services.UserService;
 
 import javafx.event.ActionEvent;
@@ -60,7 +60,7 @@ public class LoginController {
             }
         }catch (Exception e){
             e.printStackTrace();
-        } catch (UserDoesNotExist e) {
+        } catch (UserDoesNotExistException e) {
             throw new RuntimeException(e);
 
         }

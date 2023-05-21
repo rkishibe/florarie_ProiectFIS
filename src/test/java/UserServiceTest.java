@@ -1,6 +1,6 @@
 //package com.example.florarie_proiect.test;
 //
-//import com.example.florarie_proiect.exceptions.UsernameAlreadyExists;
+//import com.example.florarie_proiect.exceptions.UsernameAlreadyExistsException;
 //import com.example.florarie_proiect.model.User;
 //import com.example.florarie_proiect.services.UserService;
 //import org.junit.jupiter.api.*;
@@ -45,7 +45,7 @@
 //
 //    @Test
 //    @DisplayName("User is successfully persisted to Database")
-//    void testUserIsAddedToDatabase() throws UsernameAlreadyExists {
+//    void testUserIsAddedToDatabase() throws UsernameAlreadyExistsException {
 //        UserService.addUser(ADMIN, ADMIN, ADMIN);
 //        assertThat(UserService.getUsers()).isNotEmpty();
 //        assertThat(UserService.getUsers()).size().isEqualTo(1);
@@ -59,6 +59,6 @@
 //    @Test
 //    @DisplayName("User can not be added twice")
 //    void testUserCanNotBeAddedTwice() {
-//        assertThrows(UsernameAlreadyExists.class, () -> {});
+//        assertThrows(UsernameAlreadyExistsException.class, () -> {});
 //    }
 //}
