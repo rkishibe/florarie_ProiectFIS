@@ -5,76 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e359216e-95e7-4a92-a6bd-cea2dfc6eaae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/AdminHome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/CardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/ClientHome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/UserDoesNotExist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/model/CardCredit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/model/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/AdminHome.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/ClientHome.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/cartPage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/finishOrderPage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/AdminHome.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/ClientHome.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/cartPage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/finishOrderPage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.workspace.xml.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.workspace_BASE_731.xml.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.workspace_LOCAL_731.xml.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.workspace_REMOTE_731.xml.swp" beforeDir="false" afterPath="$PROJECT_DIR$/user-database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-May-23_5_47_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-May-23_5_47_PM_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-May-23_5_47_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-May-23_5_47_PM__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-May-23_6_01_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-May-23_6_01_PM_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-May-23_6_01_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-May-23_6_01_PM__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-May-23_6_10_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-May-23_6_10_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-May-23_6_31_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-May-23_6_31_PM_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-May-23_6_31_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-May-23_6_37_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13-May-23_6_37_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/BouquetListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/ModifyBouquetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RemoveBouquetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/BouquetList.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/RemoveBouquet.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/BouquetList.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/RemoveBouquet.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/finishOrderPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace_BACKUP_731.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace_BASE_731.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace_LOCAL_731.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace_REMOTE_731.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/AdminHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/AdminHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/CardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/ClientHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/ClientHome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/SaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/SaveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/FileSystemService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/UserServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/users.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/modifyBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/modifyBouquet.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/users.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/SaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/AddBouquetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/AdminHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/AdminHome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/ClientHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/ClientHome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/addBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/addBouquet.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/cartPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/cartPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/finishOrderPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/finishOrderPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/modifyBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/modifyBouquet.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/AdminHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/AdminHome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/ClientHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/ClientHome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/addBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/addBouquet.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/cartPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/cartPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/finishOrderPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/finishOrderPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/user-database.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,6 +154,7 @@
       <workItem from="1684133040519" duration="76000" />
       <workItem from="1684133127405" duration="4000" />
       <workItem from="1684383305209" duration="1026000" />
+      <workItem from="1684684564413" duration="567000" />
     </task>
     <servers />
   </component>
