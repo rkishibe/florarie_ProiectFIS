@@ -4,6 +4,7 @@ import com.example.florarie_proiect.exceptions.UserDoesNotExist;
 import com.example.florarie_proiect.exceptions.UsernameAlreadyExists;
 import com.example.florarie_proiect.model.User;
 import org.dizitart.no2.Nitrite;
+import org.dizitart.no2.objects.ObjectFilter;
 import org.dizitart.no2.objects.ObjectRepository;
 import org.dizitart.no2.objects.filters.ObjectFilters;
 
@@ -92,12 +93,9 @@ public class UserService {
         for (byte b : hashedPassword) {
             encodedPassword.append(String.format("%02x", b));
         }
-
+        System.out.println(encodedPassword + " "+ user.getPassword());
         return encodedPassword.toString().equals(user.getPassword());
     }
-
-
-
 
     private static MessageDigest getMessageDigest() {
         MessageDigest md;
@@ -114,6 +112,7 @@ public class UserService {
         return userRepository.find().toList();
     }
     public static void closeDatabase(){
+        //userRepository.remove(ObjectFilters.ALL);
         db.close();
     }
 }

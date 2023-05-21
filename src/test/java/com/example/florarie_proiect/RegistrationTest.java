@@ -1,33 +1,29 @@
-import javafx.fxml.FXMLLoader;
+package com.example.florarie_proiect;
 
+import com.example.florarie_proiect.services.UserService;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import com.example.florarie_proiect.services.UserService;
 import org.testfx.api.FxRobot;
-import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.Start;
 
 import static org.testfx.assertions.api.Assertions.assertThat;
 
-
-@ExtendWith(ApplicationExtension.class)
 class RegistrationTest {
 
     public static final String USERNAME = "user";
     public static final String PASSWORD = "password";
 
     @BeforeEach
-    void setUp() throws Exception {
+    void setUp()  {
         UserService.loadUsersFromDatabase();
     }
     @AfterAll
-    void tearDown() throws Exception{
+    static void tearDown() {
         UserService.closeDatabase();
     }
 
@@ -52,8 +48,7 @@ class RegistrationTest {
 
         robot.clickOn("#registerButton");
         assertThat(robot.lookup("#registrationMessage").queryText()).hasText(
-                String.format("An account with the username %s already exists!", USERNAME)
-        );
+                String.format("An account with the username %s already exists!", USERNAME));
 
         robot.clickOn("#username");
         robot.write("1");
