@@ -5,6 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< Updated upstream
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.ClientHome">
    <children>
@@ -16,5 +17,26 @@
       <Button layoutX="14.0" layoutY="153.0" mnemonicParsing="false" onAction="#switchToSceneCart" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="CART" />
       <Button layoutX="14.0" layoutY="200.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="HOME LOGIN/REGISTER" />
       <Button layoutX="14.0" layoutY="110.0" mnemonicParsing="false" onAction="#switchToSceneBouquetList" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="BOUQUET" />
+=======
+<AnchorPane prefHeight="400.0" prefWidth="601.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.ClientHome">
+   <children>
+      <Label layoutX="219.0" layoutY="39.0" prefHeight="47.0" prefWidth="163.0" text="Hello Client" textFill="#f8f4f4">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="202.0" layoutY="207.0" mnemonicParsing="false" onAction="#switchToSceneCart" prefHeight="47.0" prefWidth="196.0" style="-fx-background-color: PINK;" text="CART">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font></Button>
+      <Button layoutX="202.0" layoutY="287.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="47.0" prefWidth="196.0" style="-fx-background-color: PINK;" text="HOME LOGIN/REGISTER">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font></Button>
+      <Button layoutX="203.0" layoutY="119.0" mnemonicParsing="false" onAction="#switchToSceneBouquetList" prefHeight="47.0" prefWidth="196.0" style="-fx-background-color: PINK;" text="BOUQUETS">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font></Button>
+>>>>>>> Stashed changes
    </children>
 </AnchorPane>

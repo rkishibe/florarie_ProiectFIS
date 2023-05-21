@@ -5,6 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
+<<<<<<< Updated upstream
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.BouquetListController">
    <children>
@@ -14,5 +15,15 @@
          </font>
       </Label>
       <ListView fx:id="buchete" layoutX="219.0" layoutY="87.0" prefHeight="200.0" prefWidth="200.0" />
+=======
+<AnchorPane prefHeight="373.0" prefWidth="639.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.BouquetListController">
+   <children>
+      <Label fx:id="myLabel" alignment="CENTER" layoutX="-1.0" layoutY="4.0" prefHeight="50.0" prefWidth="640.0" text="Choose a Bouquet" textFill="#f6f5f5">
+         <font>
+            <Font name="Bodoni MT" size="36.0" />
+         </font>
+      </Label>
+      <ListView fx:id="buchete" layoutX="120.0" layoutY="87.0" prefHeight="200.0" prefWidth="399.0" />
+>>>>>>> Stashed changes
    </children>
 </AnchorPane>

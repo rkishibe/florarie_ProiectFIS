@@ -29,14 +29,18 @@ class UserServiceTest {
 
 
     @Test
-    @DisplayName("Database is initialized, and there are no users")
+    @DisplayName("BouquetService is initialized, and there are no users")
     void testDatabaseIsInitializedAndNoUserIsPersisted() {
         assertThat(UserService.getUsers()).isNotNull();
         assertThat(UserService.getUsers()).isEmpty();
     }
 
     @Test
+<<<<<<< Updated upstream
     @DisplayName("User is successfully persisted to Database")
+=======
+    @DisplayName("User is successfully persisted to BouquetService")
+>>>>>>> Stashed changes
     void testUserIsAddedToDatabase() throws UsernameAlreadyExistsException {
         UserService.addUser(ADMIN, ADMIN, ADMIN);
         assertThat(UserService.getUsers()).isNotEmpty();
