@@ -1,7 +1,9 @@
 package com.example.florarie_proiect.services;
 
-import com.example.florarie_proiect.exceptions.UserDoesNotExist;
-import com.example.florarie_proiect.exceptions.UsernameAlreadyExists;
+import com.example.florarie_proiect.exceptions.CouldNotWriteUsersException;
+import com.example.florarie_proiect.exceptions.EmptyUsernameOrPasswordException;
+import com.example.florarie_proiect.exceptions.UserDoesNotExistException;
+import com.example.florarie_proiect.exceptions.UsernameAlreadyExistsException;
 import com.example.florarie_proiect.model.User;
 import org.dizitart.no2.Nitrite;
 import org.dizitart.no2.objects.ObjectFilter;
@@ -29,36 +31,39 @@ public class UserService {
         userRepository = db.getRepository(User.class);
     }
 
-    public static void addUser(String username, String password, String role) throws UsernameAlreadyExists {
-        checkUserDoesNotAlreadyExist(username);
-        User user = new User(username, encodePassword(username, password), role);
+    public static void addUser(String username, String password, String role) throws UsernameAlreadyExistsException, CouldNotWriteUsersException {
 
-        // Insert the user into the Nitrite database
-        userRepository.insert(user);
+        try{
+            checkUserDoesNotAlreadyExistOrIsNull(username);
+            User user = new User(username, encodePassword(username, password), role);
+            userRepository.insert(user);
+        } catch (CouldNotWriteUsersException | EmptyUsernameOrPasswordException e){
+            e.printStackTrace();
+        }
+
         closeDatabase();
     }
 
 
-    public static void checkUserDoesNotAlreadyExist(String username) throws UsernameAlreadyExists {
+    public static void checkUserDoesNotAlreadyExistOrIsNull(String username) throws UsernameAlreadyExistsException, EmptyUsernameOrPasswordException {
         // Use Nitrite's API to check if the username already exists in the database
+        if(username.isBlank()){
+            throw new EmptyUsernameOrPasswordException();
+        }
         User existingUser = userRepository.find(ObjectFilters.eq("username", username))
                 .firstOrDefault();
 
         if (existingUser != null) {
-            throw new UsernameAlreadyExists(username);
+            throw new UsernameAlreadyExistsException(username);
         }
     }
 
-    public static boolean checkUserDoesNotExist(String username) throws UserDoesNotExist {
+    public static boolean checkUserDoesNotExist(String username) throws UserDoesNotExistException {
         // Use Nitrite's API to check if the username already exists in the database
         User existingUser = userRepository.find(ObjectFilters.eq("username", username))
                 .firstOrDefault();
 
-        if (existingUser == null) {
-            return false;
-        }else{
-            return true;
-        }
+        return existingUser != null;
     }
 
     public static String encodePassword(String salt, String password) {

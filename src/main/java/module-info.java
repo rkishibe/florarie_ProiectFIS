@@ -10,11 +10,15 @@ module com.example.florarie_proiect {
 //    requires org.assertj.core;
 //    requires hamcrest.core;
     opens com.example.florarie_proiect to javafx.fxml;
+    exports com.example.florarie_proiect;
     exports com.example.florarie_proiect.model;
     exports com.example.florarie_proiect.controllers;
     exports com.example.florarie_proiect.services;
     opens com.example.florarie_proiect.controllers to javafx.fxml;
+<<<<<<< HEAD
     exports com.example.florarie_proiect;
+=======
+>>>>>>> 61f027f527c434d3fa0121c449491a68b11c3d65
     exports com.example.florarie_proiect.exceptions;
 
 }
