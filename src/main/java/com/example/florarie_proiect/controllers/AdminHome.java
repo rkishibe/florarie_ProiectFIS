@@ -19,7 +19,7 @@ public class AdminHome  implements Initializable {
         public void switchToSceneModify(ActionEvent event) throws IOException {
 
             Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/modifyBouquet.fxml"));
-            Stage stage = (Stage) homeRoot.getScene().getWindow();
+            Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
             Scene scene = new Scene(homeRoot);
             stage.setScene(scene);
             stage.show();
@@ -30,7 +30,7 @@ public class AdminHome  implements Initializable {
         public void switchToSceneHome(ActionEvent event) throws IOException {
 
             Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/home.fxml"));
-            Stage stage = (Stage) homeRoot.getScene().getWindow();
+            Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
             Scene scene = new Scene(homeRoot);
             stage.setScene(scene);
             stage.show();

@@ -1,10 +1,7 @@
 package com.example.florarie_proiect.services;
 
 import com.example.florarie_proiect.exceptions.CouldNotWriteUsersException;
-<<<<<<< Updated upstream
-=======
 import com.example.florarie_proiect.exceptions.EmptyUsernameOrPasswordException;
->>>>>>> Stashed changes
 import com.example.florarie_proiect.exceptions.UserDoesNotExistException;
 import com.example.florarie_proiect.exceptions.UsernameAlreadyExistsException;
 import com.example.florarie_proiect.model.User;
@@ -34,18 +31,6 @@ public class UserService {
     }
 
     public static void addUser(String username, String password, String role) throws UsernameAlreadyExistsException, CouldNotWriteUsersException {
-<<<<<<< Updated upstream
-        checkUserDoesNotAlreadyExist(username);
-        User user = new User(username, encodePassword(username, password), role);
-
-        // Insert the user into the Nitrite database
-        try{
-            userRepository.insert(user);
-        } catch (CouldNotWriteUsersException e){
-            e.printStackTrace();
-        }
-
-=======
 
         try{
             checkUserDoesNotAlreadyExistOrIsNull(username);
@@ -55,16 +40,11 @@ public class UserService {
             e.printStackTrace();
         }
 
->>>>>>> Stashed changes
         closeDatabase();
     }
 
 
-<<<<<<< Updated upstream
-    public static void checkUserDoesNotAlreadyExist(String username) throws UsernameAlreadyExistsException {
-=======
     public static void checkUserDoesNotAlreadyExistOrIsNull(String username) throws UsernameAlreadyExistsException, EmptyUsernameOrPasswordException {
->>>>>>> Stashed changes
         // Use Nitrite's API to check if the username already exists in the database
         if(username.isBlank()){
             throw new EmptyUsernameOrPasswordException();
@@ -82,11 +62,7 @@ public class UserService {
         User existingUser = userRepository.find(ObjectFilters.eq("username", username))
                 .firstOrDefault();
 
-        if (existingUser == null) {
-            return false;
-        }else{
-            return true;
-        }
+        return existingUser != null;
     }
 
     public static String encodePassword(String salt, String password) {

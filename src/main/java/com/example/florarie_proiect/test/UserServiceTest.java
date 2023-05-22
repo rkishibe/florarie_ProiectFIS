@@ -36,11 +36,7 @@ class UserServiceTest {
     }
 
     @Test
-<<<<<<< Updated upstream
-    @DisplayName("User is successfully persisted to Database")
-=======
     @DisplayName("User is successfully persisted to BouquetService")
->>>>>>> Stashed changes
     void testUserIsAddedToDatabase() throws UsernameAlreadyExistsException {
         UserService.addUser(ADMIN, ADMIN, ADMIN);
         assertThat(UserService.getUsers()).isNotEmpty();

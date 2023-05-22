@@ -62,6 +62,7 @@ public class BouquetService {
             }
         } catch (BouquetDoesntExistException e) {
             e.printStackTrace();
+            throw new BouquetDoesntExistException();
         }
     }
 

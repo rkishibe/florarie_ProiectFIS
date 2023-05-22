@@ -6,14 +6,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.OrderController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.OrderController">
    <children>
-      <Label layoutX="97.0" layoutY="56.0" text="Cart page">
+      <Label layoutX="39.0" layoutY="30.0" text="Your cart" textFill="WHITE">
          <font>
-            <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+            <Font name="Bodoni MT Bold Italic" size="26.0" />
          </font>
       </Label>
-      <Button layoutX="438.0" layoutY="306.0" mnemonicParsing="false" onAction="#switchToSceneClientHome" text="Finish Order" />
-      <ListView fx:id="flowerListView" layoutX="77.0" layoutY="119.0" onEditStart="#getAllFlowers" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="455.0" layoutY="304.0" mnemonicParsing="false" onAction="#switchToSceneClientHome" prefHeight="54.0" prefWidth="113.0" style="-fx-background-color: pink;" text="Finish Order" textFill="#5e5252">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font></Button>
+      <ListView fx:id="flowerListView" layoutX="39.0" layoutY="82.0" onEditStart="#getAllFlowers" prefHeight="200.0" prefWidth="529.0" />
    </children>
 </AnchorPane>
