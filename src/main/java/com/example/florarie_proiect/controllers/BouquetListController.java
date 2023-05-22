@@ -26,7 +26,8 @@ public class BouquetListController implements Initializable {
             @Override
             public void changed(ObservableValue<? extends String> observableValue, String s, String t1) {
                 curentBuchet=buchete.getSelectionModel().getSelectedItem();
-                myLabel.setText(curentBuchet); // aici va trebui sa salvam in baza de date alegerea facuta
+                myLabel.setText(curentBuchet);
+                // aici va trebui sa salvam in baza de date alegerea facuta
             }
         });
     }
