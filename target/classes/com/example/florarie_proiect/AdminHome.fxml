@@ -5,16 +5,29 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.ClientHome">
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.AdminHome">
     <children>
-        <Label layoutX="33.0" layoutY="33.0" text="Hello Admin" textFill="#f8f4f4">
+        <Label layoutX="218.0" layoutY="36.0" text="Hello Admin" textFill="#f8f4f4">
             <font>
-                <Font name="Bodoni MT" size="28.0" />
+                <Font name="Bodoni MT Bold Italic" size="28.0" />
             </font>
         </Label>
-        <Button layoutX="17.0" layoutY="136.0" mnemonicParsing="false" onAction="#switchToSceneRemove" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="REMOVE" />
-        <Button layoutX="17.0" layoutY="226.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="HOME LOGIN/REGISTER" />
-        <Button layoutX="17.0" layoutY="92.0" mnemonicParsing="false" onAction="#switchToSceneAdd" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="ADD" />
-      <Button layoutX="17.0" layoutY="180.0" mnemonicParsing="false" onAction="#switchToSceneModify" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: PINK;" text="MODIFY" />
+        <Button layoutX="200.0" layoutY="165.0" mnemonicParsing="false" onAction="#switchToSceneRemove" prefHeight="47.0" prefWidth="202.0" style="-fx-background-color: PINK;" text="REMOVE">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font></Button>
+        <Button layoutX="199.0" layoutY="308.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="47.0" prefWidth="202.0" style="-fx-background-color: PINK;" text="HOME LOGIN/REGISTER">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font></Button>
+        <Button layoutX="203.0" layoutY="96.0" mnemonicParsing="false" onAction="#switchToSceneAdd" prefHeight="47.0" prefWidth="196.0" style="-fx-background-color: PINK;" text="ADD">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font></Button>
+      <Button layoutX="200.0" layoutY="234.0" mnemonicParsing="false" onAction="#switchToSceneModify" prefHeight="47.0" prefWidth="202.0" style="-fx-background-color: PINK;" text="MODIFY">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font></Button>
     </children>
 </AnchorPane>

@@ -4,110 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e359216e-95e7-4a92-a6bd-cea2dfc6eaae" name="Changes" comment="">
-<<<<<<< Updated upstream
+    <list default="true" id="4c31ef22-8641-4ff7-b967-7dc9a52bff0f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/ModifyBouquetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/ModifyBouquetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/CouldNotWriteUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/CouldNotWriteUsersException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/UserDoesNotExist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/UserDoesNotExistException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/UsernameAlreadyExists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/UsernameAlreadyExistsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ModifyBouquetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ModifyBouquetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/BouquetListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/ModifyBouquetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RemoveBouquetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/BouquetDoesntExistException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/CouldNotWriteBouquetException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/CouldNotWriteUsersException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/ModifyBouquetTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/BouquetList.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/RemoveBouquet.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/BouquetList.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/RemoveBouquet.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/finishOrderPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/AdminHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/AdminHome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/CardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/ClientHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/ClientHome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/SaveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/AddBouquetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/CouldNotWriteUsers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/UserDoesNotExist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/UserDoesNotExistException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/UsernameAlreadyExists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/UsernameAlreadyExistsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/model/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/BouquetService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/ModifyBouquetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/ModifyBouquetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/BouquetDoesntExistException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/BouquetDoesntExistException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/CouldNotWriteBouquetException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/exceptions/CouldNotWriteBouquetException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/BouquetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/BouquetService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/AdminHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/AdminHome.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/BouquetList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/BouquetList.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/ClientHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/ClientHome.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/addBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/addBouquet.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/cartPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/cartPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/finishOrderPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/finishOrderPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/home.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/modifyBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/modifyBouquet.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/AdminHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/AdminHome.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/ClientHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/ClientHome.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/addBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/addBouquet.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/cartPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/cartPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/finishOrderPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/finishOrderPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/home.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/modifyBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/modifyBouquet.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/user-database.db" afterDir="false" />
->>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="FxmlFile" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="refactoring" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-  </component>
-  <component name="ProjectId" id="2OrgPLCp1XmkY1kA3W3VLiPqbR6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="2Q8Lp0uPcJcjpRE5UNZxI1HxT3O" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -117,149 +46,27 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-<<<<<<< Updated upstream
-=======
-    "last_directory_selection": "D:/Fakultate/OneDrive - Universitatea Politehnica Timisoara/Fakultate/AN 2/SEM_2/FIS/PROIECT_FIS/florarie_proiect/src/main/java/com/example/florarie_proiect/test",
->>>>>>> Stashed changes
-    "last_opened_file_path": "D:/Fakultate/OneDrive - Universitatea Politehnica Timisoara/Fakultate/AN 2/SEM_2/OC/OC_LAB_BENCHMARK",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\resources\com\example\florarie_proiect" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.example.florarie_proiect" />
-    </key>
-  </component>
-<<<<<<< Updated upstream
-  <component name="RunManager" selected="Application.Main">
-=======
-  <component name="RunManager" selected="JUnit.ModifyBouquetTest">
->>>>>>> Stashed changes
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.florarie_proiect.Main" />
-      <module name="florarie_proiect" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.florarie_proiect.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="florarie.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="florarie.Main" />
-      <module name="florarie_ProiectFIS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="florarie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< Updated upstream
-    <list>
-      <item itemvalue="Application.florarie.Main" />
-      <item itemvalue="Application.Main" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.florarie.Main" />
-=======
-    <configuration name="ModifyBouquetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="florarie_proiect" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.florarie_proiect.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.florarie_proiect.test" />
-      <option name="MAIN_CLASS_NAME" value="com.example.florarie_proiect.test.ModifyBouquetTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="florarie_proiect" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.florarie_proiect.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.florarie_proiect.test" />
-      <option name="MAIN_CLASS_NAME" value="com.example.florarie_proiect.test.RegistrationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.florarie.Main" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.ModifyBouquetTest" />
-      <item itemvalue="JUnit.RegistrationTest" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.ModifyBouquetTest" />
-        <item itemvalue="JUnit.RegistrationTest" />
->>>>>>> Stashed changes
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.florarie.Main" />
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e359216e-95e7-4a92-a6bd-cea2dfc6eaae" name="Changes" comment="" />
-      <created>1684131212307</created>
+      <changelist id="4c31ef22-8641-4ff7-b967-7dc9a52bff0f" name="Changes" comment="" />
+      <created>1684730445759</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1684131212307</updated>
-      <workItem from="1684131213766" duration="1789000" />
-      <workItem from="1684133040519" duration="76000" />
-      <workItem from="1684133127405" duration="4000" />
-      <workItem from="1684383305209" duration="1026000" />
-      <workItem from="1684684564413" duration="567000" />
+      <updated>1684730445759</updated>
+      <workItem from="1684730447566" duration="2505000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

@@ -3,6 +3,7 @@ package com.example.florarie_proiect.controllers;
 import com.example.florarie_proiect.exceptions.UserDoesNotExistException;
 import com.example.florarie_proiect.services.UserService;
 
+import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -14,8 +15,10 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class LoginController {
     @FXML
@@ -40,14 +43,13 @@ public class LoginController {
            UserService.loadUsersFromDatabase();
             if(UserService.checkPassword(username, password, username) && UserService.checkUserDoesNotExist(username)){
                 if(role.getValue().equals("Client")){
-                   // loginMessage.setText("Logat ca si client.");
+                    loginMessage.setText("Logat ca si client.");
                     Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/ClientHome.fxml"));
                     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     Scene scene = new Scene(homeRoot);
                     stage.setScene(scene);
                     stage.show();
                 } else if(role.getValue().equals("Admin")){
-                    //loginMessage.setText("Logat ca si admin.");
                     Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/AdminHome.fxml"));
                     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     Scene scene = new Scene(homeRoot);
@@ -78,12 +80,15 @@ public class LoginController {
             return;
         }
     }
-    public void switchToSceneHome(ActionEvent event) throws IOException
-    {
+    @FXML
+    public void switchToSceneHome(ActionEvent event) throws IOException {
+
         Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/home.fxml"));
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(homeRoot);
         stage.setScene(scene);
         stage.show();
+
     }
+
 }
