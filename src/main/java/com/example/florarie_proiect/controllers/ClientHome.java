@@ -14,13 +14,13 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 
-public class ClientHome implements Initializable {
+public class ClientHome {
 
     @FXML
     public void switchToSceneBouquetList(ActionEvent event) throws IOException {
 
             Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/BouquetList.fxml"));
-            Stage stage = (Stage) homeRoot.getScene().getWindow();
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(homeRoot);
             stage.setScene(scene);
             stage.show();
@@ -31,7 +31,7 @@ public class ClientHome implements Initializable {
     public void switchToSceneHome(ActionEvent event) throws IOException {
 
             Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/home.fxml"));
-            Stage stage = (Stage) homeRoot.getScene().getWindow();
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(homeRoot);
             stage.setScene(scene);
             stage.show();
@@ -48,8 +48,4 @@ public class ClientHome implements Initializable {
 
     }
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-
-    }
 }
