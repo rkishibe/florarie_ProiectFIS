@@ -1,49 +1,43 @@
-
 package com.example.florarie_proiect.test;
 
-/*import com.example.florarie_proiect.exceptions.UsernameAlreadyExists;
-import com.example.florarie_proiect.services.FileSystemService;
+import com.example.florarie_proiect.exceptions.UsernameAlreadyExistsException;
+import com.example.florarie_proiect.model.User;
 import com.example.florarie_proiect.services.UserService;
-import org.apache.commons.io.FileUtils;
+import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.testfx.framework.junit5.ApplicationExtension;
 
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.testfx.assertions.api.Assertions.assertThat;
 
+@ExtendWith(ApplicationExtension.class)
 class UserServiceTest {
 
     public static final String ADMIN = "admin";
 
-    @BeforeAll
-    static void beforeAll() {
-        System.out.println("Before Class");
-    }
-
-    @AfterAll
-    static void afterAll() {
-        System.out.println("After Class");
-    }
 
     @BeforeEach
-    void setUp() throws Exception {
-        FileSystemService.APPLICATION_FOLDER = ".test-registration-example";
-        FileUtils.cleanDirectory(FileSystemService.getApplicationHomeFolder().toFile());
-        UserService.loadUsersFromFile();
+    void setUp() {
+        UserService.loadUsersFromDatabase();
     }
 
     @AfterEach
     void tearDown() {
-        System.out.println("After each");
+
+       UserService.closeDatabase();
     }
 
 
     @Test
-    @DisplayName("Database is initialized, and there are no users")
+    @DisplayName("BouquetService is initialized, and there are no users")
     void testDatabaseIsInitializedAndNoUserIsPersisted() {
         assertThat(UserService.getUsers()).isNotNull();
         assertThat(UserService.getUsers()).isEmpty();
     }
 
     @Test
-    @DisplayName("User is successfully persisted to Database")
-    void testUserIsAddedToDatabase() throws UsernameAlreadyExists {
+    @DisplayName("User is successfully persisted to BouquetService")
+    void testUserIsAddedToDatabase() throws UsernameAlreadyExistsException {
         UserService.addUser(ADMIN, ADMIN, ADMIN);
         assertThat(UserService.getUsers()).isNotEmpty();
         assertThat(UserService.getUsers()).size().isEqualTo(1);
@@ -57,5 +51,7 @@ class UserServiceTest {
     @Test
     @DisplayName("User can not be added twice")
     void testUserCanNotBeAddedTwice() {
-        assertThrows(UsernameAlreadyExists.class, () -> {
+        assertThrows(UsernameAlreadyExistsException.class, () -> {});
 
+    }
+}
