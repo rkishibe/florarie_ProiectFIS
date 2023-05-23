@@ -12,6 +12,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.ListView;
 import javafx.stage.Stage;
 import org.dizitart.no2.Cursor;
@@ -23,16 +24,15 @@ import java.io.IOException;
 
 public class BouquetListController {
 
-@FXML
-ListView<String> buchete;
-
+    @FXML
+    ChoiceBox<String> choice;
     @FXML
     private void addToCart(){
-
+        //adds a bouquet to a list
     }
 
     @FXML
-    private void switchToSceneCart(ActionEvent event) throws IOException {
+    void switchToSceneCart(ActionEvent event) throws IOException {
         Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/cartPage.fxml"));
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(homeRoot);
@@ -52,21 +52,20 @@ ListView<String> buchete;
     }
 
     @FXML
-    public void initialize() throws Exception {
+    public void initialize() {
         BouquetService.loadBouquetsFromDatabase();
-
-        FindOptions findOptions = FindOptions.limit(0, 1);
-        ObservableList<String> data = FXCollections.observableArrayList();  // Use String type for displaying names
-
-        for (Document document : BouquetService.getFlowerCollection().find(findOptions)) {
-            Bouquet bouquet = Bouquet.fromDocument(document);
-            String bouquetName = bouquet.getName();  // Get the name of the bouquet
-            data.add(bouquetName);
+        if(BouquetService.getFlowerCollection()!=null) {
+            for (Document document : BouquetService.getFlowerCollection().find()) {
+                String numeBuchet = document.get("name", String.class);
+                System.out.println(numeBuchet);
+                choice.getItems().add(numeBuchet);
+                // System.out.println(numeBuchet);
+            }
+        }
+        else {
+            System.out.println("baza de date goala");
         }
 
-        buchete.setItems(data);
-
-        BouquetService.closeDatabase();
     }
 
 }

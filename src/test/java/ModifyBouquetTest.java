@@ -22,7 +22,7 @@ public class ModifyBouquetTest {
 
     @Test
     void couldNotWriteBouquetException() {
-        assertThrows(CouldNotWriteBouquetException.class, );
+        assertThrows(CouldNotWriteBouquetException.class, ()->{});
     }
 
     @AfterEach
