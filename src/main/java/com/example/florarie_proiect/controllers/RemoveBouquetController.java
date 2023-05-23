@@ -32,7 +32,6 @@ public class RemoveBouquetController {
         if (BouquetService.getFlowerCollection() != null) {
             for (Document document : BouquetService.getFlowerCollection().find()) {
                 String numeBuchet = document.get("name", String.class);
-                System.out.println(numeBuchet);
                 choice.getItems().add(numeBuchet);
             }
         } else {
@@ -54,7 +53,6 @@ public class RemoveBouquetController {
 
     public void okButton(ActionEvent e) {
         mesaj.setText("Bouquet removed!");
-        // sterg din baza de date buchettttttt
         String numeBuchet = choice.getValue(); // Obține numele buchetului selectat din ChoiceBox
         BouquetService.removeBouquet(numeBuchet);
         BouquetService.closeDatabase();

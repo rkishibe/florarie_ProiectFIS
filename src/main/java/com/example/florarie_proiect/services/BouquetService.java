@@ -69,21 +69,19 @@ public class BouquetService {
         return 0;
     }
 
-    public static void modifyBouquet(Bouquet bouquet) {
+    public static void modifyBouquet(String selectedBouquet, Bouquet modifiedBouquet) {
         try {
-            Document existingBouquet = flowerCollection.find(ObjectFilters.eq("name", bouquet.getName())).firstOrDefault();
+            Document existingBouquet = flowerCollection.find(eq("name", selectedBouquet)).firstOrDefault();
             if (existingBouquet != null) {
-
-                flowerCollection.update(eq("name", bouquet.getName() ), createDocument("quantity", bouquet.getQuantity()));
-                flowerCollection.update(eq("name", bouquet.getName() ), createDocument("price", bouquet.getPrice()));
-
-                //addBouquet(existingBouquet);
+                flowerCollection.update(eq("name", selectedBouquet), createDocument("quantity", modifiedBouquet.getQuantity()));
+                flowerCollection.update(eq("name", selectedBouquet), createDocument("price", modifiedBouquet.getPrice()));
             }
         } catch (BouquetDoesntExistException e) {
             e.printStackTrace();
             throw new BouquetDoesntExistException();
         }
     }
+
 
 
     public static void closeDatabase() {
