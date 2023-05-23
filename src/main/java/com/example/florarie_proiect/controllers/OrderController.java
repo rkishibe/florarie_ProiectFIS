@@ -1,5 +1,6 @@
 package com.example.florarie_proiect.controllers;
 import com.example.florarie_proiect.model.Bouquet;
+import com.example.florarie_proiect.services.BouquetService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -22,36 +23,28 @@ import java.util.ResourceBundle;
 
 public class OrderController {
     @FXML
-    private ListView<Bouquet> flowerListView;
+    private ListView<String> flowerListView;
 
-    private ObjectRepository<Bouquet> flowerRepository;
 
-    public void initializeList() {
-        Nitrite db = Nitrite.builder()
-                .filePath("src/main/database/flower.db")
-                .openOrCreate();
 
-        flowerRepository = db.getRepository(Bouquet.class);
-
-        // Obține lista de flori din baza de date
-        List<Bouquet> flowers = getAllFlowers();
-
-        // Convertă lista de flori într-o listă observabilă
-        ObservableList<Bouquet> flowerObservableList = FXCollections.observableArrayList(flowers);
-
-        // Setează modelul de date pentru ListView
-        flowerListView.setItems(flowerObservableList);
+    public void initialize() {
+        for (Bouquet element :BouquetListController.getSelectedBouquets() ) {
+            flowerListView.getItems().add(element.getName());
+        }
+        BouquetService.closeDatabase();
     }
 
-
-    public List<Bouquet> getAllFlowers() {
-        Cursor<Bouquet> cursor = flowerRepository.find();
+/*
+    public void getAllFlowers() {
+       Cursor<Bouquet> cursor = flowerRepository.find();
         List<Bouquet> flowers = new ArrayList<>();
         for (Bouquet flower : cursor) {
             flowers.add(flower);
         }
+
         return flowers;
-    }
+        List<String> flowerListView = new ArrayList<>();
+    }*/
 
 //    @Override
 //    public void initialize(URL url, ResourceBundle resourceBundle){
@@ -68,9 +61,7 @@ public class OrderController {
 //            }
 //        });
 //    }
-    public void closeDatabase() {
-        flowerRepository.close();
-    }
+
 
     public void switchToSceneClientHome(ActionEvent event) throws IOException {
         Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/ClientHome.fxml"));

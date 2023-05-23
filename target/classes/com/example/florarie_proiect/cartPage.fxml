@@ -17,6 +17,6 @@
          <font>
             <Font name="Bodoni MT" size="14.0" />
          </font></Button>
-      <ListView fx:id="flowerListView" layoutX="39.0" layoutY="82.0" onEditStart="#getAllFlowers" prefHeight="200.0" prefWidth="529.0" />
+      <ListView fx:id="flowerListView" layoutX="39.0" layoutY="82.0" prefHeight="200.0" prefWidth="529.0" />
    </children>
 </AnchorPane>

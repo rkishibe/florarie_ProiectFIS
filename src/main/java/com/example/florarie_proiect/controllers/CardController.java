@@ -12,7 +12,9 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 public class CardController {
 
@@ -30,6 +32,7 @@ public class CardController {
 
     @FXML
     private Button sendButton;
+
 
     @FXML
     public void sendButton(ActionEvent e)
