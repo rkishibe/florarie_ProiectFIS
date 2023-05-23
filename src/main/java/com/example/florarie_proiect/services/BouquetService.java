@@ -1,7 +1,9 @@
 package com.example.florarie_proiect.services;
 
 import com.example.florarie_proiect.exceptions.BouquetDoesntExistException;
+import com.example.florarie_proiect.exceptions.CouldNotWriteBouquetException;
 import com.example.florarie_proiect.model.Bouquet;
+import com.example.florarie_proiect.model.User;
 import org.dizitart.no2.Cursor;
 import org.dizitart.no2.Document;
 import org.dizitart.no2.Filter;
@@ -32,22 +34,25 @@ public class BouquetService {
     }
 
     public static void addBouquet(Document doc) {
+        //Bouquet bouquet = new Bouquet();
+       // bouquet.fromDocument(doc);
+      //  if (bouquet.getName().isBlank() || bouquet.getQuantity() < 0 || bouquet.getPrice() < 0) {
+        //     throw new CouldNotWriteBouquetException();
 
-        //// if(doc.getName().isBlank() || bouquet.getQuantity()<0 || bouquet.getPrice()<0){
-        // throw new CouldNotWriteBouquetException();
+            flowerCollection.insert(doc);
+            BouquetService.closeDatabase();
 
-        flowerCollection.insert(doc);
-        BouquetService.closeDatabase();
     }
 
-    public static void removeBouquet(String name) throws BouquetDoesntExistException {
-       if (flowerCollection != null) {
-            try {
-                flowerCollection.remove(ObjectFilters.eq("name", name));
-            } catch (BouquetDoesntExistException e) {
-                e.printStackTrace();
+    public static void removeBouquet(String name) throws NullPointerException {
+
+           try {
+                flowerCollection.remove(eq("name", name));
+           } catch (NullPointerException e) {
+
+               e.printStackTrace();
             }
-        }
+
     }
 
 
