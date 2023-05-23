@@ -23,16 +23,12 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 @ExtendWith(ApplicationExtension.class)
 public class BouquetListControllerTest {
 
-    private BouquetListController controller;
-
     @BeforeEach
     public void setUp(Stage stage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/BouquetList.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-
-        controller = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/BouquetList.fxml"));
     }
 
     @Test
@@ -53,7 +49,7 @@ public class BouquetListControllerTest {
     }
 
     @Test
-    public void testSwitchToSceneHome(FxRobot robot) throws TimeoutException {
+    public void testSwitchToSceneHome(FxRobot robot) {
         robot.clickOn("#homeButton");
 
         // Verify that the scene is switched to the home page

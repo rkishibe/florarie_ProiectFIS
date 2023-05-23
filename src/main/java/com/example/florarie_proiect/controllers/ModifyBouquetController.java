@@ -4,7 +4,6 @@ import com.example.florarie_proiect.exceptions.CouldNotWriteBouquetException;
 import com.example.florarie_proiect.model.Bouquet;
 import com.example.florarie_proiect.services.BouquetService;
 
-import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -12,17 +11,21 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import javafx.util.Duration;
+import org.dizitart.no2.Document;
 
 public class ModifyBouquetController {
-    @FXML
 
+    @FXML
+    ChoiceBox<String> choice;
+
+    @FXML
     public TextField nameField;
     @FXML
     public TextField priceField;
@@ -33,6 +36,21 @@ public class ModifyBouquetController {
     private Text mesaj;
 
     @FXML
+    public void initialize() {
+        BouquetService.loadBouquetsFromDatabase();
+        if(BouquetService.getFlowerCollection()!=null) {
+            for (Document document : BouquetService.getFlowerCollection().find()) {
+                String numeBuchet = document.get("name", String.class);
+                choice.getItems().add(numeBuchet);
+            }
+        }
+        else {
+            System.out.println("baza de date goala");
+        }
+
+    }
+
+    @FXML
     public void switchToSceneHome(ActionEvent event) throws IOException
     {
         Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/AdminHome.fxml"));
@@ -41,27 +59,19 @@ public class ModifyBouquetController {
         stage.setScene(scene);
         stage.show();
     }
-    public void saveButton(ActionEvent e) throws CouldNotWriteBouquetException {
-        try{
-            BouquetService.modifyBouquet(new Bouquet(nameField.getText(), Integer.parseInt(priceField.getText()), Integer.parseInt(quantityField.getText())));
+    public void saveButton() throws CouldNotWriteBouquetException {
+        String selectedBouquet = choice.getSelectionModel().getSelectedItem();
+        try {
+            Bouquet modifiedBouquet = new Bouquet(nameField.getText(), Integer.parseInt(priceField.getText()), Integer.parseInt(quantityField.getText()));
+            BouquetService.modifyBouquet(selectedBouquet, modifiedBouquet);
             mesaj.setText("Bouquet modified!");
-            delaySceneSwitch();
-
-        }catch (CouldNotWriteBouquetException exception){
+        } catch (CouldNotWriteBouquetException exception) {
             exception.printStackTrace();
             throw new CouldNotWriteBouquetException();
         }
+        finally {
+            BouquetService.closeDatabase();
+        }
     }
 
-    private void delaySceneSwitch() {
-        PauseTransition delay = new PauseTransition(Duration.seconds(3));
-        delay.setOnFinished(event -> {
-            try {
-                switchToSceneHome(event);
-            } catch (IOException e) {
-                mesaj.setText("Error switching to home scene.");
-            }
-        });
-        delay.play();
-    }
 }
