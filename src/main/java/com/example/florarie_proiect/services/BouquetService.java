@@ -74,7 +74,7 @@ public class BouquetService {
 
    */
 
-    private static NitriteCollection flowerCollection;
+    public static NitriteCollection flowerCollection;
     public static void loadBouquetsFromDatabase() {
         db = Nitrite.builder()
                 .compressed()
