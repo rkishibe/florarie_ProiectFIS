@@ -18,6 +18,7 @@ public class Main extends Application {
         try {
             Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/home.fxml"));
             Scene scene = new Scene(homeRoot);
+
             primaryStage.setScene(scene);
             primaryStage.show();
         }catch(Exception e)

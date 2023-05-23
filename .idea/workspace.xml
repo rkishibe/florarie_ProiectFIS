@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="887c7d75-4012-4826-a766-bf1a6b1cf259" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/ModifyBouquetControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/florarie_proiect.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flowers.db" beforeDir="false" afterPath="$PROJECT_DIR$/flowers.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/AddBouquetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/AddBouquetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/BouquetListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/BouquetListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/ModifyBouquetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/ModifyBouquetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RemoveBouquetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RemoveBouquetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/BouquetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/BouquetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/BouquetListControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/BouquetListControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/ModifyBouquetTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/ModifyBouquetControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/ModifyBouquetControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/modifyBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/modifyBouquet.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/modifyBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/modifyBouquet.fxml" afterDir="false" />
     </list>
@@ -81,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684843904774</updated>
-      <workItem from="1684843906387" duration="3147000" />
+      <workItem from="1684843906387" duration="3716000" />
     </task>
     <servers />
   </component>

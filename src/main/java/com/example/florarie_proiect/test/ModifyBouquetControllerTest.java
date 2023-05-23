@@ -1,9 +1,6 @@
 package com.example.florarie_proiect.test;
 
 import com.example.florarie_proiect.exceptions.CouldNotWriteBouquetException;
-import com.example.florarie_proiect.model.Bouquet;
-import com.example.florarie_proiect.services.BouquetService;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -16,18 +13,13 @@ import org.junit.jupiter.api.Test;
 import org.testfx.api.FxRobot;
 
 import java.io.IOException;
-import java.util.concurrent.TimeoutException;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.testfx.assertions.api.Assertions.assertThat;
 
 
 class ModifyBouquetControllerTest {
-
-    private TextField nameField;
-    private TextField priceField;
-    private TextField quantityField;
-    private Text mesaj;
 
     @BeforeEach
     void setUp(Stage stage) throws IOException {
@@ -50,8 +42,16 @@ class ModifyBouquetControllerTest {
     }
 
     @Test
-    void saveButton_success(){
+    void saveButton_success(FxRobot robot){
+        robot.clickOn("nameField");
+        robot.write("trandafiri");
+        robot.clickOn("priceField");
+        robot.write("1");
+        robot.clickOn("quantityField");
+        robot.write("10");
+        robot.clickOn("saveButton");
 
+        assertThat(robot.lookup("mesaj").queryText()).hasText("Bouquet modified!");
     }
 
     @Test
