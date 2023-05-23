@@ -13,6 +13,9 @@ public class Bouquet {
             this.price=price;
         }
 
+    public Bouquet() {
+    }
+
     public static Bouquet fromDocument(Document document) {
         String name = document.get("name", String.class);
         int quantity = document.get("quantity", Integer.class);
