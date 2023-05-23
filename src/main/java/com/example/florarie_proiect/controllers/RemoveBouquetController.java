@@ -18,8 +18,6 @@ import org.dizitart.no2.objects.filters.ObjectFilters;
 
 import java.io.IOException;
 
-import static com.example.florarie_proiect.services.BouquetService.flowerCollection;
-
 public class RemoveBouquetController {
     @FXML
     private Text mesaj;
@@ -29,8 +27,8 @@ public class RemoveBouquetController {
 
     @FXML
     public void initialize() {
-        if(flowerCollection!=null) {
-            for (Document document : flowerCollection.find()) {
+        if(BouquetService.getFlowerCollection()!=null) {
+            for (Document document : BouquetService.getFlowerCollection().find()) {
                 String numeBuchet = document.get("name", String.class);
                 choice.getItems().add(numeBuchet);
                // System.out.println(numeBuchet);

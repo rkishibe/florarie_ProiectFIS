@@ -58,7 +58,6 @@ public class AddBouquetController {
 
 
         mesaj.setText("Bouquet added!");
-        ///////////////adaug in baza de date buchettttttt
         BouquetService.loadBouquetsFromDatabase();
         BouquetService.addBouquet(doc);
 

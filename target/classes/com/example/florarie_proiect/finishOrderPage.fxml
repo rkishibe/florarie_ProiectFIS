@@ -7,11 +7,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<<<<<<< Updated upstream
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.CardController">
-=======
 <AnchorPane prefHeight="324.0" prefWidth="334.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.CardController">
->>>>>>> Stashed changes
+
    <children>
       <Label layoutX="101.0" layoutY="31.0" text="Card Details" textFill="WHITE">
          <font>
@@ -24,11 +21,6 @@
       <Label layoutX="41.0" layoutY="192.0" text="Security code" textFill="WHITE" />
       <TextField fx:id="numarCard" layoutX="122.0" layoutY="83.0" />
       <TextField fx:id="numeDetinator" layoutX="122.0" layoutY="118.0" />
-<<<<<<< Updated upstream
-      <TextField fx:id="dataExpirare" layoutX="122.0" layoutY="153.0" />
-      <TextField fx:id="codSecuritate" layoutX="122.0" layoutY="188.0" />
-      <Button fx:id="sendButton" layoutX="510.0" layoutY="336.0" mnemonicParsing="false" onAction="#sendButton" text="Send" />
-=======
       <TextField fx:id="codSecuritate" layoutX="122.0" layoutY="188.0" prefHeight="25.0" prefWidth="72.0" />
       <Button fx:id="sendButton" layoutX="184.0" layoutY="239.0" mnemonicParsing="false" onAction="#sendButton" prefHeight="39.0" prefWidth="72.0" style="-fx-background-color: pink;" text="Send" textFill="#572f2f">
          <font>
@@ -40,6 +32,5 @@
             <Font name="Bodoni MT" size="14.0" />
          </font>
       </Button>
->>>>>>> Stashed changes
    </children>
 </AnchorPane>
