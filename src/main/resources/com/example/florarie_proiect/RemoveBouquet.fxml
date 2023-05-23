@@ -16,7 +16,7 @@
       </Label>
       <ChoiceBox fx:id="choice" layoutX="140.0" layoutY="151.0" prefHeight="55.0" prefWidth="257.0" />
       <Button layoutX="507.0" layoutY="340.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="25.0" prefWidth="67.0" text="Back" />
-      <Button layoutX="433.0" layoutY="340.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="OK" />
+      <Button layoutX="433.0" layoutY="340.0" mnemonicParsing="false" onAction="#okButton" prefHeight="25.0" prefWidth="67.0" text="OK" />
       <Text fx:id="mesaj" layoutX="140.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="257.33333333333337" />
    </children>
 </AnchorPane>

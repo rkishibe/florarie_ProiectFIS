@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1a5235f3-fa92-4905-b754-d3aedbc5f036" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flowers.db" beforeDir="false" afterPath="$PROJECT_DIR$/flowers.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RemoveBouquetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RemoveBouquetController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/BouquetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/BouquetService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/RemoveBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/RemoveBouquet.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/RemoveBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/RemoveBouquet.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

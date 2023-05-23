@@ -4,6 +4,7 @@ import com.example.florarie_proiect.exceptions.CouldNotWriteBouquetException;
 import com.example.florarie_proiect.exceptions.BouquetDoesntExistException;
 import com.example.florarie_proiect.model.Bouquet;
 import org.dizitart.no2.Document;
+import org.dizitart.no2.Filter;
 import org.dizitart.no2.Nitrite;
 import org.dizitart.no2.NitriteCollection;
 import org.dizitart.no2.objects.Cursor;
@@ -100,12 +101,15 @@ public class BouquetService {
     }
 
     public static void removeBouquet(String name) throws BouquetDoesntExistException {
-        try{
-            flowerCollection.remove(ObjectFilters.eq("name", name));
-        }catch(BouquetDoesntExistException e){
-            e.printStackTrace();
+       if (flowerCollection != null) {
+            try {
+                flowerCollection.remove(ObjectFilters.eq("name", name));
+            } catch (BouquetDoesntExistException e) {
+                e.printStackTrace();
+            }
         }
     }
+
 
     public static double getBouquetPrice(String name) throws BouquetDoesntExistException{
         try {

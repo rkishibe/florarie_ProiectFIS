@@ -29,12 +29,17 @@ public class RemoveBouquetController {
 
     @FXML
     public void initialize() {
+        BouquetService.loadBouquetsFromDatabase();
         if(flowerCollection!=null) {
             for (Document document : flowerCollection.find()) {
                 String numeBuchet = document.get("name", String.class);
+                System.out.println(numeBuchet);
                 choice.getItems().add(numeBuchet);
-               // System.out.println(numeBuchet);
+                // System.out.println(numeBuchet);
             }
+        }
+        else {
+            System.out.println("baza de date goala");
         }
 
     }
