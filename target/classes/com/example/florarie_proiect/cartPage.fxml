@@ -13,10 +13,15 @@
             <Font name="Bodoni MT Bold Italic" size="26.0" />
          </font>
       </Label>
-      <Button layoutX="455.0" layoutY="304.0" mnemonicParsing="false" onAction="#switchToSceneClientHome" prefHeight="54.0" prefWidth="113.0" style="-fx-background-color: pink;" text="Finish Order" textFill="#5e5252">
+      <Button layoutX="455.0" layoutY="304.0" mnemonicParsing="false" onAction="#switchToSceneCart" prefHeight="54.0" prefWidth="113.0" style="-fx-background-color: pink;" text="Finish Order" textFill="#5e5252">
          <font>
             <Font name="Bodoni MT" size="14.0" />
          </font></Button>
       <ListView fx:id="flowerListView" layoutX="39.0" layoutY="82.0" prefHeight="200.0" prefWidth="529.0" />
+      <Button layoutX="332.0" layoutY="304.0" mnemonicParsing="false" onAction="#switchToSceneClientHome" prefHeight="54.0" prefWidth="113.0" style="-fx-background-color: pink;" text="Back" textFill="#5e5252">
+         <font>
+            <Font name="Bodoni MT" size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

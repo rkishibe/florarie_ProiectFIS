@@ -8,6 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -25,8 +26,7 @@ public class CardController {
     private TextField numeDetinatorField;
 
     @FXML
-    private TextField dataExpirareField;
-
+    private DatePicker dataExpirareField;
     @FXML
     private TextField codSecuritateField;
 
@@ -34,16 +34,16 @@ public class CardController {
     private Button sendButton;
 
 
-    @FXML
-    public void sendButton(ActionEvent e)
+
+  /*  public void sendButton(ActionEvent e)
     {
         System.out.println("send");
-    }
-    /*
-    public void handleSendButton(ActionEvent event) throws IOException {
+    }*/
+    @FXML
+    public void sendButton(ActionEvent event) throws IOException {
         String numarCard = numarCardField.getText();
         String numeDetinator = numeDetinatorField.getText();
-        String dataExpirare = dataExpirareField.getText();
+        String dataExpirare = dataExpirareField.getValue().toString();
 
         // verificam daca datele sunt valide
         boolean isDataValid = isCardDataValid(numarCard, numeDetinator, dataExpirare, codSecuritateField.getText());
@@ -52,14 +52,11 @@ public class CardController {
             // daca datele sunt valide, ne intoarcem la pagina de home
             // aici puteti inlocui "Home.fxml" cu numele fisierului FXML al paginii home din aplicatia voastra
             // SceneChanger.changeScene(sendButton, "Home.fxml");
-            Parent root = null;
-            try {
-                root = FXMLLoader.load(getClass().getResource("home.fxml"));
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-            Scene scene = new Scene(root, 800, 600);
-            Stage stage = (Stage) sendButton.getScene().getWindow();
+            System.out.println("VALID");
+
+            Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/DetaliiComanda.fxml"));
+            Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+            Scene scene = new Scene(homeRoot);
             stage.setScene(scene);
             stage.show();
 
@@ -93,10 +90,10 @@ public class CardController {
         }
 
         // verificam daca data de expirare este valida
-        try {
-            // parsam data in formatul "MM/YY"
+      //  try {
+            // parsam data in formatul "MM/ZZ/YYYY"
             int expMonth = Integer.parseInt(dataExpirare.substring(0, 2));
-            int expYear = Integer.parseInt(dataExpirare.substring(3));
+            int expYear = Integer.parseInt(dataExpirare.substring(8));
 
             // obtinem data curenta
             Calendar calendar = Calendar.getInstance();
@@ -107,18 +104,18 @@ public class CardController {
             if (expYear < currentYear || (expYear == currentYear && expMonth < currentMonth)) {
                 return false;
             }
-        } catch (NumberFormatException | StringIndexOutOfBoundsException e) {
+       // } catch (NumberFormatException | StringIndexOutOfBoundsException e) {
             // daca data nu poate fi parsata, inseamna ca nu e valida
-            return false;
-        }
+         //   return false;
+       // }
 
         // daca toate verificarile au trecut, inseamna ca datele sunt valide
         return true;
-    }*/
+    }
 
-    public void switchToSceneClientHome(ActionEvent event) throws IOException
+    public void switchToSceneFinishOrder(ActionEvent event) throws IOException
     {
-        Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/ClientHome.fxml"));
+        Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/DetaliiComanda.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(homeRoot);
         stage.setScene(scene);

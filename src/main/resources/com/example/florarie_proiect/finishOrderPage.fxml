@@ -19,15 +19,15 @@
       <Label layoutX="70.0" layoutY="122.0" prefHeight="17.0" prefWidth="43.0" text="Name" textFill="WHITE" />
       <Label layoutX="51.0" layoutY="157.0" prefHeight="17.0" prefWidth="62.0" text="Expiry date" textFill="WHITE" />
       <Label layoutX="41.0" layoutY="192.0" text="Security code" textFill="WHITE" />
-      <TextField fx:id="numarCard" layoutX="122.0" layoutY="83.0" />
-      <TextField fx:id="numeDetinator" layoutX="122.0" layoutY="118.0" />
-      <TextField fx:id="codSecuritate" layoutX="122.0" layoutY="188.0" prefHeight="25.0" prefWidth="72.0" />
+      <TextField fx:id="numarCardField" layoutX="122.0" layoutY="83.0" />
+      <TextField fx:id="numeDetinatorField" layoutX="122.0" layoutY="118.0" />
+      <TextField fx:id="codSecuritateField" layoutX="122.0" layoutY="188.0" prefHeight="25.0" prefWidth="72.0" />
       <Button fx:id="sendButton" layoutX="184.0" layoutY="239.0" mnemonicParsing="false" onAction="#sendButton" prefHeight="39.0" prefWidth="72.0" style="-fx-background-color: pink;" text="Send" textFill="#572f2f">
          <font>
             <Font name="Bodoni MT" size="14.0" />
          </font></Button>
-      <DatePicker layoutX="122.0" layoutY="153.0" prefHeight="25.0" prefWidth="149.0" />
-      <Button layoutX="77.0" layoutY="239.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="72.0" style="-fx-background-color: pink;" text="Back" textFill="#572f2f">
+      <DatePicker fx:id="dataExpirareField" layoutX="122.0" layoutY="153.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button layoutX="77.0" layoutY="239.0" mnemonicParsing="false" onAction="#switchToSceneFinishOrder" prefHeight="39.0" prefWidth="72.0" style="-fx-background-color: pink;" text="Back" textFill="#572f2f">
          <font>
             <Font name="Bodoni MT" size="14.0" />
          </font>
