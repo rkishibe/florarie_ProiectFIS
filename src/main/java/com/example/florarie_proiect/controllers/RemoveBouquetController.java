@@ -18,8 +18,6 @@ import org.dizitart.no2.objects.filters.ObjectFilters;
 
 import java.io.IOException;
 
-import static com.example.florarie_proiect.services.BouquetService.flowerCollection;
-
 public class RemoveBouquetController {
     @FXML
     private Text mesaj;
