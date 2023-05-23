@@ -6,16 +6,28 @@
   <component name="ChangeListManager">
     <list default="true" id="40d80c42-4ca8-4ea2-8579-16b6b65ef36b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/florarie_proiect.iml" beforeDir="false" afterPath="$PROJECT_DIR$/florarie_proiect.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RemoveBouquetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RemoveBouquetController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/model/Bouquet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/model/Bouquet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/BouquetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/BouquetService.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/flowers.db" beforeDir="false" afterPath="$PROJECT_DIR$/flowers.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/BouquetListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/BouquetListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RemoveBouquetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RemoveBouquetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/BouquetList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/BouquetList.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ModifyBouquetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ModifyBouquetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/user-database.db" afterDir="false" />
+>>>>>>> e6b463187479275b065cf2b36e3ff9389abd1975
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -61,6 +73,24 @@
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+=======
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+>>>>>>> e6b463187479275b065cf2b36e3ff9389abd1975
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="40d80c42-4ca8-4ea2-8579-16b6b65ef36b" name="Changes" comment="" />
