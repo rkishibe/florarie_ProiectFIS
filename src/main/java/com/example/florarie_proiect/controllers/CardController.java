@@ -13,6 +13,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.security.spec.RSAOtherPrimeInfo;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -81,18 +82,24 @@ public class CardController {
 
         // verificam daca numarul de card are 16 cifre
         if (!numarCard.matches("\\d{16}")) {
+            System.out.println("nr card");
             return false;
         }
 
         // verificam daca codul de securitate are 3 cifre
         if (!codSecuritate.matches("\\d{3}")) {
+            System.out.println("cod");
             return false;
         }
 
         // verificam daca data de expirare este valida
       //  try {
             // parsam data in formatul "MM/ZZ/YYYY"
-            int expMonth = Integer.parseInt(dataExpirare.substring(0, 2));
+        String month = dataExpirare.substring(0, 2);
+        if (month.endsWith("/")) {
+            month = month.substring(0, month.length() - 1);
+        }
+        int expMonth = Integer.parseInt(month);
             int expYear = Integer.parseInt(dataExpirare.substring(8));
 
             // obtinem data curenta
@@ -102,6 +109,7 @@ public class CardController {
 
             // verificam daca data de expirare este in viitor
             if (expYear < currentYear || (expYear == currentYear && expMonth < currentMonth)) {
+                System.out.println("data");
                 return false;
             }
        // } catch (NumberFormatException | StringIndexOutOfBoundsException e) {
@@ -115,7 +123,7 @@ public class CardController {
 
     public void switchToSceneFinishOrder(ActionEvent event) throws IOException
     {
-        Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/DetaliiComanda.fxml"));
+        Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/cartPage.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(homeRoot);
         stage.setScene(scene);

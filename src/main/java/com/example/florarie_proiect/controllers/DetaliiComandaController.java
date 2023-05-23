@@ -42,14 +42,6 @@ private TableColumn<Bouquet,String> name;
         stage.show();
 
     }
-    /*
-    ObservableList<Bouquet> initialData(){
-        for (Bouquet element :BouquetListController.getSelectedBouquets() ) {
-            FXCollections.<Bouquet>observableArrayList(element);
-        }
-        BouquetService.closeDatabase();
-        return FXCollections.<Bouquet>observableArrayList();
-    }*/
 
     ObservableList<Bouquet> initialData() {
         ObservableList<Bouquet> data = FXCollections.observableArrayList();
