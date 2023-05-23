@@ -28,12 +28,11 @@ public class RemoveBouquetController {
     @FXML
     public void initialize() {
         BouquetService.loadBouquetsFromDatabase();
-        if(flowerCollection!=null) {
-            for (Document document : flowerCollection.find()) {
+        if(BouquetService.getFlowerCollection()!=null) {
+            for (Document document : BouquetService.getFlowerCollection().find()) {
                 String numeBuchet = document.get("name", String.class);
                 System.out.println(numeBuchet);
                 choice.getItems().add(numeBuchet);
-                // System.out.println(numeBuchet);
             }
         }
         else {
@@ -53,7 +52,6 @@ public class RemoveBouquetController {
     }
     public void okButton(ActionEvent e) {
         mesaj.setText("Bouquet removed!");
-        ///////////////sterg din baza de date buchettttttt
         String numeBuchet = choice.getValue(); // Obține numele buchetului selectat din ChoiceBox
         BouquetService.removeBouquet(numeBuchet);
         BouquetService.closeDatabase();
