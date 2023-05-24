@@ -1,7 +1,5 @@
-package com.example.florarie_proiect.test;
+package com.example.florarie_proiect.controllers;
 
-import com.example.florarie_proiect.controllers.BouquetListController;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -11,7 +9,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
-import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
 
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package com.example.florarie_proiect.test;
+package com.example.florarie_proiect.controllers;
 
 import com.example.florarie_proiect.exceptions.CouldNotWriteBouquetException;
 import javafx.fxml.FXMLLoader;
