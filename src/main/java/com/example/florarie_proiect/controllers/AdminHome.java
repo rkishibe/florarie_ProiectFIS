@@ -1,5 +1,6 @@
 package com.example.florarie_proiect.controllers;
 
+import com.example.florarie_proiect.services.BouquetService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,7 +20,7 @@ public class AdminHome {
 
         @FXML
         public void switchToSceneHome(ActionEvent event) throws IOException {
-
+            BouquetService.closeDatabase();
             Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/home.fxml"));
             Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
             Scene scene = new Scene(homeRoot);
