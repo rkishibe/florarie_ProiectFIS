@@ -1,5 +1,5 @@
-# Created at 2023-05-24T20:57:04.872
-java.lang.IllegalAccessError: class org.junit.platform.engine.discovery.DiscoverySelectors (in unnamed module @0x6b4a4e18) cannot access class org.junit.platform.commons.util.Preconditions (in module org.junit.platform.commons) because module org.junit.platform.commons does not export org.junit.platform.commons.util to unnamed module @0x6b4a4e18
+# Created at 2023-05-24T21:39:24.050
+java.lang.IllegalAccessError: class org.junit.platform.engine.discovery.DiscoverySelectors (in unnamed module @0x11dc3715) cannot access class org.junit.platform.commons.util.Preconditions (in module org.junit.platform.commons) because module org.junit.platform.commons does not export org.junit.platform.commons.util to unnamed module @0x11dc3715
 	at org.junit.platform.engine.discovery.DiscoverySelectors.selectClass(DiscoverySelectors.java:392)
 	at org.apache.maven.surefire.junitplatform.TestPlanScannerFilter.accept(TestPlanScannerFilter.java:48)
 	at org.apache.maven.surefire.api.util.DefaultScanResult.applyFilter(DefaultScanResult.java:87)

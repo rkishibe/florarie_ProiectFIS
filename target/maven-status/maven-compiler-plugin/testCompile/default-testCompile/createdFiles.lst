@@ -4,4 +4,5 @@ com\example\florarie_proiect\controllers\ModifyBouquetControllerTest.class
 com\example\florarie_proiect\controllers\RegistrationControllerTest.class
 com\example\florarie_proiect\services\UserServiceTest.class
 com\example\florarie_proiect\controllers\BouquetListControllerTest.class
+com\example\florarie_proiect\MainTest.class
 com\example\florarie_proiect\controllers\AdminHomeControllerTest.class

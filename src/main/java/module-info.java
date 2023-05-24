@@ -3,11 +3,9 @@ module com.example.florarie_proiect {
     requires javafx.fxml;
     requires nitrite;
     requires org.apache.commons.io;
-    requires org.junit.jupiter.api;
+
     requires org.junit.platform.commons;
-    requires org.testfx;
-    requires org.testfx.junit5;
-    requires hamcrest.core;
+
 
     opens com.example.florarie_proiect to javafx.fxml;
 
