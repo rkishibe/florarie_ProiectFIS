@@ -1,6 +1,7 @@
 package com.example.florarie_proiect.test;
 
 import com.example.florarie_proiect.controllers.BouquetListController;
+import com.example.florarie_proiect.services.BouquetService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -13,10 +14,10 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
+import org.testfx.framework.junit5.Start;
 
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
@@ -24,12 +25,17 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 public class BouquetListControllerTest {
 
     @BeforeEach
-    public void setUp(Stage stage) throws IOException {
+    void setUp() throws Exception {
+        BouquetService.loadBouquetsFromDatabase();
+    }
+    @Start
+    void start(Stage stage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/BouquetList.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
+
 
     @Test
     public void testAddToCart(FxRobot robot) {
