@@ -1,6 +1,7 @@
 package com.example.florarie_proiect.controllers;
 
 
+import com.example.florarie_proiect.model.Bouquet;
 import com.example.florarie_proiect.services.BouquetService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,19 +10,24 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import org.dizitart.no2.Document;
+import org.dizitart.no2.FindOptions;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.dizitart.no2.filters.Filters.eq;
 
 
 public class BouquetListController {
-
+    private static List<Bouquet> selectedBouquets=new ArrayList<>();
     @FXML
     ChoiceBox<String> choice;
     @FXML
-    private void addToCart(){
-    }
+    private Text mesaj;
 
     @FXML
     void switchToSceneCart(ActionEvent event) throws IOException {
@@ -30,6 +36,10 @@ public class BouquetListController {
         Scene scene = new Scene(homeRoot);
         stage.setScene(scene);
         stage.show();
+    }
+
+    public static List<Bouquet> getSelectedBouquets() {
+        return selectedBouquets;
     }
 
     @FXML
@@ -55,6 +65,24 @@ public class BouquetListController {
         else {
             System.out.println("baza de date goala");
         }
+
+    }
+    @FXML
+    public void addToCart(){
+        if (BouquetService.getFlowerCollection() != null) {
+            String numeBuchet = choice.getValue(); // Obține numele buchetului selectat din ChoiceBox
+            Document existingBouquet = BouquetService.getFlowerCollection().find(eq("name", numeBuchet)).firstOrDefault();
+           // for (Document document : BouquetService.getFlowerCollection().find() {
+                if(existingBouquet!=null)
+                {
+                    Bouquet bouquet=new Bouquet((String)existingBouquet.get("name"), (Integer) existingBouquet.get("quantity"), (Integer)existingBouquet.get("price"));
+                selectedBouquets.add(bouquet);
+              //  System.out.println(numeBuchet);
+            }
+        } else {
+            System.out.println("baza de date goala");
+        }
+        mesaj.setText("Bouquet added to cart!");
 
     }
 

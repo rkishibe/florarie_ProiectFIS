@@ -17,7 +17,7 @@ import static org.dizitart.no2.filters.Filters.eq;
 
 public class BouquetService {
     private static Nitrite db;
-   public static ObjectRepository<Bouquet> flowerRepository;
+   //public static ObjectRepository<Bouquet> flowerRepository;
 
     private static NitriteCollection flowerCollection;
     public static void loadBouquetsFromDatabase() {
