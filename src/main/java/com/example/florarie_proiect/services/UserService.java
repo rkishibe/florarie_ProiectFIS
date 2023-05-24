@@ -45,26 +45,16 @@ public class UserService {
     }
 
 
-    public static void checkUserDoesNotAlreadyExistOrIsNull(String username) throws UsernameAlreadyExistsException, EmptyUsernameOrPasswordException {
+    public static boolean checkUserDoesNotAlreadyExistOrIsNull(String username) throws UsernameAlreadyExistsException, EmptyUsernameOrPasswordException {
         // Use Nitrite's API to check if the username already exists in the database
         if(username.isBlank()){
             throw new EmptyUsernameOrPasswordException();
         }
-        User existingUser = userRepository.find(ObjectFilters.eq("username", username))
-                .firstOrDefault();
-
-        if (existingUser != null) {
-            throw new UsernameAlreadyExistsException(username);
-        }
-    }
-
-    public static boolean checkUserDoesNotExist(String username) throws UserDoesNotExistException {
-        // Use Nitrite's API to check if the username already exists in the database
-        User existingUser = userRepository.find(ObjectFilters.eq("username", username))
-                .firstOrDefault();
+        User existingUser = userRepository.find(ObjectFilters.eq("username", username)).firstOrDefault();
 
         return existingUser != null;
     }
+
 
     public static String encodePassword(String salt, String password) {
         MessageDigest md = getMessageDigest();
@@ -81,7 +71,7 @@ public class UserService {
     }
 
 
-    public static boolean checkPassword(String salt, String username, String password) {
+    public static boolean checkPasswordAndRole(String salt, String username, String password, String role) {
         MessageDigest md = getMessageDigest();
         md.update(salt.getBytes(StandardCharsets.UTF_8));
 
@@ -98,9 +88,13 @@ public class UserService {
         for (byte b : hashedPassword) {
             encodedPassword.append(String.format("%02x", b));
         }
-        System.out.println(encodedPassword + " "+ user.getPassword());
-        return encodedPassword.toString().equals(user.getPassword());
+
+        if(encodedPassword.toString().equals(user.getPassword()) && role.equals(user.getRole()))
+            return true;
+        else
+            return false;
     }
+
 
     private static MessageDigest getMessageDigest() {
         MessageDigest md;
