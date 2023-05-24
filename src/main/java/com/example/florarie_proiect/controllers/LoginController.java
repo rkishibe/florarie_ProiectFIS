@@ -15,10 +15,9 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import javafx.util.Duration;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
+
 
 public class LoginController {
     @FXML
@@ -38,10 +37,11 @@ public class LoginController {
     public void handleLoginButtonAction(ActionEvent event){
         String username = usernameField.getText();
         String password = passwordField.getText();
+        String userRole=role.getValue();
 
         try{
            UserService.loadUsersFromDatabase();
-            if(UserService.checkPassword(username, password, username) && UserService.checkUserDoesNotExist(username)){
+            if(UserService.checkPasswordAndRole(username, username,password, userRole) && UserService.checkUserDoesNotAlreadyExistOrIsNull(username)){
                 if(role.getValue().equals("Client")){
                     loginMessage.setText("Logat ca si client.");
                     Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/ClientHome.fxml"));
@@ -61,11 +61,11 @@ public class LoginController {
                 loginMessage.setText("Parola sau username gresite!");
             }
         }catch (Exception e){
-            e.printStackTrace();
-        } catch (UserDoesNotExistException e) {
-            throw new RuntimeException(e);
-
-        }
+            e.printStackTrace();}
+//        } catch (UserDoesNotExistException e) {
+//            throw new RuntimeException(e);
+//
+//        }
         finally{
             UserService.closeDatabase();
         }

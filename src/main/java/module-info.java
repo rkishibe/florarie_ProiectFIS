@@ -3,22 +3,18 @@ module com.example.florarie_proiect {
     requires javafx.fxml;
     requires nitrite;
     requires org.apache.commons.io;
-//    requires org.junit.jupiter.api;
-//    requires org.junit.platform.commons;
-//    requires org.testfx;
-//    requires org.testfx.junit5;
-//    requires org.assertj.core;
-//    requires hamcrest.core;
+    requires org.junit.jupiter.api;
+    requires org.junit.platform.commons;
+    requires org.testfx;
+    requires org.testfx.junit5;
+    requires org.assertj.core;
+    requires hamcrest.core;
     opens com.example.florarie_proiect to javafx.fxml;
     exports com.example.florarie_proiect;
     exports com.example.florarie_proiect.model;
     exports com.example.florarie_proiect.controllers;
     exports com.example.florarie_proiect.services;
     opens com.example.florarie_proiect.controllers to javafx.fxml;
-<<<<<<< HEAD
-    exports com.example.florarie_proiect;
-=======
->>>>>>> 61f027f527c434d3fa0121c449491a68b11c3d65
-    exports com.example.florarie_proiect.exceptions;
+
 
 }
