@@ -1,4 +1,4 @@
-package com.example.florarie_proiect;
+package com.example.florarie_proiect.controllers;
 
 import javafx.scene.Node;
 import javafx.scene.Scene;
@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @ExtendWith(ApplicationExtension.class)
-public class HomeTest {
+public class HomeControllerTest {
     @Test
     public void testSwitchToSceneLogin(FxRobot robot) {
         robot.clickOn("#loginButton");

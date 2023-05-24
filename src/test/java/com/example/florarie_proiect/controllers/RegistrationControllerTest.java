@@ -1,4 +1,4 @@
-package com.example.florarie_proiect;
+package com.example.florarie_proiect.controllers;
 
 import com.example.florarie_proiect.services.UserService;
 import org.junit.jupiter.api.AfterAll;
@@ -8,7 +8,7 @@ import org.testfx.api.FxRobot;
 
 import static org.testfx.assertions.api.Assertions.assertThat;
 
-class RegistrationTest {
+class RegistrationControllerTest {
 
     public static final String USERNAME = "user";
     public static final String PASSWORD = "password";

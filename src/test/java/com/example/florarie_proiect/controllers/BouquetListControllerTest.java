@@ -1,4 +1,4 @@
-package com.example.florarie_proiect;
+package com.example.florarie_proiect.controllers;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;

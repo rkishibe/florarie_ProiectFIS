@@ -39,9 +39,7 @@ public class AddBouquetController {
     Stage stage;
     @FXML
     public void switchToSceneHome(ActionEvent event) throws IOException {
-
         Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/AdminHome.fxml"));
-       // Stage stage = (Stage) homeRoot.getScene().getWindow();
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         Scene scene = new Scene(homeRoot);
         stage.setScene(scene);
@@ -50,9 +48,6 @@ public class AddBouquetController {
 
     }
     public void saveButton(ActionEvent e) throws IOException {
-        // Bouquet bouquet=new Bouquet(nameField.getText(), Integer.parseInt(quantityField.getText()),Integer.parseInt(priceField.getText()));
-        // create a document to populate data
-
         Document doc = createDocument("name",nameField.getText() )
                 .put("quantity",Integer.parseInt(quantityField.getText()) )
                 .put("price", Integer.parseInt(priceField.getText()));

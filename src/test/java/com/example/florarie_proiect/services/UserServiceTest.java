@@ -1,4 +1,4 @@
-package com.example.florarie_proiect;
+package com.example.florarie_proiect.services;
 
 import com.example.florarie_proiect.exceptions.UsernameAlreadyExistsException;
 import com.example.florarie_proiect.model.User;

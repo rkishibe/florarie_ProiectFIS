@@ -5,54 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06a59560-7082-4b3f-b3be-6ef0cdd820ed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/flowers.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/DetaliiComandaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/DetaliiComanda.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/BouquetListControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/ModifyBouquetControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/DetaliiComanda.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/2023-05-23T16-14-36_632-jvmRun1.dump" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/surefire-reports/2023-05-23T16-14-36_632-jvmRun1.dumpstream" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/jpms.args" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/AddBouquetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/AddBouquetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/AdminHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/AdminHome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/BouquetListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/BouquetListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/CardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/ModifyBouquetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/ModifyBouquetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RemoveBouquetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/RemoveBouquetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/model/Bouquet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/model/Bouquet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/BouquetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/services/BouquetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/ModifyBouquetTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/RegistrationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/test/UserServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/florarie_proiect/controllers/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/AdminHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/AdminHome.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/BouquetList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/BouquetList.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/RemoveBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/RemoveBouquet.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/addBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/addBouquet.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/cartPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/cartPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/finishOrderPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/finishOrderPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/modifyBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/modifyBouquet.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/florarie_proiect/register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ModifyBouquetTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/BouquetList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/BouquetList.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/AdminHomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/controllers/AdminHomeControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/BouquetListControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/controllers/BouquetListControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/HomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/controllers/HomeControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/ModifyBouquetControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/controllers/ModifyBouquetControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/controllers/RegistrationControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/florarie_proiect/services/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/module-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/AdminHome.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/AdminHome.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/RemoveBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/RemoveBouquet.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/cartPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/cartPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/finishOrderPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/finishOrderPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/addBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/addBouquet.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/login.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/modifyBouquet.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/modifyBouquet.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/finishOrderPage.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/florarie_proiect/register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-05-23T16-14-36_632-jvmRun1.dump" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-05-23T16-14-36_632-jvmRun1.dumpstream" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/user-database.db" beforeDir="false" afterPath="$PROJECT_DIR$/user-database.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,24 +41,108 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/FP-32" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2QFIHOya4qP4yrzysMH2M2O5Tw0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "D:/Fakultate/OneDrive - Universitatea Politehnica Timisoara/Fakultate/AN 2/SEM_2/FIS/junittest",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.florarie_proiect.services" />
+      <recent name="com.example.florarie_proiect.controllers" />
       <recent name="com.example.florarie_proiect" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.florarie_proiect.controllers" />
+    </key>
   </component>
+  <component name="RunManager" selected="JUnit.LoginControllerTest">
+    <configuration name="AdminHomeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="florarie_proiect" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.florarie_proiect.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.florarie_proiect.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.example.florarie_proiect.controllers.AdminHomeControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="florarie_proiect" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.florarie_proiect.controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.florarie_proiect.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.example.florarie_proiect.controllers.LoginControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LoginControllerTest" />
+        <item itemvalue="JUnit.AdminHomeControllerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="06a59560-7082-4b3f-b3be-6ef0cdd820ed" name="Changes" comment="" />
+      <created>1684942819167</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684942819167</updated>
+      <workItem from="1684942820907" duration="7784000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>

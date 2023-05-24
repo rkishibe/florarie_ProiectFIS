@@ -19,11 +19,11 @@
     <Label text="Password:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="2" />
     <PasswordField fx:id="passwordField" style="-fx-background-color: pink;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
     <Label text="Role:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="3" />
-    <ChoiceBox fx:id="role" prefWidth="150.0" style="-fx-background-color: pink;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+    <ChoiceBox fx:id="roleField" prefWidth="150.0" style="-fx-background-color: pink;" GridPane.columnIndex="1" GridPane.rowIndex="3">
     </ChoiceBox>
 
     <HBox spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="4">
-        <Button onAction="#handleLoginButtonAction" style="-fx-background-color: pink;" text="Login" />
+        <Button fx:id="loginButton" onAction="#handleLoginButtonAction" style="-fx-background-color: pink;" text="Login" />
         <Button onAction="#switchToSceneHome" style="-fx-background-color: pink;" text="Cancel" />
     </HBox>
 
