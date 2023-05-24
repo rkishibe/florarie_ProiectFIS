@@ -1,9 +1,6 @@
 package com.example.florarie_proiect.controllers;
 
-import com.example.florarie_proiect.exceptions.UserDoesNotExistException;
 import com.example.florarie_proiect.services.UserService;
-
-import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -15,10 +12,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-import javafx.util.Duration;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 public class LoginController {
     @FXML
@@ -29,47 +24,16 @@ public class LoginController {
     public TextField usernameField;
 
     @FXML
-    private ChoiceBox<String> role;
+    private ChoiceBox<String> roleField;
     @FXML
     public void initialize() {
-        role.getItems().addAll("Client", "Admin");
+        roleField.getItems().addAll("Client", "Admin");
     }
     @FXML
     public void handleLoginButtonAction(ActionEvent event){
         String username = usernameField.getText();
         String password = passwordField.getText();
-
-        try{
-           UserService.loadUsersFromDatabase();
-            if(UserService.checkPassword(username, password, username) && UserService.checkUserDoesNotExist(username)){
-                if(role.getValue().equals("Client")){
-                    loginMessage.setText("Logat ca si client.");
-                    Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/ClientHome.fxml"));
-                    Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                    Scene scene = new Scene(homeRoot);
-                    stage.setScene(scene);
-                    stage.show();
-                } else if(role.getValue().equals("Admin")){
-                    Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/AdminHome.fxml"));
-                    Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-                    Scene scene = new Scene(homeRoot);
-                    stage.setScene(scene);
-                    stage.show();
-                }
-            }
-            else {
-                loginMessage.setText("Parola sau username gresite!");
-            }
-        }catch (Exception e){
-            e.printStackTrace();
-        } catch (UserDoesNotExistException e) {
-            throw new RuntimeException(e);
-
-        }
-        finally{
-            UserService.closeDatabase();
-        }
-
+        String userRole=roleField.getValue();
 
         if (username == null || username.isEmpty()) {
             loginMessage.setText("Tastati un username!");
@@ -79,6 +43,36 @@ public class LoginController {
             loginMessage.setText("Tastati o parola!");
             return;
         }
+
+        try{
+           UserService.loadUsersFromDatabase();
+            if(UserService.checkPasswordAndRole(username,username,password, userRole) && UserService.checkUserDoesNotAlreadyExistOrIsNull(username)){
+                if(userRole.equals("Client")){
+                    Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/ClientHome.fxml"));
+                    Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    Scene scene = new Scene(homeRoot);
+                    stage.setScene(scene);
+                    stage.show();
+                    loginMessage.setText("Logat ca si client.");
+                } else if(userRole.equals("Admin")){
+                    Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/AdminHome.fxml"));
+                    Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    Scene scene = new Scene(homeRoot);
+                    stage.setScene(scene);
+                    stage.show();
+                    loginMessage.setText("Logat ca si admin.");
+                }
+            }
+            else {
+                loginMessage.setText("Parola sau username gresite!");
+            }
+        }catch (Exception e){
+            e.printStackTrace();}
+        finally{
+            UserService.closeDatabase();
+        }
+
+
     }
     @FXML
     public void switchToSceneHome(ActionEvent event) throws IOException {

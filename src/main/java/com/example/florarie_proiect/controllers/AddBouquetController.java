@@ -26,6 +26,8 @@ import static org.dizitart.no2.filters.Filters.eq;
 
 public class AddBouquetController {
     @FXML
+    public AnchorPane addPage;
+    @FXML
     private Text mesaj;
     @FXML
     private TextField nameField;
@@ -38,22 +40,21 @@ public class AddBouquetController {
     @FXML
     private Button saveButton;
 
-
     Stage stage;
+
     @FXML
     public void switchToSceneHome(ActionEvent event) throws IOException {
         Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/AdminHome.fxml"));
-        Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(homeRoot);
         stage.setScene(scene);
         stage.show();
 
-
     }
+
     public void saveButton(ActionEvent e) throws IOException {
-        // create a document to populate data
         BouquetService.loadBouquetsFromDatabase();
-       Document doc;
+        Document doc;
         List<String> existingBouquets = new ArrayList<>();
         for (Document document : BouquetService.getFlowerCollection().find()) {
             String numeBuchet = document.get("name", String.class);

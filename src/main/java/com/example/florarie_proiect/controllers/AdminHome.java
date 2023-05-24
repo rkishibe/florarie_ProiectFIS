@@ -14,18 +14,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class AdminHome  implements Initializable {
+public class AdminHome {
 
-        @FXML
-        public void switchToSceneModify(ActionEvent event) throws IOException {
 
-            Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/modifyBouquet.fxml"));
-            Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-            Scene scene = new Scene(homeRoot);
-            stage.setScene(scene);
-            stage.show();
-
-        }
 
         @FXML
         public void switchToSceneHome(ActionEvent event) throws IOException {
@@ -37,6 +28,16 @@ public class AdminHome  implements Initializable {
             stage.show();
 
         }
+        @FXML
+        public void switchToSceneModify(ActionEvent event) throws IOException {
+
+        Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/modifyBouquet.fxml"));
+        Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(homeRoot);
+        stage.setScene(scene);
+        stage.show();
+        }
+
         @FXML
         public void switchToSceneRemove(ActionEvent event) throws IOException {
 
@@ -59,9 +60,5 @@ public class AdminHome  implements Initializable {
 
     }
 
-        @Override
-        public void initialize(URL url, ResourceBundle resourceBundle) {
-
-        }
     }
 
