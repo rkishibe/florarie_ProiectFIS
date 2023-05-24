@@ -20,12 +20,12 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
-            <version>20-ea+4</version>
+            <version>21-ea+5</version>
         </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
-            <version>20-ea+4</version>
+            <version>21-ea+5</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
@@ -64,11 +64,6 @@
             <groupId>org.testfx</groupId>
             <artifactId>testfx-junit5</artifactId>
             <version>4.0.16-alpha</version>
-        </dependency>
-        <dependency>
-            <groupId>org.assertj</groupId>
-            <artifactId>assertj-core</artifactId>
-            <version>3.24.2</version>
         </dependency>
         <dependency>
             <groupId>org.assertj</groupId>
@@ -125,6 +120,11 @@
                 </executions>
             </plugin>
             <plugin>
+
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.0</version>
+            </plugin>
+<plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.10</version>
@@ -143,6 +143,7 @@
                     </execution>
                 </executions>
             </plugin>
+
 
         </plugins>
     </build>
