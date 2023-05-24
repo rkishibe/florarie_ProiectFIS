@@ -120,9 +120,31 @@
                 </executions>
             </plugin>
             <plugin>
+<<<<<<< HEAD
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.0</version>
             </plugin>
+=======
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.10</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+>>>>>>> ed5718db2adf05262d851750644911f5795fc1a9
         </plugins>
     </build>
 </project>

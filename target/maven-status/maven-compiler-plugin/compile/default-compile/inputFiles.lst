@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\controllers\OrderController.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\model\CardCredit.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\exceptions\UserDoesNotExist.java
@@ -28,8 +29,11 @@ D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\florarie\exceptions\CouldNotWriteUsers.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\florarie\exceptions\UsernameAlreadyExists.java
 =======
+=======
+>>>>>>> ed5718db2adf05262d851750644911f5795fc1a9
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\controllers\AddBouquetController.java
-D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\model\Database.java
+D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\services\BouquetService.java
+D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\test\BouquetListControllerTest.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\module-info.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\controllers\RegistrationController.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\test\ModifyBouquetTest.java
@@ -39,6 +43,7 @@ D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\controllers\LoginController.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\exceptions\UserDoesNotExistException.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\controllers\OrderController.java
+D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\exceptions\BouquetDoesntExistException.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\model\CardCredit.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\test\UserServiceTest.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\controllers\RemoveBouquetController.java
@@ -55,5 +60,8 @@ D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\exceptions\UsernameAlreadyExistsException.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\model\Bouquet.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\exceptions\CouldNotWriteUsersException.java
+<<<<<<< HEAD
 >>>>>>> Stashed changes
 >>>>>>> 61f027f527c434d3fa0121c449491a68b11c3d65
+=======
+>>>>>>> ed5718db2adf05262d851750644911f5795fc1a9
