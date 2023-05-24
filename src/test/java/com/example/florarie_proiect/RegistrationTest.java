@@ -1,15 +1,10 @@
 package com.example.florarie_proiect;
 
 import com.example.florarie_proiect.services.UserService;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.testfx.api.FxRobot;
-import org.testfx.framework.junit5.Start;
 
 import static org.testfx.assertions.api.Assertions.assertThat;
 
@@ -25,14 +20,6 @@ class RegistrationTest {
     @AfterAll
     static void tearDown() {
         UserService.closeDatabase();
-    }
-
-    @Start
-    void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("register.fxml"));
-        primaryStage.setTitle("Florarie");
-        primaryStage.setScene(new Scene(root, 300, 275));
-        primaryStage.show();
     }
 
     @Test

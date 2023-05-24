@@ -15,6 +15,7 @@ module com.example.florarie_proiect {
     exports com.example.florarie_proiect.controllers;
     exports com.example.florarie_proiect.services;
     opens com.example.florarie_proiect.controllers to javafx.fxml;
+    exports com.example.florarie_proiect.exceptions;
 
 
 }

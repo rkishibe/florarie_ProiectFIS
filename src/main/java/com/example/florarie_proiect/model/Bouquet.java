@@ -1,5 +1,7 @@
 package com.example.florarie_proiect.model;
 
+import org.dizitart.no2.Document;
+
 public class Bouquet {
         private String name;
         private int price;
@@ -11,7 +13,18 @@ public class Bouquet {
             this.price=price;
         }
 
-        // getters and setters
+    public Bouquet() {
+    }
+
+    public static Bouquet fromDocument(Document document) {
+        String name = document.get("name", String.class);
+        int quantity = document.get("quantity", Integer.class);
+        int price = document.get("price", Integer.class);
+        return new Bouquet(name, quantity, price);
+    }
+
+
+    // getters and setters
         public String getName() {
             return name;
         }
@@ -35,4 +48,12 @@ public class Bouquet {
         public void setQuantity(int quantity){
             this.quantity=quantity;
         }
+
+        public Document toDocument() {
+        Document document = new Document();
+        document.put("name", getName());
+        document.put("quantity", getQuantity());
+        document.put("price", getPrice());
+        return document;
     }
+}

@@ -1,6 +1,6 @@
 package com.example.florarie_proiect;
 
-import com.example.florarie_proiect.exceptions.UsernameAlreadyExists;
+import com.example.florarie_proiect.exceptions.UsernameAlreadyExistsException;
 import com.example.florarie_proiect.model.User;
 import com.example.florarie_proiect.services.UserService;
 import org.junit.jupiter.api.*;
@@ -29,15 +29,15 @@ class UserServiceTest {
 
 
     @Test
-    @DisplayName("Database is initialized, and there are no users")
+    @DisplayName("BouquetService is initialized, and there are no users")
     void testDatabaseIsInitializedAndNoUserIsPersisted() {
         assertThat(UserService.getUsers()).isNotNull();
         assertThat(UserService.getUsers()).isEmpty();
     }
 
     @Test
-    @DisplayName("User is successfully persisted to Database")
-    void testUserIsAddedToDatabase() throws UsernameAlreadyExists {
+    @DisplayName("User is successfully persisted to BouquetService")
+    void testUserIsAddedToDatabase() throws UsernameAlreadyExistsException {
         UserService.addUser(ADMIN, ADMIN, ADMIN);
         assertThat(UserService.getUsers()).isNotEmpty();
         assertThat(UserService.getUsers()).size().isEqualTo(1);
@@ -51,7 +51,7 @@ class UserServiceTest {
     @Test
     @DisplayName("User can not be added twice")
     void testUserCanNotBeAddedTwice() {
-        assertThrows(UsernameAlreadyExists.class, () -> {});
+        assertThrows(UsernameAlreadyExistsException.class, () -> {});
 
     }
 }

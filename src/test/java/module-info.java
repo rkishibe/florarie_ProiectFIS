@@ -9,6 +9,7 @@ open module com.example.florarie_proiect {
     requires org.testfx.junit5;
     requires org.assertj.core;
     requires hamcrest.core;
+    requires com.example.florarie_proiect;
 
     exports com.example.florarie_proiect;
 }
