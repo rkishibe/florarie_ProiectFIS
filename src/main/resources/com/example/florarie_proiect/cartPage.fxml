@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.OrderController">
+<AnchorPane fx:id="cartPage" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.OrderController">
    <children>
       <Label layoutX="39.0" layoutY="30.0" text="Your cart" textFill="WHITE">
          <font>
