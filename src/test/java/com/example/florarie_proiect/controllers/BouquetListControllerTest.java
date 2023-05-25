@@ -16,6 +16,7 @@ import java.util.concurrent.TimeoutException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.testfx.assertions.api.Assertions.assertThat;
 
 @ExtendWith(ApplicationExtension.class)
 public class BouquetListControllerTest {
@@ -30,7 +31,11 @@ public class BouquetListControllerTest {
 
     @Test
     public void testAddToCart(FxRobot robot) {
-        // TODO: Implement test for addToCart() method
+        robot.clickOn("#choice");
+        robot.clickOn(""); //robot clicks on a bouquet name
+
+        robot.clickOn("#addCartButton");
+        assertThat(robot.lookup("#loginMessage").queryText()).hasText("Bouquet added to cart!");
     }
 
     @Test
