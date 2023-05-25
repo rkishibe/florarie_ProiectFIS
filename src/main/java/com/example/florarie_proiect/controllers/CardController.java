@@ -14,6 +14,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.security.spec.RSAOtherPrimeInfo;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -95,12 +96,17 @@ public class CardController {
         // verificam daca data de expirare este valida
       //  try {
             // parsam data in formatul "MM/ZZ/YYYY"
-        String month = dataExpirare.substring(0, 2);
+      /*  String month = dataExpirare.substring(0, 2);
         if (month.endsWith("/")) {
             month = month.substring(0, month.length() - 1);
         }
         int expMonth = Integer.parseInt(month);
-            int expYear = Integer.parseInt(dataExpirare.substring(8));
+            int expYear = Integer.parseInt(dataExpirare.substring(8));*/
+        LocalDate selectedDate = dataExpirareField.getValue();
+        int expYear, expMonth;
+        if (selectedDate != null) {
+            expMonth = selectedDate.getMonthValue();
+            expYear = selectedDate.getYear() % 100; // Extragem ultimele două cifre ale anului
 
             // obtinem data curenta
             Calendar calendar = Calendar.getInstance();
@@ -112,6 +118,7 @@ public class CardController {
                 System.out.println("data");
                 return false;
             }
+        }
        // } catch (NumberFormatException | StringIndexOutOfBoundsException e) {
             // daca data nu poate fi parsata, inseamna ca nu e valida
          //   return false;
