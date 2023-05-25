@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 import org.dizitart.no2.Document;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.testfx.api.FxRobot;
 import org.testfx.framework.junit5.ApplicationTest;
@@ -21,6 +22,7 @@ import java.io.IOException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class AddBouquetControllerTest  {
     public static final String NAME = "numeBuchet";
@@ -47,9 +49,23 @@ public class AddBouquetControllerTest  {
         BouquetService.closeDatabase();
     }
 
+    @DisplayName("Test pentru schimbarea scenei de la cea de addBouquet la cea de adminHome")
     @Test
-    public void testSaveButton() throws IOException {
-        // Setarea inputurilor
+    void switchToSceneHome(FxRobot robot) {
+        robot.clickOn("#cancelButton");
+
+        Node homePage = robot.lookup("#adminHome").query();
+        assertNotNull(homePage);
+        Scene scene = homePage.getScene();
+        assertNotNull(scene);
+        assertEquals("/com/example/florarie_proiect/AdminHome.fxml", scene.getRoot().getId());
+    }
+
+
+    @DisplayName("Test pt adaugarea unui buchet")
+    @Test
+    public void testAddOK() throws IOException {
+        // Setarea imputurilor
         robot.clickOn("#nameField");
         robot.write(NAME);
         robot.clickOn("#priceField");
@@ -61,13 +77,26 @@ public class AddBouquetControllerTest  {
         // Verificam message text-ul
         assertEquals(robot.lookup("#mesaj").queryText(), "Bouquet added!");
 
+
+
+
+    }
+
+    @DisplayName("Test pt adaugarea unui buchet deja existent")
+    @Test
+    public void testAddExist() throws IOException {
+        // Setarea imputurilor
+        robot.clickOn("#nameField");
+        robot.write(NAME);
+        robot.clickOn("#priceField");
+        robot.write(PRET);
+        robot.clickOn("#quantityField");
+        robot.write(CANTITATE);
+
         robot.clickOn("#saveButton");
         assertEquals(robot.lookup("#mesaj").queryText(), "Bouquet already exists!");
 
 
-        robot.clickOn("#nameField");
-        robot.write("1");
-        robot.clickOn("#saveButton");
 
     }
 }
