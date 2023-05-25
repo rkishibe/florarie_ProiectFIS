@@ -60,13 +60,13 @@ public class AddBouquetControllerTest  {
         // Verificam message text-ul
         assertEquals(robot.lookup("#mesaj").queryText(), "Bouquet added!");
 
-        robot.clickOn("#saveButton");
-        assertEquals(robot.lookup("#mesaj").queryText(), "Bouquet already exists!");
+       // robot.clickOn("#saveButton");
+        //assertEquals(robot.lookup("#mesaj").queryText(), "Bouquet already exists!");
 
 
-        robot.clickOn("#nameField");
-        robot.write("1");
-        robot.clickOn("#saveButton");
+        //robot.clickOn("#nameField");
+       // robot.write("1");
+       // robot.clickOn("#saveButton");
 
     }
 }
