@@ -41,12 +41,14 @@ class OrderControllerTest extends ApplicationTest {
         stage.setScene(scene);
         stage.show();
     }
+
     @BeforeEach
     void setUp() {
         BouquetService.loadBouquetsFromDatabase();
     }
+
     @AfterEach
-    void tearDown(){
+    void tearDown() {
         BouquetService.closeDatabase();
     }
 
@@ -66,7 +68,7 @@ class OrderControllerTest extends ApplicationTest {
 
         Node modifyPage = robot.lookup("#clientHome").query();
         assertNotNull(modifyPage);
-        Scene scene =modifyPage.getScene();
+        Scene scene = modifyPage.getScene();
         assertNotNull(scene);
         assertEquals("/com/example/florarie_proiect/ClientHome.fxml", scene.getRoot().getId());
 
@@ -77,8 +79,9 @@ class OrderControllerTest extends ApplicationTest {
         robot.clickOn("#finishButton");
         Node modifyPage = robot.lookup("#finishOrderPage").query();
         assertNotNull(modifyPage);
-        Scene scene =modifyPage.getScene();
+        Scene scene = modifyPage.getScene();
         assertNotNull(scene);
         assertEquals("/com/example/florarie_proiect/finishOrderPage.fxml", scene.getRoot().getId());
 
     }
+}
