@@ -27,7 +27,7 @@ public class AddBouquetControllerTest  {
     public static final String PRET = "100";
     public static final String CANTITATE = "23";
 
-
+    private FxRobot robot;
     private AddBouquetController controller;
 
     @Start
@@ -39,6 +39,7 @@ public class AddBouquetControllerTest  {
     }
     @BeforeEach
     public void setUp() throws Exception {
+        robot=new FxRobot();
         BouquetService.loadBouquetsFromDatabase();
     }
     @AfterEach
@@ -47,8 +48,8 @@ public class AddBouquetControllerTest  {
     }
 
     @Test
-    public void testSaveButton(FxRobot robot) throws IOException {
-        // Setarea imputurilor
+    public void testSaveButton() throws IOException {
+        // Setarea inputurilor
         robot.clickOn("#nameField");
         robot.write(NAME);
         robot.clickOn("#priceField");

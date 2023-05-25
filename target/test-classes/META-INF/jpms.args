@@ -1,0 +1,4 @@
+--patch-module
+com.example.florarie_proiect=_
+--add-reads
+com.example.florarie_proiect=ALL-UNNAMED

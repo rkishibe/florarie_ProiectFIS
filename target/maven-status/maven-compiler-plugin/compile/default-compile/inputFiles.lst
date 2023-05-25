@@ -1,31 +1,3 @@
-<<<<<<< HEAD
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\controllers\CardController.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\controllers\HomeController.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\controllers\ClientHome.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\exceptions\CouldNotWriteUsersException.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\exceptions\UsernameAlreadyExistsException.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\controllers\RegistrationController.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\controllers\RemoveBouquetController.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\exceptions\UserDoesNotExistException.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\Main.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\exceptions\BouquetDoesntExistException.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\model\CardCredit.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\controllers\ModifyBouquetController.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\model\Bouquet.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\exceptions\CouldNotWriteBouquetException.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\controllers\LoginController.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\services\UserService.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\controllers\AdminHome.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\controllers\OrderController.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\controllers\AddBouquetController.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\controllers\BouquetListController.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\services\BouquetService.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\exceptions\EmptyUsernameOrPasswordException.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\controllers\DetaliiComandaController.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\model\User.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\module-info.java
-D:\##proiect bun fis\florarie_ProiectFIS\src\main\java\com\example\florarie_proiect\exceptions\FlowerDoesntExistException.java
-=======
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\controllers\AddBouquetController.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\services\BouquetService.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\controllers\DetaliiComandaController.java
@@ -52,4 +24,3 @@ D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\exceptions\UsernameAlreadyExistsException.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\model\Bouquet.java
 D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\src\main\java\com\example\florarie_proiect\exceptions\CouldNotWriteUsersException.java
->>>>>>> a35959143469d065396961364de4d9527944faa9
