@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="601.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.ClientHome">
+<AnchorPane fx:id="clientHome" prefHeight="400.0" prefWidth="601.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.ClientHome">
    <children>
       <Label layoutX="219.0" layoutY="39.0" prefHeight="47.0" prefWidth="163.0" text="Hello Client" textFill="#f8f4f4">
          <font>
