@@ -8,8 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.DetaliiComandaController">
+<AnchorPane fx:id="DetaliiComanda" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.DetaliiComandaController">
    <children>
       <Label layoutX="118.0" layoutY="41.0" text="Multumim pentru comanda ta" textAlignment="CENTER" textFill="#c96991">
          <font>
@@ -29,7 +28,7 @@
         </columns>
       </TableView>
       <TextField fx:id="total" layoutX="437.0" layoutY="226.0" />
-      <Button layoutX="488.0" layoutY="314.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="39.0" prefWidth="72.0" style="-fx-background-color: #c96991;" text="Back" textFill="#572f2f">
+      <Button fx:id="backButton" layoutX="488.0" layoutY="314.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="39.0" prefWidth="72.0" style="-fx-background-color: #c96991;" text="Back" textFill="#572f2f">
          <font>
             <Font name="Bodoni MT" size="14.0" />
          </font>
