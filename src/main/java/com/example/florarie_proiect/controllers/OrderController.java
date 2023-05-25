@@ -26,8 +26,6 @@ public class OrderController {
     @FXML
     private ListView<String> flowerListView;
 
-
-
     public void initialize() {
         for (Bouquet element :BouquetListController.getSelectedBouquets() ) {
             flowerListView.getItems().add(element.getName());
