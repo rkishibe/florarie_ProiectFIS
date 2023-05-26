@@ -33,6 +33,10 @@ public class OrderController {
         BouquetService.closeDatabase();
     }
 
+    public ListView<String> getFlowerListView() {
+        return flowerListView;
+    }
+
     public void switchToSceneClientHome(ActionEvent event) throws IOException {
         Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/ClientHome.fxml"));
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

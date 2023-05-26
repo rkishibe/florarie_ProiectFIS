@@ -77,9 +77,6 @@ public class AddBouquetControllerTest  {
         // Verificam message text-ul
         assertEquals(robot.lookup("#mesaj").queryText(), "Bouquet added!");
 
-
-
-
     }
 
     @DisplayName("Test pt adaugarea unui buchet deja existent")
@@ -95,7 +92,6 @@ public class AddBouquetControllerTest  {
 
         robot.clickOn("#saveButton");
         assertEquals(robot.lookup("#mesaj").queryText(), "Bouquet already exists!");
-
 
 
     }
