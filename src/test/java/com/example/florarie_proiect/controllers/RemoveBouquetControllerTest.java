@@ -79,7 +79,7 @@ class RemoveBouquetControllerTest extends ApplicationTest {
     @Test
     void initialize(FxRobot robot) {
         // Verificăm că lista de opțiuni ChoiceBox este populată corect
-        ChoiceBox<String> choiceBox = robot.lookup("#choice").queryChoiceBox();
+        ChoiceBox<String> choiceBox = robot.lookup("#choice").query();
         assertNotNull(choiceBox);
         ObservableList<String> actualItems = choiceBox.getItems();
         assertEquals(actualItems.size(), 1);
