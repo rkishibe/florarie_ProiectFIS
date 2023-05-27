@@ -17,7 +17,7 @@
             <Font size="16.0" />
          </font></Button>
 
-      <Label id="PageTitle" layoutX="99.0" layoutY="46.0" prefHeight="41.0" prefWidth="252.0" text="Welcome to our flower shop!">
+      <Label fx:id="PageTitle" layoutX="99.0" layoutY="46.0" prefHeight="41.0" prefWidth="252.0" text="Welcome to our flower shop!">
 
 
          <font>
