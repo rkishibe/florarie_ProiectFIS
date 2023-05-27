@@ -13,11 +13,11 @@ import java.io.IOException;
 
 public class AdminHome {
 
-    public void initialize() throws IOException {
-        Parent root = FXMLLoader
-                .load(getClass().getClassLoader().getResource("/com/example/florarie_proiect/AdminHome.fxml"));
-
-    }
+//    public void initialize() throws IOException {
+//        Parent root = FXMLLoader
+//                .load(getClass().getClassLoader().getResource("/com/example/florarie_proiect/AdminHome.fxml"));
+//
+//    }
     @FXML
         public void switchToSceneHome(ActionEvent event) throws IOException {
             BouquetService.closeDatabase();

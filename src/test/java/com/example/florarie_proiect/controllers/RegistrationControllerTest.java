@@ -28,7 +28,7 @@ public class RegistrationControllerTest  {
 
     @Start
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(Main.class.getResource("/com/example/florarie_proiect/AdminHome.fxml"));
+        Parent root = FXMLLoader.load(Main.class.getResource("/com/example/florarie_proiect/register.fxml"));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
@@ -43,8 +43,10 @@ public class RegistrationControllerTest  {
         robot.clickOn("#usernameField").write(USERNAME);
 
         robot.clickOn("#passwordField").write(PASSWORD);
+        robot.clickOn("#role").write("Admin");
+
         robot.clickOn("#registerButton");
 
-        verifyThat("#registrationMessage", LabeledMatchers.hasText("Hello Admin"));
+        verifyThat("#registrationmesaj", LabeledMatchers.hasText("Cont creat cu succes!"));
     }
 }

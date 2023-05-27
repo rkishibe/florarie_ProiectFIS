@@ -16,9 +16,9 @@
 
     </HBox>
     <Text id="title-text" fill="WHITE" text="Flower shop register" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="0">
-      <font>
-         <Font name="Bodoni MT" size="18.0" />
-      </font></Text>
+        <font>
+            <Font name="Bodoni MT" size="18.0" />
+        </font></Text>
 
     <Label text="Username:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="1" />
 
@@ -34,18 +34,18 @@
     </ChoiceBox>
 
     <Text fx:id="registrationMessage" fill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-   <columnConstraints>
-      <ColumnConstraints />
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-      <RowConstraints />
-   </rowConstraints>
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
 </GridPane>

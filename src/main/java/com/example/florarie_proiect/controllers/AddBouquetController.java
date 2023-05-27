@@ -38,11 +38,11 @@ public class AddBouquetController {
     public Button saveButton;
 
 
-    public void initialize() throws IOException {
-        Parent root = FXMLLoader
-                .load(getClass().getClassLoader().getResource("/com/example/florarie_proiect/addBouquet.fxml"));
-
-    }
+//    public void initialize() throws IOException {
+//        Parent root = FXMLLoader
+//                .load(getClass().getClassLoader().getResource("/com/example/florarie_proiect/addBouquet.fxml"));
+//
+//    }
 
     @FXML
     public void switchToSceneHome(ActionEvent event) throws IOException {
