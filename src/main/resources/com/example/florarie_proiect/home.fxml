@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="home" prefHeight="313.0" prefWidth="449.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.HomeController">
+<AnchorPane fx:id="home"  prefHeight="313.0" prefWidth="449.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.florarie_proiect.controllers.HomeController">
    <children>
       <Button fx:id="loginButton" layoutX="176.0" layoutY="112.0" mnemonicParsing="false" onAction="#switchToSceneLogin" prefHeight="51.0" prefWidth="98.0" style="-fx-background-color: #ffe3ef;" text="Login">
          <font>
@@ -15,7 +15,7 @@
          <font>
             <Font size="16.0" />
          </font></Button>
-      <Label layoutX="99.0" layoutY="46.0" prefHeight="41.0" prefWidth="252.0" text="Welcome to our flower shop!">
+      <Label id="PageTitle" layoutX="99.0" layoutY="46.0" prefHeight="41.0" prefWidth="252.0" text="Welcome to our flower shop!">
          <font>
             <Font name="Balthazar Regular" size="24.0" />
          </font>

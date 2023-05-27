@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="clientHome" prefHeight="400.0" prefWidth="601.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.ClientHome">
+<AnchorPane fx:id="clientHome" prefHeight="400.0" prefWidth="601.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.florarie_proiect.controllers.ClientHome">
    <children>
       <Label layoutX="219.0" layoutY="39.0" prefHeight="47.0" prefWidth="163.0" text="Hello Client" textFill="#f8f4f4">
          <font>
@@ -16,7 +16,7 @@
          <font>
             <Font name="Bodoni MT" size="14.0" />
          </font></Button>
-      <Button fx:id="homeButton" layoutX="202.0" layoutY="287.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="47.0" prefWidth="196.0" style="-fx-background-color: PINK;" text="HOME LOGIN/REGISTER">
+      <Button fx:id="homeButton" id="homeButton" layoutX="202.0" layoutY="287.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="47.0" prefWidth="196.0" style="-fx-background-color: PINK;" text="HOME LOGIN/REGISTER">
          <font>
             <Font name="Bodoni MT" size="14.0" />
          </font></Button>

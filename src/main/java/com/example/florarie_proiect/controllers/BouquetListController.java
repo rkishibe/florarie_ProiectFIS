@@ -38,6 +38,10 @@ public class BouquetListController {
         stage.show();
     }
 
+    public static void setSelectedBouquets(List<Bouquet> selectedBouquets) {
+        BouquetListController.selectedBouquets = selectedBouquets;
+    }
+
     public static List<Bouquet> getSelectedBouquets() {
         return selectedBouquets;
     }

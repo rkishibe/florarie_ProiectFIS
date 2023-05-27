@@ -20,17 +20,17 @@ import java.io.IOException;
 
 public class DetaliiComandaController {
 @FXML
-private TableView<Bouquet> table;
+TableView<Bouquet> table;
 
 @FXML
 private TableColumn<Bouquet,String> name;
     @FXML
-    private TableColumn<Bouquet, Integer> price;
+    public TableColumn<Bouquet, Integer> price;
     @FXML
-    private TableColumn<Bouquet,Integer> quantity;
+    public TableColumn<Bouquet,Integer> quantity;
 
     @FXML
-    private TextField total;
+    TextField total;
 
     @FXML
     public void switchToSceneHome(ActionEvent event) throws IOException {

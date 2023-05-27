@@ -1,5 +1,6 @@
 package com.example.florarie_proiect.controllers;
 
+import com.example.florarie_proiect.Main;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -16,34 +17,30 @@ import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.ApplicationTest;
 import org.testfx.framework.junit5.Start;
+import org.testfx.matcher.control.LabeledMatchers;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.testfx.api.FxAssert.verifyThat;
 
-class ClientHomeTest extends Application {
+@ExtendWith(ApplicationExtension.class)
+class ClientHomeTest {
         @Start
         public void start(Stage primaryStage) throws Exception {
-            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("/com/example/florarie_proiect/ClientHome.fxml"));
-            primaryStage.setTitle("CLIENT HOME Example");
-            primaryStage.setScene(new Scene(root, 300, 275));
+            Parent root = FXMLLoader.load(Main.class.getResource("/com/example/florarie_proiect/ClientHome.fxml"));
+            primaryStage.setScene(new Scene(root));
             primaryStage.show();
         }
 
         FxRobot robot;
     @BeforeEach
     public  void setUp() throws Exception {
-       robot=new FxRobot();
         FxToolkit.registerPrimaryStage();
 
     }
         @Test
         public void testSwitchToSceneHome() {
             robot.clickOn("#homeButton");
-
-            Node homePage = robot.lookup("#adminHome").query();
-            assertNotNull(homePage);
-            Scene scene = homePage.getScene();
-            assertNotNull(scene);
-            assertEquals("/com/example/florarie_proiect/AdminHome.fxml", scene.getRoot().getId());
+            verifyThat("#PageTitle", LabeledMatchers.hasText("Welcome to our flower shop!"));
         }
 
         @Test
