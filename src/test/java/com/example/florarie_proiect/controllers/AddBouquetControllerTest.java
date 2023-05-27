@@ -58,7 +58,7 @@ public class AddBouquetControllerTest {
           @Test
           void switchToSceneHome() {
           robot.clickOn("#cancelButton");
-             // verifyThat("page", LabeledMatchers.hasText("Hello Admin"));
+          verifyThat("page", LabeledMatchers.hasText("Hello Admin"));
           }
 
 

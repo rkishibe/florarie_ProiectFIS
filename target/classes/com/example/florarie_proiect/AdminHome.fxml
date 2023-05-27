@@ -4,15 +4,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<<<<<<< HEAD
+
 <AnchorPane fx:id="adminHome" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.florarie_proiect.controllers.AdminHome">
     <children>
         <Label id="page" layoutX="218.0" layoutY="36.0" text="Hello Admin" textFill="#f8f4f4">
-=======
-<AnchorPane fx:id="adminHome" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.AdminHome">
-    <children>
-        <Label fx:id="PageTitle" layoutX="218.0" layoutY="36.0" text="Hello Admin" textFill="#f8f4f4">
->>>>>>> origin/main
+
             <font>
                 <Font name="Bodoni MT Bold Italic" size="28.0" />
             </font>
