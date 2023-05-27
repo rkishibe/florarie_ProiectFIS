@@ -14,8 +14,11 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
+import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.ApplicationTest;
+import org.testfx.framework.junit5.Start;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -23,10 +26,11 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+@ExtendWith(ApplicationExtension.class)
 
-class OrderControllerTest extends ApplicationTest {
+class OrderControllerTest {
 
-    @Override
+    @Start
     public void start(Stage stage) throws IOException {
         // Încărcăm fișierul FXML
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/florarie_proiect/cartPage.fxml"));

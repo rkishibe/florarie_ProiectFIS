@@ -18,9 +18,12 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
 import org.testfx.api.FxToolkit;
+import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.ApplicationTest;
+import org.testfx.framework.junit5.Start;
 import org.testfx.util.WaitForAsyncUtils;
 
 import java.io.IOException;
@@ -28,13 +31,14 @@ import java.util.Arrays;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+@ExtendWith(ApplicationExtension.class)
 
-    class DetaliiComandaControllerTest extends Application {
+    class DetaliiComandaControllerTest {
 
         private ObservableList<Bouquet> selectedBouquets;
 
 
-        @Override
+        @Start
         public void start(Stage stage) throws IOException {
             Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("/com/example/florarie_proiect/DetaliiComanda.fxml"));
             stage.setTitle("DETALII COMANDA Example");
