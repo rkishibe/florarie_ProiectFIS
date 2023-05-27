@@ -1,82 +1,60 @@
 package com.example.florarie_proiect.controllers;
 
-import javafx.scene.Node;
+import com.example.florarie_proiect.Main;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Stage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
+import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.Start;
+import org.testfx.matcher.control.LabeledMatchers;
 
-import java.io.IOException;
+import static org.testfx.api.FxAssert.verifyThat;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 @ExtendWith(ApplicationExtension.class)
 public class AdminHomeControllerTest {
-    private AdminHome controller;
-    private FxRobot robot;
+
+   FxRobot robot;
 
     @Start
-    void start(Stage primaryStage){
-        primaryStage=new Stage();
-        Parent root = FXMLLoader
-                .load(getClass().getClassLoader().getResource("/com/example/florarie_proiect/AdminHome.fxml"));
-
-        primaryStage.setScene(new Scene(root, 300, 275));
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(Main.class.getResource("/com/example/florarie_proiect/AdminHome.fxml"));
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
     @BeforeEach
-    void setUp() throws IOException {
+    public  void setUp() throws Exception {
+        FxToolkit.registerPrimaryStage();
 
-        controller=new AdminHome();
-        robot=new FxRobot();
-        controller.initialize();
     }
 
 
     @Test
     public void testSwitchToSceneHome() {
         robot.clickOn("#homeButton");
-
-        Node homePage = robot.lookup("#adminHome").query();
-        assertNotNull(homePage);
-        Scene scene = homePage.getScene();
-        assertNotNull(scene);
-        assertEquals("/com/example/florarie_proiect/AdminHome.fxml", scene.getRoot().getId());
+        verifyThat("#PageTitle", LabeledMatchers.hasText("Hello Admin"));
     }
 
     @Test
     public void testSwitchToSceneModify() {
         robot.clickOn("#modifyButton");
-
-        Node modifyPage = robot.lookup("#modifyPage").query();
-        assertNotNull(modifyPage);
-        Scene scene = modifyPage.getScene();
-        assertNotNull(scene);
-        assertEquals("/com/example/florarie_proiect/modifyBouquet.fxml", scene.getRoot().getId());
+        verifyThat("#PageTitle", LabeledMatchers.hasText("Add Bouquet"));
     }
 
     @Test
     public void testSwitchToSceneRemove() {
         robot.clickOn("#removeButton");
-
-        Node removePage = robot.lookup("#removePage").query();
-        assertNotNull(removePage);
-        Scene scene = removePage.getScene();
-        assertNotNull(scene);
-        assertEquals("/com/example/florarie_proiect/RemoveBouquet.fxml", scene.getRoot().getId());
+        verifyThat("#PageTitle", LabeledMatchers.hasText("Choose the bouquet you want to remove"));
     }
 
     @Test
     public void testSwitchToSceneAdd() {
         robot.clickOn("#addButton");
-
-        Node addPage = robot.lookup("#addPage").query();
-        assertNotNull(addPage);
-        Scene scene = addPage.getScene();
-        assertNotNull(scene);
-        assertEquals("/com/example/florarie_proiect/addBouquet.fxml", scene.getRoot().getId());
+        verifyThat("#PageTitle", LabeledMatchers.hasText("Hello Admin"));
     }
 }

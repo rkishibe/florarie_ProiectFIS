@@ -1,66 +1,59 @@
 package com.example.florarie_proiect.controllers;
 
+import com.example.florarie_proiect.Main;
 import com.example.florarie_proiect.exceptions.CouldNotWriteBouquetException;
-import javafx.scene.Node;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
+import javafx.stage.Stage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
+import org.testfx.framework.junit5.Start;
+import org.testfx.matcher.control.LabeledMatchers;
 
-import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.testfx.api.FxAssert.verifyThat;
 
 @ExtendWith(ApplicationExtension.class)
 class ModifyBouquetControllerTest {
-    private ModifyBouquetController controller;
-    private FxRobot robot;
 
+    FxRobot robot;
+
+    @Start
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(Main.class.getResource("/com/example/florarie_proiect/AdminHome.fxml"));
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
     @BeforeEach
     void setUp() throws TimeoutException {
-        //BouquetService.loadBouquetsFromDatabase();
         FxToolkit.registerPrimaryStage();
-        controller = new ModifyBouquetController();
-        controller.nameField = new TextField();
-        controller.priceField = new TextField();
-        controller.quantityField = new TextField();
-        controller.choice = new ChoiceBox<>();
-        controller.mesaj=new Text();
-        controller.initialize();
-        robot=new FxRobot();
-//        Parent root = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/BouquetList.fxml"));
-//        Scene scene = new Scene(root);
-//        stage.setScene(scene);
-//        stage.show();
     }
 
     @Test
-    void switchToSceneHome() throws IOException {
+    public void testSwitchToSceneHome() {
         robot.clickOn("#homeButton");
-
-        // Verify that the scene is switched to the home page
-        Node modifyPage = robot.lookup("#AdminHome").query();
-        assertNotNull(modifyPage);
-        Scene scene =modifyPage.getScene();
-        assertNotNull(scene);
-        assertEquals("/com/example/florarie_proiect/AdminHome.fxml", scene.getRoot().getId());
+        verifyThat("#PageTitle", LabeledMatchers.hasText("Hello Admin"));
     }
 
     @Test
     void saveButton_success(){
-        controller.nameField.setText("hortensii");
-        controller.priceField.setText("12");
-        controller.quantityField.setText("1");
-        controller.saveButton();
+        robot.clickOn("#nameField");
+        robot.write("hortensii");
+        robot.clickOn("#priceField");
+        robot.write("12");
+        robot.clickOn("#quantityField");
+        robot.write("1");
 
-        assertEquals(controller.getLoginMessage(),"Bouquet modified!");
+        robot.clickOn("#saveButton");
+        verifyThat("#PageTitle", LabeledMatchers.hasText("Bouquet modified!"));
+
     }
 
     @Test

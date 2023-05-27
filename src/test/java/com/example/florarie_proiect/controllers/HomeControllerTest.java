@@ -1,47 +1,46 @@
 package com.example.florarie_proiect.controllers;
 
-import javafx.scene.Node;
+import com.example.florarie_proiect.Main;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Stage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
+import org.testfx.framework.junit5.Start;
+import org.testfx.matcher.control.LabeledMatchers;
 
 import java.util.concurrent.TimeoutException;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.testfx.api.FxAssert.verifyThat;
 
 @ExtendWith(ApplicationExtension.class)
 public class HomeControllerTest {
-    private FxRobot robot;
+    FxRobot robot;
+    @Start
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(Main.class.getResource("/com/example/florarie_proiect/home.fxml"));
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
     @BeforeEach
     void setUp() throws TimeoutException {
-        robot=new FxRobot();
         FxToolkit.registerPrimaryStage();
     }
 
     @Test
     public void testSwitchToSceneLogin() {
         robot.clickOn("#loginButton");
-
-        Node loginPage = robot.lookup("#loginPage").query();
-        assertNotNull(loginPage);
-        Scene scene = loginPage.getScene();
-        assertNotNull(scene);
-        assertEquals("/com/example/florarie_proiect/login.fxml", scene.getRoot().getId());
+        verifyThat("#title-text", LabeledMatchers.hasText("Flower shop login"));
     }
 
     @Test
     public void testSwitchToSceneRegister() {
         robot.clickOn("#registerButton");
-
-        Node registerPage = robot.lookup("#registerPage").query();
-        assertNotNull(registerPage);
-        Scene scene = registerPage.getScene();
-        assertNotNull(scene);
-        assertEquals("/com/example/florarie_proiect/register.fxml", scene.getRoot().getId());
+        verifyThat("#title-text", LabeledMatchers.hasText("Flower shop register"));
     }
 }

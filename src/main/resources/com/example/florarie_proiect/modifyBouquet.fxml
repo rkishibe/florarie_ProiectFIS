@@ -4,13 +4,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="modifyPage" prefHeight="381.0" prefWidth="465.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.ModifyBouquetController">
+<AnchorPane fx:id="modifyPage" prefHeight="381.0" prefWidth="465.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.ModifyBouquetController">
    <children>
       <Button fx:id="saveButton" layoutX="252.0" layoutY="301.0" mnemonicParsing="false" onAction="#saveButton" prefHeight="39.0" prefWidth="108.0" style="-fx-background-color: pink;" text="Save Changes">
          <font>
             <Font size="14.0" />
          </font></Button>
-      <Label layoutX="142.0" layoutY="58.0" text="Modify Bouquet" textFill="WHITE">
+      <Label fx:id="PageTitle" layoutX="142.0" layoutY="58.0" text="Modify Bouquet" textFill="WHITE">
          <font>
             <Font name="Bodoni MT Bold Italic" size="24.0" />
          </font>

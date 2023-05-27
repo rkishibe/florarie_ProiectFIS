@@ -2,11 +2,9 @@ package com.example.florarie_proiect.services;
 
 import com.example.florarie_proiect.exceptions.CouldNotWriteUsersException;
 import com.example.florarie_proiect.exceptions.EmptyUsernameOrPasswordException;
-import com.example.florarie_proiect.exceptions.UserDoesNotExistException;
 import com.example.florarie_proiect.exceptions.UsernameAlreadyExistsException;
 import com.example.florarie_proiect.model.User;
 import org.dizitart.no2.Nitrite;
-import org.dizitart.no2.objects.ObjectFilter;
 import org.dizitart.no2.objects.ObjectRepository;
 import org.dizitart.no2.objects.filters.ObjectFilters;
 
@@ -24,7 +22,7 @@ public class UserService {
         // Open or create the Nitrite database
         db = Nitrite.builder()
                 .compressed()
-                .filePath("user-database.db")
+                .filePath("user-database1.db")
                 .openOrCreate();
 
         // Get the user repository
