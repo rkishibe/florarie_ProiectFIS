@@ -37,7 +37,6 @@ public class RegistrationControllerTest  {
         FxToolkit.registerPrimaryStage();
     }
 
-
     @Test
     void testRegistration() {
         robot.clickOn("#usernameField").write(USERNAME);
