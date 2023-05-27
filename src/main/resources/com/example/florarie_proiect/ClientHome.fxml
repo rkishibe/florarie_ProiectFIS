@@ -12,7 +12,7 @@
             <Font name="Bodoni MT Bold Italic" size="28.0" />
          </font>
       </Label>
-      <Button fx:id="cartButton" layoutX="202.0" layoutY="207.0" mnemonicParsing="false" onAction="#switchToSceneCart" prefHeight="47.0" prefWidth="196.0" style="-fx-background-color: PINK;" text="CART">
+      <Button fx:id="cartButton" id="cartButton" layoutX="202.0" layoutY="207.0" mnemonicParsing="false" onAction="#switchToSceneCart" prefHeight="47.0" prefWidth="196.0" style="-fx-background-color: PINK;" text="CART">
          <font>
             <Font name="Bodoni MT" size="14.0" />
          </font></Button>
@@ -20,7 +20,7 @@
          <font>
             <Font name="Bodoni MT" size="14.0" />
          </font></Button>
-      <Button fx:id="bouquetButton" layoutX="203.0" layoutY="119.0" mnemonicParsing="false" onAction="#switchToSceneBouquetList" prefHeight="47.0" prefWidth="196.0" style="-fx-background-color: PINK;" text="BOUQUETS">
+      <Button fx:id="bouquetButton" id="bouquetButton" layoutX="203.0" layoutY="119.0" mnemonicParsing="false" onAction="#switchToSceneBouquetList" prefHeight="47.0" prefWidth="196.0" style="-fx-background-color: PINK;" text="BOUQUETS">
          <font>
             <Font name="Bodoni MT" size="14.0" />
          </font></Button>
