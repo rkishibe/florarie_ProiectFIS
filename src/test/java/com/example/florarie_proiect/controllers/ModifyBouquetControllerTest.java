@@ -27,7 +27,7 @@ class ModifyBouquetControllerTest {
 
     @Start
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(Main.class.getResource("/com/example/florarie_proiect/AdminHome.fxml"));
+        Parent root = FXMLLoader.load(Main.class.getResource("/com/example/florarie_proiect/modifyBouquet.fxml"));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }

@@ -47,6 +47,6 @@ public class RegistrationControllerTest  {
 
         robot.clickOn("#registerButton");
 
-        verifyThat("#registrationmesaj", LabeledMatchers.hasText("Cont creat cu succes!"));
+            verifyThat("#registrationmesaj", LabeledMatchers.hasText("Cont creat cu succes!"));
     }
 }

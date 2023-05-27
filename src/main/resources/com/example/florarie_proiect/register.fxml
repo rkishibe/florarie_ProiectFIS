@@ -22,15 +22,15 @@
 
     <Label text="Username:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="1" />
 
-    <TextField fx:id="usernameField" style="-fx-background-color: pink;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <TextField id="usernameField" style="-fx-background-color: pink;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
 
     <Label text="Password:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="2" />
 
-    <PasswordField fx:id="passwordField" style="-fx-background-color: pink;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <PasswordField id="passwordField" style="-fx-background-color: pink;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
 
     <Label text="Role:" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="3" />
 
-    <ChoiceBox fx:id="role" prefWidth="150.0" style="-fx-background-color: pink;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+    <ChoiceBox id="role" prefWidth="150.0" style="-fx-background-color: pink;" GridPane.columnIndex="1" GridPane.rowIndex="3">
     </ChoiceBox>
 
     <Text fx:id="registrationMessage" fill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7" />
