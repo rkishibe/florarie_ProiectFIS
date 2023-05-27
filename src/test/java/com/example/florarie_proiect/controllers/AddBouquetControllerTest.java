@@ -1,30 +1,35 @@
 package com.example.florarie_proiect.controllers;
 
+<<<<<<< HEAD
+=======
 import com.example.florarie_proiect.controllers.AddBouquetController;
 import com.example.florarie_proiect.exceptions.BouquetNameFieldEmptyException;
+>>>>>>> origin/main
 import com.example.florarie_proiect.services.BouquetService;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
+<<<<<<< HEAD
+=======
 import org.apache.commons.io.FileUtils;
 import org.dizitart.no2.Document;
+>>>>>>> origin/main
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.testfx.api.FxRobot;
-import org.testfx.framework.junit5.ApplicationTest;
 import org.testfx.framework.junit5.Start;
 
 import java.io.IOException;
 
+<<<<<<< HEAD
+import static org.junit.jupiter.api.Assertions.assertEquals;
+=======
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
+>>>>>>> origin/main
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;

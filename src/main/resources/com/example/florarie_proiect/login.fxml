@@ -27,10 +27,10 @@
         <Button onAction="#switchToSceneHome" style="-fx-background-color: pink;" text="Cancel" />
     </HBox>
 
-    <Text fx:id="loginMessage" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+    <Text fx:id="loginMessage" fill="WHITE" wrappingWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
    <columnConstraints>
-      <ColumnConstraints />
-      <ColumnConstraints />
+      <ColumnConstraints maxWidth="64.0" minWidth="40.0" prefWidth="64.0" />
+      <ColumnConstraints maxWidth="166.0" minWidth="142.0" prefWidth="142.0" />
       <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>

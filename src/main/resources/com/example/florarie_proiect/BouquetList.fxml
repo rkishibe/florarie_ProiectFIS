@@ -7,6 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+
 <AnchorPane fx:id="chooseBouquetPage" prefHeight="373.0" prefWidth="586.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.BouquetListController">
    <children>
       <Label fx:id="myLabel" alignment="CENTER" layoutY="24.0" prefHeight="50.0" prefWidth="640.0" text="Choose a Bouquet" textFill="#f6f5f5">
@@ -14,17 +15,17 @@
             <Font name="Bodoni MT" size="36.0" />
          </font>
       </Label>
-      <Button fx:id="addCartButton" layoutX="275.0" layoutY="307.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="30.0" prefWidth="89.0" style="-fx-background-color: pink;" text="Add to cart">
+      <Button fx:id="addCartButton" layoutX="264.0" layoutY="269.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="39.0" prefWidth="91.0" style="-fx-background-color: pink;" text="Add to cart">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="120.0" layoutY="308.0" mnemonicParsing="false" onAction="#switchToSceneHome" style="-fx-background-color: pink;" text="Back">
+      <Button layoutX="141.0" layoutY="269.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="39.0" prefWidth="61.0" style="-fx-background-color: pink;" text="Back">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Button fx:id="cartButton" layoutX="443.0" layoutY="308.0" mnemonicParsing="false" onAction="#switchToSceneCart" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: pink;" text="View cart">
+      <Button fx:id="cartButton" layoutX="420.0" layoutY="269.0" mnemonicParsing="false" onAction="#switchToSceneCart" prefHeight="39.0" prefWidth="82.0" style="-fx-background-color: pink;" text="View cart">
          <font>
             <Font size="14.0" />
          </font>
