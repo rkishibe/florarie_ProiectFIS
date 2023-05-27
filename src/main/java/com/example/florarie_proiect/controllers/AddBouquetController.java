@@ -64,12 +64,10 @@ private String name;
         return price;
     }
 
-<<<<<<< HEAD
+
     public AddBouquetController() {
     }
 
-=======
->>>>>>> origin/main
     public String getMesaj() {
         return mesaj.getText();
     }
@@ -78,11 +76,8 @@ private String name;
         return name;
     }
 
-<<<<<<< HEAD
     public void saveButton() throws  BouquetNameFieldEmptyException {
-=======
-    public void saveButton() throws IOException {
->>>>>>> origin/main
+
         BouquetService.loadBouquetsFromDatabase();
         Document doc;
         List<String> existingBouquets = new ArrayList<>();

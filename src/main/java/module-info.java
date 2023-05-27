@@ -5,11 +5,8 @@ module com.example.florarie_proiect {
 
     requires org.slf4j;
     requires org.testfx.junit5;
-<<<<<<< HEAD
-=======
-    requires hamcrest.core;
-    requires org.slf4j;
->>>>>>> origin/main
+
+
 
     opens com.example.florarie_proiect;
     exports com.example.florarie_proiect;
