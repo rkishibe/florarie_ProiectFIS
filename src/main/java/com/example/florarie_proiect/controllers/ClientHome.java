@@ -10,7 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.control.MenuItem;
-import org.testfx.framework.junit5.Start;
+
 
 import java.io.IOException;
 import java.net.URL;
@@ -32,7 +32,7 @@ public class ClientHome {
 
     @FXML
     public void switchToSceneHome(ActionEvent event) throws IOException {
-        BouquetService.closeDatabase();
+       // BouquetService.closeDatabase();
             Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/home.fxml"));
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(homeRoot);
