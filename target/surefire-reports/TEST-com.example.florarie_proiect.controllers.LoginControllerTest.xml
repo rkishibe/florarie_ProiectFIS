@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.florarie_proiect.controllers.LoginControllerTest" time="0.284" tests="4" errors="4" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.florarie_proiect.controllers.LoginControllerTest" time="0.414" tests="4" errors="4" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="19"/>
     <property name="javafx.runtime.version" value="21-ea+17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\target\test-classes;C:\Users\Alex\.m2\repository\org\openjfx\javafx-controls\21-ea+17\javafx-controls-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-graphics\21-ea+17\javafx-graphics-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-base\21-ea+17\javafx-base-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-fxml\21-ea+17\javafx-fxml-21-ea+17.jar;C:\Users\Alex\.m2\repository\ch\qos\logback\logback-classic\1.4.6\logback-classic-1.4.6.jar;C:\Users\Alex\.m2\repository\ch\qos\logback\logback-core\1.4.6\logback-core-1.4.6.jar;C:\Users\Alex\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\Alex\.m2\repository\com\h2database\h2-mvstore\1.4.200\h2-mvstore-1.4.200.jar;C:\Users\Alex\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.1\jackson-databind-2.10.1.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.1\jackson-core-2.10.1.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.1\jackson-annotations-2.10.1.jar;C:\Users\Alex\.m2\repository\org\jasypt\jasypt\1.9.3\jasypt-1.9.3.jar;C:\Users\Alex\.m2\repository\com\squareup\okhttp3\okhttp\4.3.1\okhttp-4.3.1.jar;C:\Users\Alex\.m2\repository\com\squareup\okio\okio\2.4.1\okio-2.4.1.jar;C:\Users\Alex\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.50\kotlin-stdlib-common-1.3.50.jar;C:\Users\Alex\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.61\kotlin-stdlib-1.3.61.jar;C:\Users\Alex\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Alex\.m2\repository\uk\co\jemos\podam\podam\7.2.3.RELEASE\podam-7.2.3.RELEASE.jar;C:\Users\Alex\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\Alex\.m2\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\Alex\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\Alex\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\Alex\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\Alex\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\Alex\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;"/>
+    <property name="java.class.path" value="D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_ProiectFIS\target\test-classes;C:\Users\Alex\.m2\repository\org\openjfx\javafx-controls\21-ea+17\javafx-controls-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-graphics\21-ea+17\javafx-graphics-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-base\21-ea+17\javafx-base-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-fxml\21-ea+17\javafx-fxml-21-ea+17.jar;C:\Users\Alex\.m2\repository\ch\qos\logback\logback-classic\1.4.6\logback-classic-1.4.6.jar;C:\Users\Alex\.m2\repository\ch\qos\logback\logback-core\1.4.6\logback-core-1.4.6.jar;C:\Users\Alex\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\Alex\.m2\repository\com\h2database\h2-mvstore\1.4.200\h2-mvstore-1.4.200.jar;C:\Users\Alex\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.1\jackson-databind-2.10.1.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.1\jackson-core-2.10.1.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.1\jackson-annotations-2.10.1.jar;C:\Users\Alex\.m2\repository\org\jasypt\jasypt\1.9.3\jasypt-1.9.3.jar;C:\Users\Alex\.m2\repository\com\squareup\okhttp3\okhttp\4.3.1\okhttp-4.3.1.jar;C:\Users\Alex\.m2\repository\com\squareup\okio\okio\2.4.1\okio-2.4.1.jar;C:\Users\Alex\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.50\kotlin-stdlib-common-1.3.50.jar;C:\Users\Alex\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.61\kotlin-stdlib-1.3.61.jar;C:\Users\Alex\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Alex\.m2\repository\uk\co\jemos\podam\podam\7.2.3.RELEASE\podam-7.2.3.RELEASE.jar;C:\Users\Alex\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\Alex\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\Alex\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\Alex\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\Alex\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\Alex\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Europe/Bucharest"/>
+    <property name="javafx.version" value="21-ea"/>
     <property name="os.name" value="Windows 10"/>
     <property name="java.vm.specification.version" value="19"/>
-    <property name="javafx.version" value="21-ea"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
-    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter C:\Users\Alex\AppData\Local\Temp\surefire13056326533709174402 2023-05-25T14-58-37_681-jvmRun1 surefire-20230525145838282_1tmp surefire_0-20230525145838282_2tmp"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter C:\Users\Alex\AppData\Local\Temp\surefire14866486744797858157 2023-05-27T10-32-36_757-jvmRun1 surefire-20230527103237109_1tmp surefire_0-20230527103237109_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\target\test-classes;C:\Users\Alex\.m2\repository\org\openjfx\javafx-controls\21-ea+17\javafx-controls-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-graphics\21-ea+17\javafx-graphics-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-base\21-ea+17\javafx-base-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-fxml\21-ea+17\javafx-fxml-21-ea+17.jar;C:\Users\Alex\.m2\repository\ch\qos\logback\logback-classic\1.4.6\logback-classic-1.4.6.jar;C:\Users\Alex\.m2\repository\ch\qos\logback\logback-core\1.4.6\logback-core-1.4.6.jar;C:\Users\Alex\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\Alex\.m2\repository\com\h2database\h2-mvstore\1.4.200\h2-mvstore-1.4.200.jar;C:\Users\Alex\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.1\jackson-databind-2.10.1.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.1\jackson-core-2.10.1.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.1\jackson-annotations-2.10.1.jar;C:\Users\Alex\.m2\repository\org\jasypt\jasypt\1.9.3\jasypt-1.9.3.jar;C:\Users\Alex\.m2\repository\com\squareup\okhttp3\okhttp\4.3.1\okhttp-4.3.1.jar;C:\Users\Alex\.m2\repository\com\squareup\okio\okio\2.4.1\okio-2.4.1.jar;C:\Users\Alex\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.50\kotlin-stdlib-common-1.3.50.jar;C:\Users\Alex\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.61\kotlin-stdlib-1.3.61.jar;C:\Users\Alex\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Alex\.m2\repository\uk\co\jemos\podam\podam\7.2.3.RELEASE\podam-7.2.3.RELEASE.jar;C:\Users\Alex\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\Alex\.m2\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\Alex\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\Alex\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\Alex\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\Alex\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\Alex\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;"/>
+    <property name="surefire.test.class.path" value="D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_ProiectFIS\target\test-classes;C:\Users\Alex\.m2\repository\org\openjfx\javafx-controls\21-ea+17\javafx-controls-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-graphics\21-ea+17\javafx-graphics-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-base\21-ea+17\javafx-base-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-fxml\21-ea+17\javafx-fxml-21-ea+17.jar;C:\Users\Alex\.m2\repository\ch\qos\logback\logback-classic\1.4.6\logback-classic-1.4.6.jar;C:\Users\Alex\.m2\repository\ch\qos\logback\logback-core\1.4.6\logback-core-1.4.6.jar;C:\Users\Alex\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\Alex\.m2\repository\com\h2database\h2-mvstore\1.4.200\h2-mvstore-1.4.200.jar;C:\Users\Alex\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.1\jackson-databind-2.10.1.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.1\jackson-core-2.10.1.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.1\jackson-annotations-2.10.1.jar;C:\Users\Alex\.m2\repository\org\jasypt\jasypt\1.9.3\jasypt-1.9.3.jar;C:\Users\Alex\.m2\repository\com\squareup\okhttp3\okhttp\4.3.1\okhttp-4.3.1.jar;C:\Users\Alex\.m2\repository\com\squareup\okio\okio\2.4.1\okio-2.4.1.jar;C:\Users\Alex\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.50\kotlin-stdlib-common-1.3.50.jar;C:\Users\Alex\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.61\kotlin-stdlib-1.3.61.jar;C:\Users\Alex\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Alex\.m2\repository\uk\co\jemos\podam\podam\7.2.3.RELEASE\podam-7.2.3.RELEASE.jar;C:\Users\Alex\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\Alex\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\Alex\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\Alex\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\Alex\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\Alex\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Alex"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="jdk.module.path" value="D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\target\classes;C:\Users\Alex\.m2\repository\org\openjfx\javafx-controls\21-ea+17\javafx-controls-21-ea+17-win.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-graphics\21-ea+17\javafx-graphics-21-ea+17-win.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-base\21-ea+17\javafx-base-21-ea+17-win.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-fxml\21-ea+17\javafx-fxml-21-ea+17-win.jar;C:\Users\Alex\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Alex\.m2\repository\org\testfx\testfx-core\4.0.16-alpha\testfx-core-4.0.16-alpha.jar;C:\Users\Alex\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Alex\.m2\repository\org\testfx\testfx-junit5\4.0.16-alpha\testfx-junit5-4.0.16-alpha.jar;C:\Users\Alex\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\Alex\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Alex\.m2\repository\org\dizitart\nitrite\3.4.4\nitrite-3.4.4.jar"/>
+    <property name="jdk.module.path" value="D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_ProiectFIS\target\classes;C:\Users\Alex\.m2\repository\org\openjfx\javafx-controls\21-ea+17\javafx-controls-21-ea+17-win.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-graphics\21-ea+17\javafx-graphics-21-ea+17-win.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-base\21-ea+17\javafx-base-21-ea+17-win.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-fxml\21-ea+17\javafx-fxml-21-ea+17-win.jar;C:\Users\Alex\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Alex\.m2\repository\org\testfx\testfx-core\4.0.16-alpha\testfx-core-4.0.16-alpha.jar;C:\Users\Alex\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Alex\.m2\repository\org\testfx\testfx-junit5\4.0.16-alpha\testfx-junit5-4.0.16-alpha.jar;C:\Users\Alex\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\Alex\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Alex\.m2\repository\org\dizitart\nitrite\3.4.4\nitrite-3.4.4.jar"/>
     <property name="java.version.date" value="2023-01-17"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-19"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect"/>
+    <property name="basedir" value="D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_ProiectFIS"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Alex\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.1.0\surefire-shared-utils-3.1.0.jar;C:\Users\Alex\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.1.0\surefire-extensions-spi-3.1.0.jar;C:\Users\Alex\.m2\repository\org\apache\maven\surefire\surefire-api\3.1.0\surefire-api-3.1.0.jar;C:\Users\Alex\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.1.0\surefire-logger-api-3.1.0.jar;C:\Users\Alex\.m2\repository\org\apache\maven\surefire\surefire-booter\3.1.0\surefire-booter-3.1.0.jar;D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect\target\test-classes;C:\Users\Alex\.m2\repository\org\openjfx\javafx-controls\21-ea+17\javafx-controls-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-graphics\21-ea+17\javafx-graphics-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-base\21-ea+17\javafx-base-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-fxml\21-ea+17\javafx-fxml-21-ea+17.jar;C:\Users\Alex\.m2\repository\ch\qos\logback\logback-classic\1.4.6\logback-classic-1.4.6.jar;C:\Users\Alex\.m2\repository\ch\qos\logback\logback-core\1.4.6\logback-core-1.4.6.jar;C:\Users\Alex\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\Alex\.m2\repository\com\h2database\h2-mvstore\1.4.200\h2-mvstore-1.4.200.jar;C:\Users\Alex\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.1\jackson-databind-2.10.1.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.1\jackson-core-2.10.1.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.1\jackson-annotations-2.10.1.jar;C:\Users\Alex\.m2\repository\org\jasypt\jasypt\1.9.3\jasypt-1.9.3.jar;C:\Users\Alex\.m2\repository\com\squareup\okhttp3\okhttp\4.3.1\okhttp-4.3.1.jar;C:\Users\Alex\.m2\repository\com\squareup\okio\okio\2.4.1\okio-2.4.1.jar;C:\Users\Alex\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.50\kotlin-stdlib-common-1.3.50.jar;C:\Users\Alex\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.61\kotlin-stdlib-1.3.61.jar;C:\Users\Alex\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Alex\.m2\repository\uk\co\jemos\podam\podam\7.2.3.RELEASE\podam-7.2.3.RELEASE.jar;C:\Users\Alex\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\Alex\.m2\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\Alex\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\Alex\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\Alex\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\Alex\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\Alex\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Alex\.m2\repository\org\apache\maven\surefire\surefire-junit-platform\3.1.0\surefire-junit-platform-3.1.0.jar;C:\Users\Alex\.m2\repository\org\apache\maven\surefire\common-java5\3.1.0\common-java5-3.1.0.jar;C:\Users\Alex\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Alex\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.1.0\surefire-shared-utils-3.1.0.jar;C:\Users\Alex\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.1.0\surefire-extensions-spi-3.1.0.jar;C:\Users\Alex\.m2\repository\org\apache\maven\surefire\surefire-api\3.1.0\surefire-api-3.1.0.jar;C:\Users\Alex\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.1.0\surefire-logger-api-3.1.0.jar;C:\Users\Alex\.m2\repository\org\apache\maven\surefire\surefire-booter\3.1.0\surefire-booter-3.1.0.jar;D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_ProiectFIS\target\test-classes;C:\Users\Alex\.m2\repository\org\openjfx\javafx-controls\21-ea+17\javafx-controls-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-graphics\21-ea+17\javafx-graphics-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-base\21-ea+17\javafx-base-21-ea+17.jar;C:\Users\Alex\.m2\repository\org\slf4j\slf4j-api\2.0.7\slf4j-api-2.0.7.jar;C:\Users\Alex\.m2\repository\org\openjfx\javafx-fxml\21-ea+17\javafx-fxml-21-ea+17.jar;C:\Users\Alex\.m2\repository\ch\qos\logback\logback-classic\1.4.6\logback-classic-1.4.6.jar;C:\Users\Alex\.m2\repository\ch\qos\logback\logback-core\1.4.6\logback-core-1.4.6.jar;C:\Users\Alex\.m2\repository\org\assertj\assertj-core\3.13.2\assertj-core-3.13.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\Alex\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\Alex\.m2\repository\com\h2database\h2-mvstore\1.4.200\h2-mvstore-1.4.200.jar;C:\Users\Alex\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.1\jackson-databind-2.10.1.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.1\jackson-core-2.10.1.jar;C:\Users\Alex\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.1\jackson-annotations-2.10.1.jar;C:\Users\Alex\.m2\repository\org\jasypt\jasypt\1.9.3\jasypt-1.9.3.jar;C:\Users\Alex\.m2\repository\com\squareup\okhttp3\okhttp\4.3.1\okhttp-4.3.1.jar;C:\Users\Alex\.m2\repository\com\squareup\okio\okio\2.4.1\okio-2.4.1.jar;C:\Users\Alex\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.50\kotlin-stdlib-common-1.3.50.jar;C:\Users\Alex\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.61\kotlin-stdlib-1.3.61.jar;C:\Users\Alex\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Alex\.m2\repository\uk\co\jemos\podam\podam\7.2.3.RELEASE\podam-7.2.3.RELEASE.jar;C:\Users\Alex\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\Alex\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\Alex\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\Alex\.m2\repository\org\apache\commons\commons-lang3\3.8.1\commons-lang3-3.8.1.jar;C:\Users\Alex\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\Alex\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Alex\.m2\repository\org\apache\maven\surefire\surefire-junit-platform\3.1.0\surefire-junit-platform-3.1.0.jar;C:\Users\Alex\.m2\repository\org\apache\maven\surefire\common-java5\3.1.0\common-java5-3.1.0.jar;C:\Users\Alex\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="19.0.2+7-44"/>
@@ -48,12 +48,12 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\Alex\AppData\Local\Temp\"/>
     <property name="java.version" value="19.0.2"/>
-    <property name="user.dir" value="D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_proiect"/>
+    <property name="user.dir" value="D:\Fakultate\OneDrive - Universitatea Politehnica Timisoara\Fakultate\AN 2\SEM_2\FIS\PROIECT_FIS\florarie_ProiectFIS"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\WINDOWS\System32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Windows\System32;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Calibre2\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.9.2\bin;C:\OCaml64\home\Alex\.opam\4.12.0+mingw64c\bin\;C:\Users\Alex\AppData\Local\Microsoft\WindowsApps;D:\php;C:\Users\Alex\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\Alex\.dotnet\tools;C:\Users\Alex\AppData\Local\gitkraken\bin;C:\Users\Alex\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\Alex\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\Alex\anaconda3\Library\bin\conda.bat;C:\Users\Alex\anaconda3\Scripts\conda.exe;C:\Users\Alex\anaconda3\condabin\conda.bat;C:\Users\Alex\AppData\Roaming\npm;D:\Games\modelsim_ase\win32aloem;C:\MinGW\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-19\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\WINDOWS\System32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Windows\System32;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Calibre2\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.9.2\bin;C:\OCaml64\home\Alex\.opam\4.12.0+mingw64c\bin\;C:\Users\Alex\AppData\Local\Microsoft\WindowsApps;D:\php;C:\Users\Alex\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\Alex\.dotnet\tools;C:\Users\Alex\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\Alex\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\Alex\anaconda3\Library\bin\conda.bat;C:\Users\Alex\anaconda3\Scripts\conda.exe;C:\Users\Alex\anaconda3\condabin\conda.bat;C:\Users\Alex\AppData\Roaming\npm;D:\Games\modelsim_ase\win32aloem;C:\MinGW\bin;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
@@ -61,15 +61,106 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="succesLoginClientTest(FxRobot)" classname="com.example.florarie_proiect.controllers.LoginControllerTest" time="0.266">
-    <error message="Invalid type definition for type `com.example.florarie_proiect.model.User`: Failed to construct BeanSerializer for [simple type, class com.example.florarie_proiect.model.User]: (java.lang.reflect.InaccessibleObjectException) Unable to make field public java.lang.String com.example.florarie_proiect.model.User.username accessible: module com.example.florarie_proiect does not &quot;exports com.example.florarie_proiect.model&quot; to unnamed module @292b08d6" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: Invalid type definition for type `com.example.florarie_proiect.model.User`: Failed to construct BeanSerializer for [simple type, class com.example.florarie_proiect.model.User]: (java.lang.reflect.InaccessibleObjectException) Unable to make field public java.lang.String com.example.florarie_proiect.model.User.username accessible: module com.example.florarie_proiect does not "exports com.example.florarie_proiect.model" to unnamed module @292b08d6
-	at com.fasterxml.jackson.databind.ObjectMapper._convert(ObjectMapper.java:3922)
-	at com.fasterxml.jackson.databind.ObjectMapper.convertValue(ObjectMapper.java:3853)
-	at nitrite@3.4.4/org.dizitart.no2.mapper.JacksonFacade.asDocument(JacksonFacade.java:116)
-	at nitrite@3.4.4/org.dizitart.no2.mapper.GenericMapper.asDocumentInternal(GenericMapper.java:48)
-	at nitrite@3.4.4/org.dizitart.no2.mapper.AbstractMapper.asDocument(AbstractMapper.java:64)
-	at nitrite@3.4.4/org.dizitart.no2.util.ObjectUtils.toDocument(ObjectUtils.java:238)
-	at nitrite@3.4.4/org.dizitart.no2.objects.DefaultObjectRepository.asDocument(DefaultObjectRepository.java:289)
+  <testcase name="succesLoginClientTest(FxRobot)" classname="com.example.florarie_proiect.controllers.LoginControllerTest" time="0.351">
+    <error message="NO2.2004: store is closed" type="org.dizitart.no2.exceptions.NitriteIOException"><![CDATA[org.dizitart.no2.exceptions.NitriteIOException: NO2.2004: store is closed
+	at nitrite@3.4.4/org.dizitart.no2.internals.DefaultNitriteCollection.checkOpened(DefaultNitriteCollection.java:394)
+	at nitrite@3.4.4/org.dizitart.no2.internals.DefaultNitriteCollection.find(DefaultNitriteCollection.java:176)
+	at nitrite@3.4.4/org.dizitart.no2.objects.DefaultObjectRepository.find(DefaultObjectRepository.java:190)
+	at com.example.florarie_proiect@1.0-SNAPSHOT/com.example.florarie_proiect.services.UserService.checkUserDoesNotAlreadyExistOrIsNull(UserService.java:53)
+	at com.example.florarie_proiect@1.0-SNAPSHOT/com.example.florarie_proiect.services.UserService.addUser(UserService.java:37)
+	at com.example.florarie_proiect@1.0-SNAPSHOT/com.example.florarie_proiect.controllers.LoginControllerTest.setUp(LoginControllerTest.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.platform.commons@1.9.2/org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:128)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeEachMethod(TimeoutExtension.java:78)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeMethodInExtensionContext(ClassBasedTestDescriptor.java:520)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$synthesizeBeforeEachMethodAdapter$23(ClassBasedTestDescriptor.java:505)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachMethods$3(TestMethodTestDescriptor.java:174)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:202)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:202)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachMethods(TestMethodTestDescriptor.java:171)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:134)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></error>
+    <system-out><![CDATA[10:32:41.072 [main] DEBUG uk.co.jemos.podam.api.PodamFactoryImpl -- Manufacturing class java.lang.String with parameters []
+10:32:41.081 [main] DEBUG uk.co.jemos.podam.api.PodamFactoryImpl -- Populating pojo class java.lang.String
+10:32:41.134 [main] DEBUG org.dizitart.no2.internals.DataService -- Total 1 document(s) to be inserted in com.example.florarie_proiect.model.User
+10:32:41.141 [main] DEBUG org.dizitart.no2.internals.DataService -- Inserting document {username=cl, password=9086c94bc354bd2591869098e8f17bc0e4001379872b4cbbe4f6de7f57f2e813eb55bbfc6d010e9783eb134c2e66571a840d0c7f375750d564d7f402139e9c28, role=Client, _id=520405534613600, _revision=1, _modified=1685172761134} in com.example.florarie_proiect.model.User
+10:32:41.143 [main] DEBUG org.dizitart.no2.internals.DataService -- Notifying INSERT event for items [ChangedItem(document={username=cl, password=9086c94bc354bd2591869098e8f17bc0e4001379872b4cbbe4f6de7f57f2e813eb55bbfc6d010e9783eb134c2e66571a840d0c7f375750d564d7f402139e9c28, role=Client, _id=520405534613600, _revision=1, _modified=1685172761134}, changeType=INSERT, changeTimestamp=1685172761134)] from com.example.florarie_proiect.model.User
+10:32:41.143 [main] DEBUG org.dizitart.no2.internals.DataService -- Returning write result WriteResultImpl(nitriteIdList=[[520405534613600]NO₂])  for collection com.example.florarie_proiect.model.User
+10:32:41.144 [main] DEBUG org.dizitart.no2.Nitrite -- Unsaved changes detected, committing the changes.
+10:32:41.149 [main] DEBUG org.dizitart.no2.Nitrite -- Unsaved changes committed successfully.
+10:32:41.156 [main] DEBUG org.dizitart.no2.Nitrite -- Store compaction is successful.
+10:32:41.157 [main] INFO org.dizitart.no2.Nitrite -- Nitrite database has been closed successfully.
+]]></system-out>
+  </testcase>
+  <testcase name="failLoginEmptyTest(FxRobot)" classname="com.example.florarie_proiect.controllers.LoginControllerTest" time="0.049">
+    <error message="NO2.10003: unique key constraint violation for username" type="org.dizitart.no2.exceptions.UniqueConstraintException"><![CDATA[org.dizitart.no2.exceptions.UniqueConstraintException: NO2.10003: unique key constraint violation for username
+	at nitrite@3.4.4/org.dizitart.no2.internals.IndexingService.updateIndexEntry(IndexingService.java:121)
+	at nitrite@3.4.4/org.dizitart.no2.internals.DataService.insert(DataService.java:92)
+	at nitrite@3.4.4/org.dizitart.no2.internals.NitriteService.insert(NitriteService.java:329)
+	at nitrite@3.4.4/org.dizitart.no2.internals.DefaultNitriteCollection.insert(DefaultNitriteCollection.java:156)
 	at nitrite@3.4.4/org.dizitart.no2.objects.DefaultObjectRepository.insert(DefaultObjectRepository.java:107)
 	at com.example.florarie_proiect@1.0-SNAPSHOT/com.example.florarie_proiect.services.UserService.addUser(UserService.java:39)
 	at com.example.florarie_proiect@1.0-SNAPSHOT/com.example.florarie_proiect.controllers.LoginControllerTest.setUp(LoginControllerTest.java:31)
@@ -146,23 +237,96 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invalid type definition for type `com.example.florarie_proiect.model.User`: Failed to construct BeanSerializer for [simple type, class com.example.florarie_proiect.model.User]: (java.lang.reflect.InaccessibleObjectException) Unable to make field public java.lang.String com.example.florarie_proiect.model.User.username accessible: module com.example.florarie_proiect does not "exports com.example.florarie_proiect.model" to unnamed module @292b08d6
-	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:72)
-	at com.fasterxml.jackson.databind.SerializerProvider.reportBadTypeDefinition(SerializerProvider.java:1163)
-	at com.fasterxml.jackson.databind.ser.BeanSerializerFactory.constructBeanOrAddOnSerializer(BeanSerializerFactory.java:454)
-	at com.fasterxml.jackson.databind.ser.BeanSerializerFactory.findBeanOrAddOnSerializer(BeanSerializerFactory.java:286)
-	at com.fasterxml.jackson.databind.ser.BeanSerializerFactory._createSerializer2(BeanSerializerFactory.java:231)
-	at com.fasterxml.jackson.databind.ser.BeanSerializerFactory.createSerializer(BeanSerializerFactory.java:165)
-	at com.fasterxml.jackson.databind.SerializerProvider._createUntypedSerializer(SerializerProvider.java:1388)
-	at com.fasterxml.jackson.databind.SerializerProvider._createAndCacheUntypedSerializer(SerializerProvider.java:1336)
-	at com.fasterxml.jackson.databind.SerializerProvider.findValueSerializer(SerializerProvider.java:510)
-	at com.fasterxml.jackson.databind.SerializerProvider.findTypedValueSerializer(SerializerProvider.java:713)
-	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:308)
-	at com.fasterxml.jackson.databind.ObjectMapper._convert(ObjectMapper.java:3900)
-	... 82 more
 ]]></error>
+    <system-out><![CDATA[10:32:41.162 [main] DEBUG uk.co.jemos.podam.api.PodamFactoryImpl -- Manufacturing class java.lang.String with parameters []
+10:32:41.162 [main] DEBUG uk.co.jemos.podam.api.PodamFactoryImpl -- Populating pojo class java.lang.String
+10:32:41.203 [main] DEBUG org.dizitart.no2.internals.DataService -- Total 1 document(s) to be inserted in com.example.florarie_proiect.model.User
+10:32:41.204 [main] DEBUG org.dizitart.no2.internals.DataService -- Inserting document {username=cl, password=9086c94bc354bd2591869098e8f17bc0e4001379872b4cbbe4f6de7f57f2e813eb55bbfc6d010e9783eb134c2e66571a840d0c7f375750d564d7f402139e9c28, role=Client, _id=520405534613601, _revision=1, _modified=1685172761204} in com.example.florarie_proiect.model.User
+10:32:41.204 [main] ERROR org.dizitart.no2.internals.DataService -- Unique constraint violated for the document {username=cl, password=9086c94bc354bd2591869098e8f17bc0e4001379872b4cbbe4f6de7f57f2e813eb55bbfc6d010e9783eb134c2e66571a840d0c7f375750d564d7f402139e9c28, role=Client, _id=520405534613601, _revision=1, _modified=1685172761204} in com.example.florarie_proiect.model.User
+org.dizitart.no2.exceptions.UniqueConstraintException: NO2.10003: unique key constraint violation for username
+	at nitrite@3.4.4/org.dizitart.no2.internals.IndexingService.updateIndexEntry(IndexingService.java:121)
+	at nitrite@3.4.4/org.dizitart.no2.internals.DataService.insert(DataService.java:92)
+	at nitrite@3.4.4/org.dizitart.no2.internals.NitriteService.insert(NitriteService.java:329)
+	at nitrite@3.4.4/org.dizitart.no2.internals.DefaultNitriteCollection.insert(DefaultNitriteCollection.java:156)
+	at nitrite@3.4.4/org.dizitart.no2.objects.DefaultObjectRepository.insert(DefaultObjectRepository.java:107)
+	at com.example.florarie_proiect@1.0-SNAPSHOT/com.example.florarie_proiect.services.UserService.addUser(UserService.java:39)
+	at com.example.florarie_proiect@1.0-SNAPSHOT/com.example.florarie_proiect.controllers.LoginControllerTest.setUp(LoginControllerTest.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.platform.commons@1.9.2/org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:128)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeEachMethod(TimeoutExtension.java:78)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeMethodInExtensionContext(ClassBasedTestDescriptor.java:520)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$synthesizeBeforeEachMethodAdapter$23(ClassBasedTestDescriptor.java:505)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachMethods$3(TestMethodTestDescriptor.java:174)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:202)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:202)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachMethods(TestMethodTestDescriptor.java:171)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:134)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></system-out>
   </testcase>
-  <testcase name="failLoginEmptyTest(FxRobot)" classname="com.example.florarie_proiect.controllers.LoginControllerTest" time="0.001">
+  <testcase name="failLoginWrongTest(FxRobot)" classname="com.example.florarie_proiect.controllers.LoginControllerTest" time="0.003">
     <error message="NO2.2001: database is already opened in other process" type="org.dizitart.no2.exceptions.NitriteIOException"><![CDATA[org.dizitart.no2.exceptions.NitriteIOException: NO2.2001: database is already opened in other process
 	at nitrite@3.4.4/org.dizitart.no2.NitriteBuilder.openOrCreateInternal(NitriteBuilder.java:466)
 	at nitrite@3.4.4/org.dizitart.no2.NitriteBuilder.openOrCreate(NitriteBuilder.java:373)
@@ -243,88 +407,7 @@ Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Invali
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]></error>
   </testcase>
-  <testcase name="failLoginWrongTest(FxRobot)" classname="com.example.florarie_proiect.controllers.LoginControllerTest" time="0.002">
-    <error message="NO2.2001: database is already opened in other process" type="org.dizitart.no2.exceptions.NitriteIOException"><![CDATA[org.dizitart.no2.exceptions.NitriteIOException: NO2.2001: database is already opened in other process
-	at nitrite@3.4.4/org.dizitart.no2.NitriteBuilder.openOrCreateInternal(NitriteBuilder.java:466)
-	at nitrite@3.4.4/org.dizitart.no2.NitriteBuilder.openOrCreate(NitriteBuilder.java:373)
-	at com.example.florarie_proiect@1.0-SNAPSHOT/com.example.florarie_proiect.services.UserService.loadUsersFromDatabase(UserService.java:28)
-	at com.example.florarie_proiect@1.0-SNAPSHOT/com.example.florarie_proiect.controllers.LoginControllerTest.setUp(LoginControllerTest.java:30)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.junit.platform.commons@1.9.2/org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptLifecycleMethod(TimeoutExtension.java:128)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptBeforeEachMethod(TimeoutExtension.java:78)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
-	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeMethodInExtensionContext(ClassBasedTestDescriptor.java:520)
-	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$synthesizeBeforeEachMethodAdapter$23(ClassBasedTestDescriptor.java:505)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachMethods$3(TestMethodTestDescriptor.java:174)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:202)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:202)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachMethods(TestMethodTestDescriptor.java:171)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:134)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:50)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
-	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]></error>
-  </testcase>
-  <testcase name="switchToSceneHome(FxRobot)" classname="com.example.florarie_proiect.controllers.LoginControllerTest" time="0.002">
+  <testcase name="switchToSceneHome(FxRobot)" classname="com.example.florarie_proiect.controllers.LoginControllerTest" time="0.001">
     <error message="NO2.2001: database is already opened in other process" type="org.dizitart.no2.exceptions.NitriteIOException"><![CDATA[org.dizitart.no2.exceptions.NitriteIOException: NO2.2001: database is already opened in other process
 	at nitrite@3.4.4/org.dizitart.no2.NitriteBuilder.openOrCreateInternal(NitriteBuilder.java:466)
 	at nitrite@3.4.4/org.dizitart.no2.NitriteBuilder.openOrCreate(NitriteBuilder.java:373)

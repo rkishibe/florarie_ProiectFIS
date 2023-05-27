@@ -1,7 +1,10 @@
 package com.example.florarie_proiect.controllers;
 
+import com.example.florarie_proiect.services.BouquetService;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
@@ -12,8 +15,22 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @ExtendWith(ApplicationExtension.class)
 public class AdminHomeControllerTest {
+
+    private FxRobot robot;
+
+
+    @BeforeEach
+    public void setUp(){
+        robot=new FxRobot();
+    }
+
+    @AfterEach
+    public void setDown() throws Exception{
+        BouquetService.closeDatabase();
+    }
+
     @Test
-    public void testSwitchToSceneHome(FxRobot robot) {
+    public void testSwitchToSceneHome() {
         robot.clickOn("#homeButton");
 
         Node homePage = robot.lookup("#adminHome").query();
@@ -24,7 +41,7 @@ public class AdminHomeControllerTest {
     }
 
     @Test
-    public void testSwitchToSceneModify(FxRobot robot) {
+    public void testSwitchToSceneModify() {
         robot.clickOn("#modifyButton");
 
         Node modifyPage = robot.lookup("#modifyPage").query();

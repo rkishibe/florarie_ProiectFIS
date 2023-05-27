@@ -1,9 +1,12 @@
-com\example\florarie_proiect\controllers\LoginControllerTest.class
+com\example\florarie_proiect\controllers\ClientHomeTest$AdminHomeControllerTest.class
 com\example\florarie_proiect\controllers\HomeControllerTest.class
 com\example\florarie_proiect\controllers\ModifyBouquetControllerTest.class
 com\example\florarie_proiect\controllers\RegistrationControllerTest.class
+com\example\florarie_proiect\controllers\AddBouquetControllerTest.class
+com\example\florarie_proiect\controllers\LoginControllerTest.class
+com\example\florarie_proiect\services\BouquetServiceTest.class
+com\example\florarie_proiect\controllers\ClientHomeTest.class
 com\example\florarie_proiect\services\UserServiceTest.class
 com\example\florarie_proiect\controllers\BouquetListControllerTest.class
 com\example\florarie_proiect\MainTest.class
-com\example\florarie_proiect\controllers\AddBouquetControllerTest.class
 com\example\florarie_proiect\controllers\AdminHomeControllerTest.class

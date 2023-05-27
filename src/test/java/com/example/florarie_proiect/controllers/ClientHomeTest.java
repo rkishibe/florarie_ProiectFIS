@@ -1,30 +1,43 @@
 package com.example.florarie_proiect.controllers;
 
+import com.example.florarie_proiect.services.BouquetService;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
-import org.testfx.framework.junit5.ApplicationExtension;
-import org.testfx.framework.junit5.Start;
+import org.testfx.framework.junit5.ApplicationTest;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-class ClientHomeTest {
-    @ExtendWith(ApplicationExtension.class)
-    public class AdminHomeControllerTest {
-        @Start
-        void start(Stage primaryStage) throws Exception {
+class ClientHomeTest extends ApplicationTest {
+
+    private FxRobot robot;
+
+
+    @BeforeEach
+    public void setUp(){
+        robot=new FxRobot();
+    }
+
+    @AfterEach
+    public void setDown() throws Exception{
+        BouquetService.closeDatabase();
+    }
+        @Override
+        public void start(Stage primaryStage) throws Exception {
             Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("/com/example/florarie_proiect/ClientHome.fxml"));
             primaryStage.setTitle("CLIENT HOME Example");
             primaryStage.setScene(new Scene(root, 300, 275));
             primaryStage.show();
         }
         @Test
-        public void testSwitchToSceneHome(FxRobot robot) {
+        public void testSwitchToSceneHome() {
             robot.clickOn("#homeButton");
 
             Node homePage = robot.lookup("#adminHome").query();
@@ -35,7 +48,7 @@ class ClientHomeTest {
         }
 
         @Test
-        public void testSwitchToSceneBouquetList(FxRobot robot) {
+        public void testSwitchToSceneBouquetList() {
             robot.clickOn("#bouquetButton");
 
             Node modifyPage = robot.lookup("#chooseBouquetPage").query();
@@ -46,7 +59,7 @@ class ClientHomeTest {
         }
 
         @Test
-        public void testSwitchToSceneCartPage(FxRobot robot) {
+        public void testSwitchToSceneCartPage() {
             robot.clickOn("#cartButton");
 
             Node removePage = robot.lookup("#cartPage").query();
@@ -58,6 +71,3 @@ class ClientHomeTest {
 
 
     }
-
-
-}

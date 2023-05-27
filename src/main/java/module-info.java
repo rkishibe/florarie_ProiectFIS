@@ -1,6 +1,8 @@
 module com.example.florarie_proiect {
+    requires javafx.base;
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.graphics;
     requires nitrite;
     requires org.apache.commons.io;
     requires org.junit.platform.commons;

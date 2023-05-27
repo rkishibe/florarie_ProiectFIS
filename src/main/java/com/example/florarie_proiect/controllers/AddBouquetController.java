@@ -1,7 +1,5 @@
 package com.example.florarie_proiect.controllers;
 
-import com.example.florarie_proiect.model.Bouquet;
-import com.example.florarie_proiect.model.User;
 import com.example.florarie_proiect.services.BouquetService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,32 +13,35 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import org.dizitart.no2.Document;
-import org.dizitart.no2.objects.filters.ObjectFilters;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.dizitart.no2.Document.createDocument;
-import static org.dizitart.no2.filters.Filters.eq;
 
 public class AddBouquetController {
     @FXML
     public AnchorPane addPage;
     @FXML
-    private Text mesaj;
+    Text mesaj;
     @FXML
-    private TextField nameField;
+    TextField nameField;
 
     @FXML
-    private TextField priceField;
+    TextField priceField;
 
     @FXML
-    private TextField quantityField;
+    TextField quantityField;
+
+    @FXML
+    private Button cancelButton;
     @FXML
     private Button saveButton;
 
-    Stage stage;
+    public Button getCancelButton() {
+        return cancelButton;
+    }
 
     @FXML
     public void switchToSceneHome(ActionEvent event) throws IOException {
@@ -52,7 +53,7 @@ public class AddBouquetController {
 
     }
 
-    public void saveButton(ActionEvent e) throws IOException {
+    public void saveButton() throws IOException {
         BouquetService.loadBouquetsFromDatabase();
         Document doc;
         List<String> existingBouquets = new ArrayList<>();
@@ -75,4 +76,7 @@ public class AddBouquetController {
 
     }
 
+    public Text getMesaj() {
+        return mesaj;
+    }
 }

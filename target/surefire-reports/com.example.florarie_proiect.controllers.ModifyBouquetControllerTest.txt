@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.example.florarie_proiect.controllers.ModifyBouquetControllerTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.011 s <<< FAILURE! - in com.example.florarie_proiect.controllers.ModifyBouquetControllerTest
-com.example.florarie_proiect.controllers.ModifyBouquetControllerTest.saveButton_exceptionThrown  Time elapsed: 0.001 s  <<< ERROR!
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.006 s <<< FAILURE! - in com.example.florarie_proiect.controllers.ModifyBouquetControllerTest
+com.example.florarie_proiect.controllers.ModifyBouquetControllerTest.saveButton_exceptionThrown  Time elapsed: 0.003 s  <<< ERROR!
 org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [javafx.stage.Stage arg0] in method [void com.example.florarie_proiect.controllers.ModifyBouquetControllerTest.setUp(javafx.stage.Stage) throws java.io.IOException].
 	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameter(ParameterResolutionUtils.java:120)
 	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameters(ParameterResolutionUtils.java:103)
@@ -130,7 +130,7 @@ org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolv
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-com.example.florarie_proiect.controllers.ModifyBouquetControllerTest.switchToSceneHome(FxRobot)  Time elapsed: 0.002 s  <<< ERROR!
+com.example.florarie_proiect.controllers.ModifyBouquetControllerTest.switchToSceneHome(FxRobot)  Time elapsed: 0.001 s  <<< ERROR!
 org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [javafx.stage.Stage arg0] in method [void com.example.florarie_proiect.controllers.ModifyBouquetControllerTest.setUp(javafx.stage.Stage) throws java.io.IOException].
 	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameter(ParameterResolutionUtils.java:120)
 	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameters(ParameterResolutionUtils.java:103)

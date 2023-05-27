@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.example.florarie_proiect.controllers.BouquetListControllerTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.882 s <<< FAILURE! - in com.example.florarie_proiect.controllers.BouquetListControllerTest
-com.example.florarie_proiect.controllers.BouquetListControllerTest.testInitializeWithEmptyFlowerCollection  Time elapsed: 0.174 s  <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 0.837 s <<< FAILURE! - in com.example.florarie_proiect.controllers.BouquetListControllerTest
+com.example.florarie_proiect.controllers.BouquetListControllerTest.testInitializeWithEmptyFlowerCollection  Time elapsed: 0.167 s  <<< ERROR!
 java.lang.RuntimeException: java.lang.IllegalAccessError: class org.testfx.toolkit.impl.ToolkitServiceImpl (in module org.testfx) cannot access class com.sun.javafx.application.ParametersImpl (in module javafx.graphics) because module javafx.graphics does not export com.sun.javafx.application to module org.testfx
 	at org.testfx@4.0.16-alpha/org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
 	at org.testfx@4.0.16-alpha/org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:244)
@@ -73,7 +73,7 @@ Caused by: java.lang.IllegalAccessError: class org.testfx.toolkit.impl.ToolkitSe
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 
-com.example.florarie_proiect.controllers.BouquetListControllerTest.testSwitchToSceneCart(FxRobot)  Time elapsed: 0.171 s  <<< ERROR!
+com.example.florarie_proiect.controllers.BouquetListControllerTest.testSwitchToSceneCart(FxRobot)  Time elapsed: 0.166 s  <<< ERROR!
 java.lang.RuntimeException: java.lang.IllegalAccessError: class org.testfx.toolkit.impl.ToolkitServiceImpl (in module org.testfx) cannot access class com.sun.javafx.application.ParametersImpl (in module javafx.graphics) because module javafx.graphics does not export com.sun.javafx.application to module org.testfx
 	at org.testfx@4.0.16-alpha/org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
 	at org.testfx@4.0.16-alpha/org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:244)
@@ -144,7 +144,7 @@ Caused by: java.lang.IllegalAccessError: class org.testfx.toolkit.impl.ToolkitSe
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 
-com.example.florarie_proiect.controllers.BouquetListControllerTest.testSwitchToSceneHome(FxRobot)  Time elapsed: 0.17 s  <<< ERROR!
+com.example.florarie_proiect.controllers.BouquetListControllerTest.testSwitchToSceneHome(FxRobot)  Time elapsed: 0.166 s  <<< ERROR!
 java.lang.RuntimeException: java.lang.IllegalAccessError: class org.testfx.toolkit.impl.ToolkitServiceImpl (in module org.testfx) cannot access class com.sun.javafx.application.ParametersImpl (in module javafx.graphics) because module javafx.graphics does not export com.sun.javafx.application to module org.testfx
 	at org.testfx@4.0.16-alpha/org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
 	at org.testfx@4.0.16-alpha/org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:244)
@@ -215,7 +215,7 @@ Caused by: java.lang.IllegalAccessError: class org.testfx.toolkit.impl.ToolkitSe
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 
-com.example.florarie_proiect.controllers.BouquetListControllerTest.testInitializeWithFlowerCollection  Time elapsed: 0.174 s  <<< ERROR!
+com.example.florarie_proiect.controllers.BouquetListControllerTest.testInitializeWithFlowerCollection  Time elapsed: 0.166 s  <<< ERROR!
 java.lang.RuntimeException: java.lang.IllegalAccessError: class org.testfx.toolkit.impl.ToolkitServiceImpl (in module org.testfx) cannot access class com.sun.javafx.application.ParametersImpl (in module javafx.graphics) because module javafx.graphics does not export com.sun.javafx.application to module org.testfx
 	at org.testfx@4.0.16-alpha/org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
 	at org.testfx@4.0.16-alpha/org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:244)
@@ -286,7 +286,7 @@ Caused by: java.lang.IllegalAccessError: class org.testfx.toolkit.impl.ToolkitSe
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 
-com.example.florarie_proiect.controllers.BouquetListControllerTest.testAddToCart(FxRobot)  Time elapsed: 0.171 s  <<< ERROR!
+com.example.florarie_proiect.controllers.BouquetListControllerTest.testAddToCart(FxRobot)  Time elapsed: 0.167 s  <<< ERROR!
 java.lang.RuntimeException: java.lang.IllegalAccessError: class org.testfx.toolkit.impl.ToolkitServiceImpl (in module org.testfx) cannot access class com.sun.javafx.application.ParametersImpl (in module javafx.graphics) because module javafx.graphics does not export com.sun.javafx.application to module org.testfx
 	at org.testfx@4.0.16-alpha/org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
 	at org.testfx@4.0.16-alpha/org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:244)

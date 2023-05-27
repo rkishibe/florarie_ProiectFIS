@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.example.florarie_proiect.controllers.RegistrationControllerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.022 s <<< FAILURE! - in com.example.florarie_proiect.controllers.RegistrationControllerTest
-com.example.florarie_proiect.controllers.RegistrationControllerTest.testRegistration(FxRobot)  Time elapsed: 0.015 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.009 s <<< FAILURE! - in com.example.florarie_proiect.controllers.RegistrationControllerTest
+com.example.florarie_proiect.controllers.RegistrationControllerTest.testRegistration(FxRobot)  Time elapsed: 0.007 s  <<< ERROR!
 org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [org.testfx.api.FxRobot arg0] in method [void com.example.florarie_proiect.controllers.RegistrationControllerTest.testRegistration(org.testfx.api.FxRobot)].
 	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameter(ParameterResolutionUtils.java:120)
 	at org.junit.jupiter.engine.execution.ParameterResolutionUtils.resolveParameters(ParameterResolutionUtils.java:103)
