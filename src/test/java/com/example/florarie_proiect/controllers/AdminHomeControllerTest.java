@@ -4,24 +4,32 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
+import org.testfx.framework.junit5.ApplicationExtension;
+import org.testfx.framework.junit5.Start;
 
 import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-
+@ExtendWith(ApplicationExtension.class)
 public class AdminHomeControllerTest {
     private AdminHome controller;
     private FxRobot robot;
+
+    @Start
+    void start(Stage primaryStage){
+        primaryStage=new Stage();
+        Parent root = FXMLLoader
+                .load(getClass().getClassLoader().getResource("/com/example/florarie_proiect/AdminHome.fxml"));
+
+        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.show();
+    }
     @BeforeEach
     void setUp() throws IOException {
-//        primaryStage=new Stage();
-//        Parent root = FXMLLoader
-//                .load(getClass().getClassLoader().getResource("/com/example/florarie_proiect/AdminHome.fxml"));
-//        primaryStage.setTitle("ADD BOUQUET Example");
-//        primaryStage.setScene(new Scene(root, 300, 275));
-//        primaryStage.show();
+
         controller=new AdminHome();
         robot=new FxRobot();
         controller.initialize();

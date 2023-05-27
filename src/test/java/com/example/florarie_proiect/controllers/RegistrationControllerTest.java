@@ -4,13 +4,15 @@ import com.example.florarie_proiect.services.UserService;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
 import org.testfx.api.FxToolkit;
+import org.testfx.framework.junit5.ApplicationExtension;
 
 import java.util.concurrent.TimeoutException;
 
 import static org.testfx.assertions.api.Assertions.assertThat;
-
+@ExtendWith(ApplicationExtension.class)
 public class RegistrationControllerTest  {
 
     private FxRobot robot;

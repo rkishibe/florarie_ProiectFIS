@@ -9,12 +9,14 @@ import javafx.scene.text.Text;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxToolkit;
+import org.testfx.framework.junit5.ApplicationExtension;
 
 import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+@ExtendWith(ApplicationExtension.class)
 public class LoginControllerTest  {
 
     private LoginController controller;

@@ -4,14 +4,17 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
 import org.testfx.api.FxToolkit;
+import org.testfx.framework.junit5.ApplicationExtension;
 
 import java.util.concurrent.TimeoutException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+@ExtendWith(ApplicationExtension.class)
 public class HomeControllerTest {
     private FxRobot robot;
     @BeforeEach

@@ -8,7 +8,9 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.text.Text;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
+import org.testfx.framework.junit5.ApplicationExtension;
 
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
@@ -16,7 +18,7 @@ import java.util.concurrent.TimeoutException;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.testfx.assertions.api.Assertions.assertThat;
 
-
+@ExtendWith(ApplicationExtension.class)
 public class BouquetListControllerTest{
     private BouquetListController controller;
     private FxRobot robot;
