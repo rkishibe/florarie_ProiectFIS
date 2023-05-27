@@ -2,18 +2,26 @@ package com.example.florarie_proiect.controllers;
 
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
-import org.testfx.framework.junit5.ApplicationExtension;
+import org.testfx.api.FxToolkit;
+
+import java.util.concurrent.TimeoutException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-@ExtendWith(ApplicationExtension.class)
 public class HomeControllerTest {
+    private FxRobot robot;
+    @BeforeEach
+    void setUp() throws TimeoutException {
+        robot=new FxRobot();
+        FxToolkit.registerPrimaryStage();
+    }
+
     @Test
-    public void testSwitchToSceneLogin(FxRobot robot) {
+    public void testSwitchToSceneLogin() {
         robot.clickOn("#loginButton");
 
         Node loginPage = robot.lookup("#loginPage").query();
@@ -24,7 +32,7 @@ public class HomeControllerTest {
     }
 
     @Test
-    public void testSwitchToSceneRegister(FxRobot robot) {
+    public void testSwitchToSceneRegister() {
         robot.clickOn("#registerButton");
 
         Node registerPage = robot.lookup("#registerPage").query();

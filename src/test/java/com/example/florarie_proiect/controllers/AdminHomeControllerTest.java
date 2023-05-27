@@ -2,18 +2,34 @@ package com.example.florarie_proiect.controllers;
 
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
-import org.testfx.framework.junit5.ApplicationExtension;
+
+import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-@ExtendWith(ApplicationExtension.class)
 public class AdminHomeControllerTest {
+    private AdminHome controller;
+    private FxRobot robot;
+    @BeforeEach
+    void setUp() throws IOException {
+//        primaryStage=new Stage();
+//        Parent root = FXMLLoader
+//                .load(getClass().getClassLoader().getResource("/com/example/florarie_proiect/AdminHome.fxml"));
+//        primaryStage.setTitle("ADD BOUQUET Example");
+//        primaryStage.setScene(new Scene(root, 300, 275));
+//        primaryStage.show();
+        controller=new AdminHome();
+        robot=new FxRobot();
+        controller.initialize();
+    }
+
+
     @Test
-    public void testSwitchToSceneHome(FxRobot robot) {
+    public void testSwitchToSceneHome() {
         robot.clickOn("#homeButton");
 
         Node homePage = robot.lookup("#adminHome").query();
@@ -24,7 +40,7 @@ public class AdminHomeControllerTest {
     }
 
     @Test
-    public void testSwitchToSceneModify(FxRobot robot) {
+    public void testSwitchToSceneModify() {
         robot.clickOn("#modifyButton");
 
         Node modifyPage = robot.lookup("#modifyPage").query();
@@ -35,7 +51,7 @@ public class AdminHomeControllerTest {
     }
 
     @Test
-    public void testSwitchToSceneRemove(FxRobot robot) {
+    public void testSwitchToSceneRemove() {
         robot.clickOn("#removeButton");
 
         Node removePage = robot.lookup("#removePage").query();
@@ -46,7 +62,7 @@ public class AdminHomeControllerTest {
     }
 
     @Test
-    public void testSwitchToSceneAdd(FxRobot robot) {
+    public void testSwitchToSceneAdd() {
         robot.clickOn("#addButton");
 
         Node addPage = robot.lookup("#addPage").query();

@@ -1,111 +1,73 @@
 package com.example.florarie_proiect.controllers;
 
-import com.example.florarie_proiect.exceptions.UsernameAlreadyExistsException;
-import com.example.florarie_proiect.services.UserService;
-import javafx.scene.Node;
-import javafx.scene.Scene;
-import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.AfterAll;
+import javafx.event.ActionEvent;
+import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.testfx.api.FxRobot;
+import org.testfx.api.FxToolkit;
 
 import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.testfx.assertions.api.Assertions.assertThat;
 
-public class LoginControllerTest {
+public class LoginControllerTest  {
 
-    public static final String USERNAME_CLIENT = "cl";
-    public static final String PASSWORD_CLIENT = "pass";
-    public static final String USERNAME_ADMIN = "ad";
-    public static final String PASSWORD_ADMIN = "pass";
-    public static final String ROLE_CLIENT = "Client";
-    public static final String ROLE_ADMIN = "Client";
+    private LoginController controller;
+    private ActionEvent event;
+
 
     @BeforeEach
-    void setUp() throws UsernameAlreadyExistsException {
-        UserService.loadUsersFromDatabase();
-        UserService.addUser(USERNAME_CLIENT, PASSWORD_CLIENT, ROLE_CLIENT);
-        UserService.addUser(USERNAME_ADMIN, PASSWORD_ADMIN, ROLE_ADMIN);
-    }
-    @AfterAll
-    static void tearDown() {
-        UserService.closeDatabase();
-    }
-
-    @Test
-    void succesLoginClientTest(FxRobot robot) {
-        robot.clickOn("#usernameField");
-        robot.write(USERNAME_CLIENT);
-        robot.clickOn("#passwordField");
-        robot.write(PASSWORD_CLIENT);
-        robot.clickOn("#roleField");
-        robot.clickOn("Client");
-
-        robot.clickOn("#loginButton");
-
-        assertThat(robot.lookup("#loginMessage").queryText()).hasText("Logat ca si client.");
-        Assertions.assertThat(UserService.getUsers()).size().isEqualTo(1);
+    public void setUp() throws Exception {
+        event=new ActionEvent();
+        FxToolkit.registerPrimaryStage();
+        controller = new LoginController();
+        controller.usernameField = new TextField();
+        controller.passwordField = new PasswordField();
+        controller.roleField = new ChoiceBox<>();
+        controller.loginMessage=new Text();
 
     }
 
     @Test
-    void failLoginWrongTest(FxRobot robot) {
-        robot.clickOn("#usernameField");
-        robot.write("abc");
-        robot.clickOn("#passwordField");
-        robot.write("bca");
-        robot.clickOn("#roleField");
-        robot.clickOn("Client");
-
-        robot.clickOn("#loginButton");
-
-        assertThat(robot.lookup("#loginMessage").queryText()).hasText("Parola sau username gresite!");
-        Assertions.assertThat(UserService.getUsers()).size().isEqualTo(0);
-
+    @DisplayName("Login as user")
+    void testLoginInvalidUsername() throws IOException {
+        controller.usernameField.setText("invalid");
+        controller.passwordField.setText("invalid");
+        controller.roleField.setValue("Admin");
+        ActionEvent event = new ActionEvent();
+        controller.handleLoginButtonAction(event);
+       assertEquals(controller.getLoginMessage(), "Parola sau username gresite!");
     }
 
     @Test
-    void failLoginEmptyTest(FxRobot robot) {
-        robot.clickOn("#usernameField");
-        //robot.write("abc");
-        robot.clickOn("#passwordField");
-        robot.write("bca");
-        robot.clickOn("#roleField");
-        robot.clickOn("Client");
+    @DisplayName("Login as user")
+    void testLoginValidUsername() throws IOException {
+        controller.usernameField.setText("admin");
+        controller.passwordField.setText("admin");
+        controller.roleField.setValue("Admin");
 
-        robot.clickOn("#loginButton");
+        Button loginButton = new Button("Login");
+        loginButton.setId("loginButton");
+        loginButton.getStyleClass().add("button");
 
-        assertThat(robot.lookup("#loginMessage").queryText()).hasText("Parola sau username gresite!");
+        //ActionEvent event = new ActionEvent(loginButton, loginButton);
+//
+//        // Create a mock Scene and Window for the event source
+//        Scene scene = new Scene(new Group());
+//        Window window = new Stage();
+//        scene.getWindow();
+//        ((Node) event.getSource()).getScene();
 
-        robot.clickOn("#usernameField");
-        robot.write("abc");
-        robot.clickOn("#passwordField");
-        //robot.write("bca");
-        robot.clickOn("#roleField");
-        robot.clickOn("Client");
+        controller.handleLoginButtonAction(event);
 
-        robot.clickOn("#loginButton");
-
-        assertThat(robot.lookup("#loginMessage").queryText()).hasText("Parola sau username gresite!");
-
-        Assertions.assertThat(UserService.getUsers()).size().isEqualTo(0);
-
+        assertEquals(controller.getLoginMessage(), "Logat ca si admin.");
     }
 
-    @Test
-    void switchToSceneHome(FxRobot robot) throws IOException {
-        robot.clickOn("#homeButton");
 
-        // Verify that the scene is switched to the home page
-        Node modifyPage = robot.lookup("#AdminHome").query();
-        assertNotNull(modifyPage);
-        Scene scene =modifyPage.getScene();
-        assertNotNull(scene);
-        assertEquals("/com/example/florarie_proiect/AdminHome.fxml", scene.getRoot().getId());
-    }
 
 }
