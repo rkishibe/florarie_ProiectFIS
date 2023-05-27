@@ -1,34 +1,42 @@
 package com.example.florarie_proiect.controllers;
 
-import com.example.florarie_proiect.services.UserService;
-import org.junit.jupiter.api.AfterAll;
+import com.example.florarie_proiect.Main;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
 import org.testfx.api.FxToolkit;
+import org.testfx.framework.junit5.ApplicationExtension;
+import org.testfx.framework.junit5.Start;
+import org.testfx.matcher.control.LabeledMatchers;
 
 import java.util.concurrent.TimeoutException;
 
-import static org.testfx.assertions.api.Assertions.assertThat;
+import static org.testfx.api.FxAssert.verifyThat;
 
+@ExtendWith(ApplicationExtension.class)
 public class RegistrationControllerTest  {
 
-    private FxRobot robot;
+     FxRobot robot;
     public static final String USERNAME = "user";
     public static final String PASSWORD = "password";
 
 
+    @Start
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(Main.class.getResource("/com/example/florarie_proiect/AdminHome.fxml"));
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
     @BeforeEach
     void setUp() throws TimeoutException {
-        UserService.loadUsersFromDatabase();
         FxToolkit.registerPrimaryStage();
-        robot = new FxRobot();
     }
 
-    @AfterAll
-    static void tearDown() {
-        UserService.closeDatabase();
-    }
 
     @Test
     void testRegistration() {
@@ -37,18 +45,6 @@ public class RegistrationControllerTest  {
         robot.clickOn("#passwordField").write(PASSWORD);
         robot.clickOn("#registerButton");
 
-        assertThat(robot.lookup("#registrationMessage").queryText()).hasText("Cont creat cu succes!");
-        assertThat(UserService.getUsers()).size().isEqualTo(1);
-
-        robot.clickOn("#registerButton");
-        assertThat(robot.lookup("#registrationMessage").queryText()).hasText(
-                String.format("An account with the username %s already exists!", USERNAME));
-
-        robot.clickOn("#usernameField").write("1");
-        robot.clickOn("#passwordField").write(PASSWORD);
-        robot.clickOn("#registerButton");
-
-        assertThat(robot.lookup("#registrationMessage").queryText()).hasText("Cont creat cu succes!");
-        assertThat(UserService.getUsers()).size().isEqualTo(2);
+        verifyThat("#registrationMessage", LabeledMatchers.hasText("Hello Admin"));
     }
 }

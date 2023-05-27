@@ -5,6 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
+
 <AnchorPane fx:id="addPage" prefHeight="382.0" prefWidth="489.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.florarie_proiect.controllers.AddBouquetController">   <children>
       <Label layoutX="154.0" layoutY="123.0" text="Name" textFill="WHITE" />
       <Label layoutX="157.0" layoutY="160.0" text="Price" textFill="WHITE" />
@@ -13,6 +14,7 @@
       <TextField  fx:id="priceField" id="price" layoutX="205.0" layoutY="156.0" style="-fx-background-color: pink;" />
       <TextField  fx:id="quantityField" id="quantity" layoutX="205.0" layoutY="197.0" style="-fx-background-color: pink;" />
       <Label layoutX="175.0" layoutY="57.0" prefHeight="42.0" prefWidth="140.0" text="Add Bouquet" textAlignment="CENTER" textFill="WHITE">
+
          <font>
             <Font name="Bodoni MT" size="24.0" />
          </font></Label>

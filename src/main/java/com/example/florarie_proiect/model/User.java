@@ -1,6 +1,9 @@
 package com.example.florarie_proiect.model;
 
+import org.dizitart.no2.objects.Id;
+
 public class User {
+    @Id
     public String username;
     public String password;
     public String role;

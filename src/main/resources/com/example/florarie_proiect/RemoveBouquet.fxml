@@ -4,9 +4,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
+
 <AnchorPane fx:id="removePage" prefHeight="347.0" prefWidth="547.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.florarie_proiect.controllers.RemoveBouquetController">
+
    <children>
-      <Label layoutX="71.0" layoutY="69.0" text="Choose the bouquet you want to remove" textFill="WHITE">
+      <Label fx:id="PageTitle" layoutX="71.0" layoutY="69.0" text="Choose the bouquet you want to remove" textFill="WHITE">
          <font>
             <Font name="Bodoni MT" size="24.0" />
          </font>

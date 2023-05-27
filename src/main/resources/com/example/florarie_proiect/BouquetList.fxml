@@ -8,9 +8,11 @@
 <?import javafx.scene.text.Text?>
 
 
+
 <AnchorPane fx:id="chooseBouquetPage" prefHeight="373.0" prefWidth="586.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.florarie_proiect.controllers.BouquetListController">
    <children>
       <Label fx:id="myLabel" id="page" alignment="CENTER" layoutY="24.0" prefHeight="50.0" prefWidth="640.0" text="Choose a Bouquet" textFill="#f6f5f5">
+
          <font>
             <Font name="Bodoni MT" size="36.0" />
          </font>
@@ -20,7 +22,7 @@
             <Font size="14.0" />
          </font>
       </Button>
-      <Button layoutX="141.0" layoutY="269.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="39.0" prefWidth="61.0" style="-fx-background-color: pink;" text="Back">
+      <Button fx:id="homeButton" layoutX="141.0" layoutY="269.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="39.0" prefWidth="61.0" style="-fx-background-color: pink;" text="Back">
          <font>
             <Font size="14.0" />
          </font>
