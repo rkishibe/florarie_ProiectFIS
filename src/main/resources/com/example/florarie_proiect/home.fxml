@@ -4,7 +4,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="313.0" prefWidth="449.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.HomeController">
+
+<AnchorPane fx:id="home" prefHeight="313.0" prefWidth="449.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.HomeController">
    <children>
       <Button fx:id="loginButton" layoutX="176.0" layoutY="113.0" mnemonicParsing="false" onAction="#switchToSceneLogin" prefHeight="51.0" prefWidth="98.0" style="-fx-background-color: #ffe3ef;" text="Login" textFill="#6f2d49">
          <font>

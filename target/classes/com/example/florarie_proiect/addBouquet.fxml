@@ -5,8 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="addPage" prefHeight="355.0" prefWidth="510.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.AddBouquetController">
-   <children>
+<AnchorPane fx:id="addPage" prefHeight="382.0" prefWidth="489.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.AddBouquetController">   <children>
       <Label layoutX="154.0" layoutY="123.0" text="Name" textFill="WHITE" />
       <Label layoutX="157.0" layoutY="160.0" text="Price" textFill="WHITE" />
       <Label layoutX="147.0" layoutY="201.0" text="Quantity" textFill="WHITE" />

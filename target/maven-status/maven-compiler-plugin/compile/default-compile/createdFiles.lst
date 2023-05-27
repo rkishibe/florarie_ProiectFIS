@@ -13,6 +13,7 @@ com\example\florarie_proiect\controllers\AdminHome.class
 com\example\florarie_proiect\services\UserService.class
 com\example\florarie_proiect\controllers\BouquetListController.class
 com\example\florarie_proiect\exceptions\CouldNotWriteBouquetException.class
+com\example\florarie_proiect\exceptions\BouquetNameFieldEmptyException.class
 com\example\florarie_proiect\services\BouquetService.class
 com\example\florarie_proiect\controllers\OrderController.class
 com\example\florarie_proiect\exceptions\CouldNotWriteUsersException.class

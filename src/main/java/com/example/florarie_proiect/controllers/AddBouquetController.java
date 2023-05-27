@@ -1,5 +1,6 @@
 package com.example.florarie_proiect.controllers;
 
+import com.example.florarie_proiect.exceptions.BouquetNameFieldEmptyException;
 import com.example.florarie_proiect.model.Bouquet;
 import com.example.florarie_proiect.model.User;
 import com.example.florarie_proiect.services.BouquetService;
@@ -28,17 +29,17 @@ public class AddBouquetController {
     @FXML
     public AnchorPane addPage;
     @FXML
-    private Text mesaj;
+    public Text mesaj;
     @FXML
-    private TextField nameField;
+    public TextField nameField;
 
     @FXML
-    private TextField priceField;
+    public TextField priceField;
 
     @FXML
-    private TextField quantityField;
+    public TextField quantityField;
     @FXML
-    private Button saveButton;
+    public Button saveButton;
 
     Stage stage;
 
@@ -51,6 +52,24 @@ public class AddBouquetController {
         stage.show();
 
     }
+private String name;
+    private int price, quantity;
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public Text getMesaj() {
+        return mesaj;
+    }
+
+    public String getName() {
+        return name;
+    }
 
     public void saveButton(ActionEvent e) throws IOException {
         BouquetService.loadBouquetsFromDatabase();
@@ -59,6 +78,22 @@ public class AddBouquetController {
         for (Document document : BouquetService.getFlowerCollection().find()) {
             String numeBuchet = document.get("name", String.class);
             existingBouquets.add(numeBuchet);
+        }
+
+        //verific daca numele buchetului a fost introdus
+        name = nameField.getText();
+        if (name.isEmpty() || name == null) {
+            mesaj.setText("Name field is empty!");
+            throw new BouquetNameFieldEmptyException();
+        }
+
+        //verific daca cantitatea si pretul sunt intregi
+        try {
+            quantity = Integer.parseInt(quantityField.getText());
+            price = Integer.parseInt(priceField.getText());
+        } catch (NumberFormatException exception) {
+            mesaj.setText("Quantity and price must be integers!");
+            return;
         }
 
         if (existingBouquets.contains(nameField.getText())) {

@@ -4,19 +4,20 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.OrderController">
+
+<AnchorPane fx:id="cartPage" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.OrderController">
    <children>
       <Label layoutX="39.0" layoutY="30.0" text="Your cart" textFill="WHITE">
          <font>
             <Font name="Bodoni MT Bold Italic" size="26.0" />
          </font>
       </Label>
-      <Button layoutX="455.0" layoutY="304.0" mnemonicParsing="false" onAction="#switchToSceneCart" prefHeight="54.0" prefWidth="113.0" style="-fx-background-color: pink;" text="Finish Order" textFill="#5e5252">
+      <Button fx:id="finishButton" layoutX="455.0" layoutY="304.0" mnemonicParsing="false" onAction="#switchToSceneCart" prefHeight="54.0" prefWidth="113.0" style="-fx-background-color: pink;" text="Finish Order" textFill="#5e5252">
          <font>
             <Font name="Bodoni MT" size="14.0" />
          </font></Button>
       <ListView fx:id="flowerListView" layoutX="39.0" layoutY="82.0" prefHeight="200.0" prefWidth="529.0" style="-fx-background-color: pink;" />
-      <Button layoutX="332.0" layoutY="304.0" mnemonicParsing="false" onAction="#switchToSceneClientHome" prefHeight="54.0" prefWidth="113.0" style="-fx-background-color: pink;" text="Back" textFill="#5e5252">
+      <Button fx:id="backButton" layoutX="332.0" layoutY="304.0" mnemonicParsing="false" onAction="#switchToSceneClientHome" prefHeight="54.0" prefWidth="113.0" style="-fx-background-color: pink;" text="Back" textFill="#5e5252">
          <font>
             <Font name="Bodoni MT" size="14.0" />
          </font>

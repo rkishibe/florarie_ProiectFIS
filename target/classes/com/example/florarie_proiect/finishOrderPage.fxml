@@ -4,8 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="324.0" prefWidth="334.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.CardController">
-
+<AnchorPane fx:id="finishOrderPage" prefHeight="324.0" prefWidth="334.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.CardController">
    <children>
       <Label layoutX="101.0" layoutY="31.0" text="Card Details" textFill="WHITE">
          <font>
@@ -24,7 +23,7 @@
             <Font name="Bodoni MT" size="14.0" />
          </font></Button>
       <DatePicker fx:id="dataExpirareField" layoutX="122.0" layoutY="153.0" prefHeight="25.0" prefWidth="149.0" />
-      <Button layoutX="77.0" layoutY="239.0" mnemonicParsing="false" onAction="#switchToSceneFinishOrder" prefHeight="39.0" prefWidth="72.0" style="-fx-background-color: pink;" text="Back" textFill="#572f2f">
+      <Button fx:id="backButton" layoutX="77.0" layoutY="239.0" mnemonicParsing="false" onAction="#switchToSceneFinishOrder" prefHeight="39.0" prefWidth="72.0" style="-fx-background-color: pink;" text="Back" textFill="#572f2f">
          <font>
             <Font name="Bodoni MT" size="14.0" />
          </font>

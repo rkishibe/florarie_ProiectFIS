@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.example.florarie_proiect.controllers.HomeControllerTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.345 s <<< FAILURE! - in com.example.florarie_proiect.controllers.HomeControllerTest
-com.example.florarie_proiect.controllers.HomeControllerTest.testSwitchToSceneLogin(FxRobot)  Time elapsed: 0.173 s  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.354 s <<< FAILURE! - in com.example.florarie_proiect.controllers.HomeControllerTest
+com.example.florarie_proiect.controllers.HomeControllerTest.testSwitchToSceneLogin(FxRobot)  Time elapsed: 0.176 s  <<< ERROR!
 java.lang.RuntimeException: java.lang.IllegalAccessError: class org.testfx.toolkit.impl.ToolkitServiceImpl (in module org.testfx) cannot access class com.sun.javafx.application.ParametersImpl (in module javafx.graphics) because module javafx.graphics does not export com.sun.javafx.application to module org.testfx
 	at org.testfx@4.0.16-alpha/org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
 	at org.testfx@4.0.16-alpha/org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:244)
@@ -73,7 +73,7 @@ Caused by: java.lang.IllegalAccessError: class org.testfx.toolkit.impl.ToolkitSe
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1589)
 
-com.example.florarie_proiect.controllers.HomeControllerTest.testSwitchToSceneRegister(FxRobot)  Time elapsed: 0.168 s  <<< ERROR!
+com.example.florarie_proiect.controllers.HomeControllerTest.testSwitchToSceneRegister(FxRobot)  Time elapsed: 0.173 s  <<< ERROR!
 java.lang.RuntimeException: java.lang.IllegalAccessError: class org.testfx.toolkit.impl.ToolkitServiceImpl (in module org.testfx) cannot access class com.sun.javafx.application.ParametersImpl (in module javafx.graphics) because module javafx.graphics does not export com.sun.javafx.application to module org.testfx
 	at org.testfx@4.0.16-alpha/org.testfx.util.WaitForAsyncUtils.waitFor(WaitForAsyncUtils.java:301)
 	at org.testfx@4.0.16-alpha/org.testfx.api.FxToolkit.waitForSetup(FxToolkit.java:244)
