@@ -1,46 +1,59 @@
 package com.example.florarie_proiect.controllers;
 
-import javafx.fxml.FXMLLoader;
+import javafx.fxml.FXML;
 import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.stage.Stage;
+import javafx.scene.control.Button;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.text.Text;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
-import org.testfx.framework.junit5.ApplicationExtension;
 
 import java.io.IOException;
 import java.util.concurrent.TimeoutException;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.testfx.assertions.api.Assertions.assertThat;
 
-@ExtendWith(ApplicationExtension.class)
-public class BouquetListControllerTest {
+
+public class BouquetListControllerTest{
+    private BouquetListController controller;
+    private FxRobot robot;
+
+    @FXML
+    public Button addCartButton;
+    @FXML
+    public Button cartButton;
+    @FXML
+    ChoiceBox<String> choice;
+    @FXML
+    private Text mesaj;
 
     @BeforeEach
-    public void setUp(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/BouquetList.fxml"));
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
+    public void setUp() throws IOException {
+        controller=new BouquetListController();
+
+//        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("/com/example/florarie_proiect/BouquetList.fxml"));
+//        Scene scene = new Scene(root);
+//        Stage stage=new Stage();
+//        stage.setScene(scene);
+//        stage.show();
+        robot=new FxRobot();
     }
 
     @Test
-    public void testAddToCart(FxRobot robot) {
-        robot.clickOn("#choice");
-        robot.clickOn(""); //robot clicks on a bouquet name
+    public void testAddToCart() {
+        robot.clickOn(controller.getChoice());
+        robot.clickOn(choice.getValue()); //robot clicks on a bouquet name
 
-        robot.clickOn("#addCartButton");
-        assertThat(robot.lookup("#loginMessage").queryText()).hasText("Bouquet added to cart!");
+        robot.clickOn(addCartButton);
+        assertThat(robot.lookup(mesaj.getText()).queryText()).hasText("Bouquet added to cart!");
     }
 
     @Test
-    public void testSwitchToSceneCart(FxRobot robot) throws TimeoutException {
-        robot.clickOn("#cartButton");
+    public void testSwitchToSceneCart() throws TimeoutException {
+        robot.clickOn(controller.getCartButton());
 
         // Verify that the scene is switched to the cart page
         Node cartPage = robot.lookup("#cartPage").query();
@@ -51,7 +64,7 @@ public class BouquetListControllerTest {
     }
 
     @Test
-    public void testSwitchToSceneHome(FxRobot robot) {
+    public void testSwitchToSceneHome() {
         robot.clickOn("#homeButton");
 
         // Verify that the scene is switched to the home page
@@ -64,11 +77,12 @@ public class BouquetListControllerTest {
 
     @Test
     public void testInitializeWithFlowerCollection() {
-        // TODO: Implement test for initialize() method when FlowerCollection is not null
+        assertNull(controller.initialize());
     }
 
     @Test
     public void testInitializeWithEmptyFlowerCollection() {
-        // TODO: Implement test for initialize() method when FlowerCollection is null
+        assertEquals(controller.initialize(), "baza de date goala");
     }
+
 }

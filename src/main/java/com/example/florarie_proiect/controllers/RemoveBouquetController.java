@@ -26,6 +26,10 @@ public class RemoveBouquetController {
     @FXML
     private ChoiceBox<String> choice;
 
+    public ChoiceBox<String> getChoice() {
+        return choice;
+    }
+
     @FXML
     public void initialize() {
         BouquetService.loadBouquetsFromDatabase();

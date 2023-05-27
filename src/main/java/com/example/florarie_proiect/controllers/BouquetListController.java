@@ -9,11 +9,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import org.dizitart.no2.Document;
-import org.dizitart.no2.FindOptions;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -24,10 +24,30 @@ import static org.dizitart.no2.filters.Filters.eq;
 
 public class BouquetListController {
     private static List<Bouquet> selectedBouquets=new ArrayList<>();
+    public Button addCartButton;
+    public Button cartButton;
     @FXML
     ChoiceBox<String> choice;
     @FXML
     private Text mesaj;
+
+
+
+    public Button getAddCartButton() {
+        return addCartButton;
+    }
+
+    public Button getCartButton() {
+        return cartButton;
+    }
+
+    public ChoiceBox<String> getChoice() {
+        return choice;
+    }
+
+    public Text getMesaj() {
+        return mesaj;
+    }
 
     @FXML
     void switchToSceneCart(ActionEvent event) throws IOException {
@@ -58,18 +78,21 @@ public class BouquetListController {
     }
 
     @FXML
-    public void initialize() {
+    public String initialize() {
         BouquetService.loadBouquetsFromDatabase();
         if(BouquetService.getFlowerCollection()!=null) {
             for (Document document : BouquetService.getFlowerCollection().find()) {
                 String numeBuchet = document.get("name", String.class);
                 choice.getItems().add(numeBuchet);
+                return null;
             }
         }
         else {
-            System.out.println("baza de date goala");
+
+            return "baza de date goala";
         }
 
+        return null;
     }
     @FXML
     public void addToCart(){

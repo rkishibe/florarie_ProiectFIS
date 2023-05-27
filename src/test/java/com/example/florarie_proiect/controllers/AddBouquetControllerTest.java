@@ -1,15 +1,12 @@
 package com.example.florarie_proiect.controllers;
 
-import com.example.florarie_proiect.controllers.AddBouquetController;
+
 import com.example.florarie_proiect.exceptions.BouquetNameFieldEmptyException;
-import com.example.florarie_proiect.services.BouquetService;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+<<<<<<< HEAD
 import javafx.stage.Stage;
 import org.apache.commons.io.FileUtils;
 import org.dizitart.no2.Document;
@@ -18,16 +15,19 @@ import org.testfx.api.FxRobot;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationTest;
 import org.testfx.framework.junit5.Start;
+=======
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.testfx.api.FxToolkit;
+>>>>>>> origin/main
 
 import java.io.IOException;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class AddBouquetControllerTest {
+<<<<<<< HEAD
     public static final String NAME = "numeBuchet";
     public static final String PRET = "100";
     public static final String CANTITATE = "23";
@@ -114,15 +114,37 @@ public class AddBouquetControllerTest {
     public  void setUp() throws Exception {
 
         FxToolkit.registerPrimaryStage();
+=======
+    @FXML
+    public Button saveButton;
+    private AddBouquetController controller;
+
+    @BeforeEach
+    public void setUp() throws Exception {
+        //BouquetService.loadBouquetsFromDatabase();
+>>>>>>> origin/main
         controller = new AddBouquetController();
+        FxToolkit.registerPrimaryStage();
         controller.nameField = new TextField();
         controller.quantityField = new TextField();
         controller.priceField = new TextField();
         controller.mesaj = new Text();
     }
+<<<<<<< HEAD
     @AfterAll
     public static void tearDown() throws Exception{
         BouquetService.closeDatabase();
+=======
+
+    @Test
+    public void test_nameField_fail() throws IOException {
+        controller.nameField.setText(null);
+        controller.quantityField.setText("1");
+        controller.priceField.setText("12");
+        controller.saveButton();
+        assertThrows(BouquetNameFieldEmptyException.class, () -> {
+        });
+>>>>>>> origin/main
     }
 
     @DisplayName("Name Bouquet Field is empty")

@@ -24,7 +24,7 @@ public class LoginController {
     public TextField usernameField;
 
     @FXML
-    private ChoiceBox<String> roleField;
+    ChoiceBox<String> roleField;
     @FXML
     public void initialize() {
         roleField.getItems().addAll("Client", "Admin");
@@ -47,15 +47,16 @@ public class LoginController {
         try{
            UserService.loadUsersFromDatabase();
             if(UserService.checkPasswordAndRole(username,username,password, userRole) && UserService.checkUserDoesNotAlreadyExistOrIsNull(username)){
+                Parent homeRoot;
                 if(userRole.equals("Client")){
-                    Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/ClientHome.fxml"));
+                    homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/ClientHome.fxml"));
                     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     Scene scene = new Scene(homeRoot);
                     stage.setScene(scene);
                     stage.show();
                     loginMessage.setText("Logat ca si client.");
                 } else if(userRole.equals("Admin")){
-                    Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/AdminHome.fxml"));
+                    homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/AdminHome.fxml"));
                     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     Scene scene = new Scene(homeRoot);
                     stage.setScene(scene);
@@ -67,12 +68,12 @@ public class LoginController {
                 loginMessage.setText("Parola sau username gresite!");
             }
         }catch (Exception e){
-            e.printStackTrace();}
+            e.printStackTrace();
+        }
         finally{
+            System.out.println(event);
             UserService.closeDatabase();
         }
-
-
     }
     @FXML
     public void switchToSceneHome(ActionEvent event) throws IOException {
@@ -85,4 +86,7 @@ public class LoginController {
 
     }
 
+    public String getLoginMessage() {
+        return loginMessage.getText().toString();
+    }
 }

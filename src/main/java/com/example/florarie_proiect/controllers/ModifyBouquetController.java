@@ -3,22 +3,19 @@ package com.example.florarie_proiect.controllers;
 import com.example.florarie_proiect.exceptions.CouldNotWriteBouquetException;
 import com.example.florarie_proiect.model.Bouquet;
 import com.example.florarie_proiect.services.BouquetService;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
-
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import org.dizitart.no2.Document;
 
 import java.io.IOException;
-import org.dizitart.no2.Document;
 
 public class ModifyBouquetController {
 
@@ -32,8 +29,7 @@ public class ModifyBouquetController {
     @FXML
     public TextField quantityField;
     @FXML
-
-    private Text mesaj;
+    Text mesaj;
 
     @FXML
     public void initialize() {
@@ -74,4 +70,7 @@ public class ModifyBouquetController {
         }
     }
 
+    public String getLoginMessage() {
+        return mesaj.getText();
+    }
 }
