@@ -80,8 +80,6 @@ public class BouquetService {
         }
     }
 
-
-
     public static void closeDatabase() {
         db.close();
     }
