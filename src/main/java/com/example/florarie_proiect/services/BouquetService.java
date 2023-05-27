@@ -1,16 +1,14 @@
 package com.example.florarie_proiect.services;
 
 import com.example.florarie_proiect.exceptions.BouquetDoesntExistException;
-import com.example.florarie_proiect.exceptions.CouldNotWriteBouquetException;
 import com.example.florarie_proiect.model.Bouquet;
-import com.example.florarie_proiect.model.User;
 import org.dizitart.no2.Cursor;
 import org.dizitart.no2.Document;
-import org.dizitart.no2.Filter;
 import org.dizitart.no2.Nitrite;
 import org.dizitart.no2.NitriteCollection;
-import org.dizitart.no2.objects.ObjectRepository;
 import org.dizitart.no2.objects.filters.ObjectFilters;
+
+import java.util.List;
 
 import static org.dizitart.no2.Document.createDocument;
 import static org.dizitart.no2.filters.Filters.eq;
@@ -90,5 +88,10 @@ public class BouquetService {
 
     public static NitriteCollection getFlowerCollection() {
         return flowerCollection;
+    }
+
+    public static List<Document> getBouquet() {
+        // Retrieve all users from the Nitrite database
+        return flowerCollection.find().toList();
     }
 }
