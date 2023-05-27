@@ -1,5 +1,6 @@
 package com.example.florarie_proiect.controllers;
 import com.example.florarie_proiect.controllers.AddBouquetController;
+import com.example.florarie_proiect.exceptions.BouquetNameFieldEmptyException;
 import com.example.florarie_proiect.services.BouquetService;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -9,6 +10,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import org.apache.commons.io.FileUtils;
 import org.dizitart.no2.Document;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,7 +22,7 @@ import org.testfx.framework.junit5.Start;
 import java.io.IOException;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class AddBouquetControllerTest  {
     public static final String NAME = "numeBuchet";
@@ -28,7 +30,7 @@ public class AddBouquetControllerTest  {
     public static final String CANTITATE = "23";
 
     private FxRobot robot;
-    private AddBouquetController controller;
+
 
     @Start
     void start(Stage primaryStage) throws Exception {
@@ -37,7 +39,7 @@ public class AddBouquetControllerTest  {
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
     }
-    @BeforeEach
+  /*  @BeforeEach
     public void setUp() throws Exception {
         robot=new FxRobot();
         BouquetService.loadBouquetsFromDatabase();
@@ -69,5 +71,33 @@ public class AddBouquetControllerTest  {
        // robot.write("1");
        // robot.clickOn("#saveButton");
 
+    }
+
+   */
+private AddBouquetController controller;
+    @BeforeEach
+    public void setUp() throws Exception {
+        BouquetService.loadBouquetsFromDatabase();
+        controller = new AddBouquetController();
+        controller.nameField = new TextField();
+        controller.quantityField = new TextField();
+        controller.priceField = new TextField();
+        controller.mesaj=new Text();
+    }
+
+    @Test
+    public void test_nameField_fail() {
+        controller.nameField.setText(null);
+        controller.quantityField.setText("1");
+        controller.priceField.setText("12");
+        assertThrows(BouquetNameFieldEmptyException.class, () -> {});
+    }
+
+    @Test
+    public void test_addCorrect() {
+        controller.nameField.setText("floricele");
+        controller.quantityField.setText("1");
+        controller.priceField.setText("12");
+       assertEquals(controller.getMesaj(), "Bouquet added!");
     }
 }
