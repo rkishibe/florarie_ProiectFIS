@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="373.0" prefWidth="637.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.BouquetListController">
+<AnchorPane fx:id="chooseBouquetPage" prefHeight="373.0" prefWidth="637.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.BouquetListController">
    <children>
       <Label fx:id="myLabel" alignment="CENTER" layoutY="24.0" prefHeight="50.0" prefWidth="640.0" text="Choose a Bouquet" textFill="#f6f5f5">
          <font>
