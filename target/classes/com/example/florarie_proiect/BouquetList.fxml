@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="chooseBouquetPage" prefHeight="373.0" prefWidth="586.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.BouquetListController">
+   <children>
+      <Label fx:id="myLabel" alignment="CENTER" layoutY="24.0" prefHeight="50.0" prefWidth="640.0" text="Choose a Bouquet" textFill="#f6f5f5">
+         <font>
+            <Font name="Bodoni MT" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="addCartButton" layoutX="275.0" layoutY="307.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="30.0" prefWidth="89.0" style="-fx-background-color: pink;" text="Add to cart">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="120.0" layoutY="308.0" mnemonicParsing="false" onAction="#switchToSceneHome" style="-fx-background-color: pink;" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="cartButton" layoutX="443.0" layoutY="308.0" mnemonicParsing="false" onAction="#switchToSceneCart" prefHeight="30.0" prefWidth="76.0" style="-fx-background-color: pink;" text="View cart">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="choice" layoutX="179.0" layoutY="147.0" prefHeight="78.0" prefWidth="282.0" style="-fx-background-color: pink;" />
+      <Text fx:id="mesaj" layoutX="297.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

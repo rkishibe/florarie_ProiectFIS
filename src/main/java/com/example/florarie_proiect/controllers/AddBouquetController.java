@@ -66,15 +66,15 @@ private String name;
     public AddBouquetController() {
     }
 
-    public Text getMesaj() {
-        return mesaj;
+    public String getMesaj() {
+        return mesaj.getText();
     }
 
     public String getName() {
         return name;
     }
 
-    public void saveButton(ActionEvent e) throws IOException {
+    public void saveButton() throws  BouquetNameFieldEmptyException {
         BouquetService.loadBouquetsFromDatabase();
         Document doc;
         List<String> existingBouquets = new ArrayList<>();
@@ -82,13 +82,16 @@ private String name;
             String numeBuchet = document.get("name", String.class);
             existingBouquets.add(numeBuchet);
         }
-
+    try {
         //verific daca numele buchetului a fost introdus
-        name = nameField.getText();
-        if (name.isEmpty() || name == null) {
+         name = nameField.getText();
+        }catch(BouquetNameFieldEmptyException exception) {
             mesaj.setText("Name field is empty!");
-            throw new BouquetNameFieldEmptyException();
-        }
+
+        }finally {
+        //BouquetService.closeDatabase();
+    }
+
 
         //verific daca cantitatea si pretul sunt intregi
         try {
@@ -96,11 +99,13 @@ private String name;
             price = Integer.parseInt(priceField.getText());
         } catch (NumberFormatException exception) {
             mesaj.setText("Quantity and price must be integers!");
-            return;
+        }finally {
+          //  BouquetService.closeDatabase();
         }
 
         if (existingBouquets.contains(nameField.getText())) {
             mesaj.setText("Bouquet already exists!");
+            BouquetService.closeDatabase();
         } else {
             doc = createDocument("name", nameField.getText())
                     .put("quantity", Integer.parseInt(quantityField.getText()))
@@ -109,7 +114,7 @@ private String name;
             BouquetService.addBouquet(doc);
         }
 
-        BouquetService.closeDatabase();
+
 
     }
 

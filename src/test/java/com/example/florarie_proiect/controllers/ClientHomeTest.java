@@ -1,30 +1,42 @@
 package com.example.florarie_proiect.controllers;
 
+import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxRobot;
+import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
+import org.testfx.framework.junit5.ApplicationTest;
 import org.testfx.framework.junit5.Start;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ClientHomeTest {
-    @ExtendWith(ApplicationExtension.class)
-    public class AdminHomeControllerTest {
+class ClientHomeTest extends Application {
         @Start
-        void start(Stage primaryStage) throws Exception {
+        public void start(Stage primaryStage) throws Exception {
             Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("/com/example/florarie_proiect/ClientHome.fxml"));
             primaryStage.setTitle("CLIENT HOME Example");
             primaryStage.setScene(new Scene(root, 300, 275));
             primaryStage.show();
         }
+
+        FxRobot robot;
+    @BeforeEach
+    public  void setUp() throws Exception {
+       robot=new FxRobot();
+        FxToolkit.registerPrimaryStage();
+
+    }
         @Test
-        public void testSwitchToSceneHome(FxRobot robot) {
+        public void testSwitchToSceneHome() {
             robot.clickOn("#homeButton");
 
             Node homePage = robot.lookup("#adminHome").query();
@@ -35,7 +47,7 @@ class ClientHomeTest {
         }
 
         @Test
-        public void testSwitchToSceneBouquetList(FxRobot robot) {
+        public void testSwitchToSceneBouquetList() {
             robot.clickOn("#bouquetButton");
 
             Node modifyPage = robot.lookup("#chooseBouquetPage").query();
@@ -60,4 +72,3 @@ class ClientHomeTest {
     }
 
 
-}

@@ -1,20 +1,30 @@
 package com.example.florarie_proiect.controllers;
 import static org.junit.jupiter.api.Assertions.*;
+
+import com.example.florarie_proiect.services.BouquetService;
+import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.testfx.api.FxRobot;
+import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationTest;
 
 import java.io.IOException;
 import java.time.LocalDate;
 
 
-    class CardControllerTest extends ApplicationTest {
+    class CardControllerTest extends Application {
 
         @Override
         public void start(Stage stage) throws IOException {
@@ -24,7 +34,7 @@ import java.time.LocalDate;
             stage.show();
         }
 
-        @DisplayName("Am apasat pe butonul de send, iar datele sunt invalide")
+      /*  @DisplayName("Am apasat pe butonul de send, iar datele sunt invalide")
         @Test
         void sendButtonValidData(FxRobot robot) {
             // Simulăm completarea câmpurilor cu date valide
@@ -70,6 +80,54 @@ import java.time.LocalDate;
             assertNotNull(scene);
             assertEquals("/com/example/florarie_proiect/cartPage.fxml", scene.getRoot().getId());
 
+        }*/
+
+        private CardController controller;
+
+        @BeforeEach
+        public  void setUp() throws Exception {
+
+            FxToolkit.registerPrimaryStage();
+            controller = new CardController();
+            controller.numarCardField = new TextField();
+            controller.numeDetinatorField = new TextField();
+            controller.codSecuritateField = new TextField();
+            controller.dataExpirareField= new DatePicker();
+            controller.mesaj=new Text();
         }
+
+        @Test
+        public void test_sendButton_withInvalidCardNumber() {
+            controller.numarCardField.setText("123");
+            controller.numeDetinatorField.setText("ana");
+            controller.dataExpirareField.setValue(LocalDate.of(2025, 12, 31));
+            assertDoesNotThrow(() -> controller.sendButton(null));
+            assertEquals( controller.getMesaj(), "Date card invalide");
+        }
+        @Test
+        public void test_sendButton_withInvalidCardHolderName() {
+            controller.numarCardField.setText("1234567890123456");
+            controller.numeDetinatorField.setText("");
+            controller.dataExpirareField.setValue(LocalDate.of(2025, 12, 31));
+            assertDoesNotThrow(() -> controller.sendButton(null));
+            assertEquals( controller.getMesaj(), "Date card invalide");
+        }
+        @Test
+        public void test_sendButton_withInvalidDataExpiration() {
+            controller.numarCardField.setText("1234567890123456");
+            controller.numeDetinatorField.setText("ana");
+            controller.dataExpirareField.setValue(LocalDate.of(2022, 12, 31));
+            assertDoesNotThrow(() -> controller.sendButton(null));
+            assertEquals( controller.getMesaj(), "Date card invalide");
+        }
+
+        @Test
+        public void test_sendButton_withValidData() throws IOException {
+            controller.numarCardField.setText("1234567890123456");
+            controller.numeDetinatorField.setText("Maria");
+            controller.dataExpirareField.setValue(LocalDate.of(2023, 5, 27));
+            assertDoesNotThrow(() -> controller.sendButton(null));
+            assertEquals(controller.getMesaj(), "VALID");
+            }
     }
 
