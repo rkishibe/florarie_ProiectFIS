@@ -33,7 +33,7 @@
     <ChoiceBox fx:id="role" prefWidth="150.0" style="-fx-background-color: pink;" GridPane.columnIndex="1" GridPane.rowIndex="3">
     </ChoiceBox>
 
-    <Text fx:id="registrationMessage" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+    <Text fx:id="registrationMessage" fill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7" />
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />

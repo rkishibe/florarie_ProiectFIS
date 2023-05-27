@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.ColorAdjust?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="addPage" prefHeight="382.0" prefWidth="489.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.AddBouquetController">
+<AnchorPane fx:id="addPage" prefHeight="355.0" prefWidth="510.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.AddBouquetController">
    <children>
-      <Label layoutX="42.0" layoutY="64.0" text="Name" />
-      <Label layoutX="44.0" layoutY="92.0" text="Price" />
-      <Label layoutX="44.0" layoutY="122.0" text="Quantity" />
-      <TextField fx:id="#nameField" id="name" layoutX="95.0" layoutY="60.0" />
-      <TextField fx:id="priceField" id="price" layoutX="95.0" layoutY="88.0" />
-      <TextField fx:id="quantityField" id="quantity" layoutX="95.0" layoutY="118.0" />
-      <Label layoutX="290.0" layoutY="13.0" prefHeight="42.0" prefWidth="163.0" text="Add Bouquet" textAlignment="CENTER">
+      <Label layoutX="154.0" layoutY="123.0" text="Name" textFill="WHITE" />
+      <Label layoutX="157.0" layoutY="160.0" text="Price" textFill="WHITE" />
+      <Label layoutX="147.0" layoutY="201.0" text="Quantity" textFill="WHITE" />
+      <TextField id="name" fx:id="nameField" layoutX="205.0" layoutY="119.0" style="-fx-background-color: pink;" />
+      <TextField id="price" fx:id="priceField" layoutX="205.0" layoutY="156.0" style="-fx-background-color: pink;" />
+      <TextField id="quantity" fx:id="quantityField" layoutX="205.0" layoutY="197.0" style="-fx-background-color: pink;" />
+      <Label layoutX="175.0" layoutY="57.0" prefHeight="42.0" prefWidth="140.0" text="Add Bouquet" textAlignment="CENTER" textFill="WHITE">
          <font>
-            <Font name="Bookman Old Style Italic" size="23.0" />
+            <Font name="Bodoni MT" size="24.0" />
          </font></Label>
-      <Button fx:id="saveButton" id="save" alignment="CENTER" layoutX="361.0" layoutY="316.0" mnemonicParsing="false" onAction="#saveButton" text="Save" />
-      <Button fx:id="cancelButton" alignment="CENTER" layoutX="412.0" layoutY="316.0" mnemonicParsing="false" onAction="#switchToSceneHome" text="Cancel" textAlignment="CENTER" />
-      <Text fx:id="mesaj" id="mesaj1" layoutX="116.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="162.8033905029297" />
+      <Button id="save" fx:id="saveButton" alignment="CENTER" layoutX="176.0" layoutY="245.0" mnemonicParsing="false" onAction="#saveButton" prefHeight="35.0" prefWidth="59.0" style="-fx-background-color: pink;" text="Save" />
+      <Button fx:id="cancelButton" alignment="CENTER" layoutX="281.0" layoutY="245.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="35.0" prefWidth="69.0" style="-fx-background-color: pink;" text="Cancel" textAlignment="CENTER" />
+      <Text id="mesaj1" fx:id="mesaj" fill="WHITE" layoutX="174.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="162.8033905029297" />
    </children>
    <effect>
       <ColorAdjust />
