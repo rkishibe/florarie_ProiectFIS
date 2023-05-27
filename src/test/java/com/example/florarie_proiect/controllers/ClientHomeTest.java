@@ -24,13 +24,13 @@ import static org.testfx.api.FxAssert.verifyThat;
 
 @ExtendWith(ApplicationExtension.class)
 class ClientHomeTest {
-        @Start
-        public void start(Stage primaryStage) throws Exception {
-            Parent root = FXMLLoader.load(Main.class.getResource("/com/example/florarie_proiect/ClientHome.fxml"));
-            primaryStage.setScene(new Scene(root));
-            primaryStage.show();
-        }
 
+    @Start
+    void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(Main.class.getResource("/com/example/florarie_proiect/ClientHome.fxml"));
+        primaryStage.setScene(new Scene(root));
+        primaryStage.show();
+    }
         FxRobot robot;
     @BeforeEach
     public  void setUp() throws Exception {
@@ -46,24 +46,14 @@ class ClientHomeTest {
         @Test
         public void testSwitchToSceneBouquetList() {
             robot.clickOn("#bouquetButton");
-
-            Node modifyPage = robot.lookup("#chooseBouquetPage").query();
-            assertNotNull(modifyPage);
-            Scene scene = modifyPage.getScene();
-            assertNotNull(scene);
-            assertEquals("/com/example/florarie_proiect/BouquetList.fxml", scene.getRoot().getId());
+            verifyThat("#page", LabeledMatchers.hasText("Choose a Bouquet"));
         }
 
         @Test
-        public void testSwitchToSceneCartPage(FxRobot robot) {
+        public void testSwitchToSceneCartPage() {
             robot.clickOn("#cartButton");
-
-            Node removePage = robot.lookup("#cartPage").query();
-            assertNotNull(removePage);
-            Scene scene = removePage.getScene();
-            assertNotNull(scene);
-            assertEquals("/com/example/florarie_proiect/cartPage.fxml", scene.getRoot().getId());
-        }
+            verifyThat("#page2", LabeledMatchers.hasText("Your cart"));
+}
 
 
     }
