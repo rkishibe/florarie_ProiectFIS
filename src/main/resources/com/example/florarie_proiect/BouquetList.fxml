@@ -8,9 +8,9 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane fx:id="chooseBouquetPage" prefHeight="373.0" prefWidth="586.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.BouquetListController">
+<AnchorPane fx:id="chooseBouquetPage" prefHeight="373.0" prefWidth="586.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.florarie_proiect.controllers.BouquetListController">
    <children>
-      <Label fx:id="myLabel" alignment="CENTER" layoutY="24.0" prefHeight="50.0" prefWidth="640.0" text="Choose a Bouquet" textFill="#f6f5f5">
+      <Label fx:id="myLabel" id="page" alignment="CENTER" layoutY="24.0" prefHeight="50.0" prefWidth="640.0" text="Choose a Bouquet" textFill="#f6f5f5">
          <font>
             <Font name="Bodoni MT" size="36.0" />
          </font>

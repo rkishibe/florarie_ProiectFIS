@@ -4,22 +4,22 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:id="removePage" prefHeight="347.0" prefWidth="547.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.florarie_proiect.controllers.RemoveBouquetController">
+<AnchorPane fx:id="removePage" prefHeight="347.0" prefWidth="547.0" style="-fx-background-color: #c96991;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.florarie_proiect.controllers.RemoveBouquetController">
    <children>
       <Label layoutX="71.0" layoutY="69.0" text="Choose the bouquet you want to remove" textFill="WHITE">
          <font>
             <Font name="Bodoni MT" size="24.0" />
          </font>
       </Label>
-      <ChoiceBox fx:id="choice" layoutX="140.0" layoutY="137.0" prefHeight="55.0" prefWidth="257.0" style="-fx-background-color: pink;" />
+      <ChoiceBox fx:id="choice" id="choice" layoutX="140.0" layoutY="137.0" prefHeight="55.0" prefWidth="257.0" style="-fx-background-color: pink;" />
       <Button layoutX="285.0" layoutY="224.0" mnemonicParsing="false" onAction="#switchToSceneHome" prefHeight="39.0" prefWidth="89.0" style="-fx-background-color: pink;" text="Back">
          <font>
             <Font size="14.0" />
          </font></Button>
-      <Button layoutX="172.0" layoutY="224.0" mnemonicParsing="false" onAction="#okButton" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: pink;" text="OK">
+      <Button id="okButton" layoutX="172.0" layoutY="224.0" mnemonicParsing="false" onAction="#okButton" prefHeight="39.0" prefWidth="73.0" style="-fx-background-color: pink;" text="OK">
          <font>
             <Font size="14.0" />
          </font></Button>
-      <Text fx:id="mesaj" fill="WHITE" layoutX="145.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="257.33333333333337" />
+      <Text fx:id="mesaj" id="mesaj" fill="WHITE" layoutX="145.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="257.33333333333337" />
    </children>
 </AnchorPane>
