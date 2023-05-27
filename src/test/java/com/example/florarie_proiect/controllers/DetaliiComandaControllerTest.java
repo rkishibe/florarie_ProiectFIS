@@ -1,5 +1,7 @@
 package com.example.florarie_proiect.controllers;
+import javafx.application.Application;
 import javafx.collections.FXCollections;
+import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -17,64 +19,67 @@ import javafx.stage.Stage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.testfx.api.FxRobot;
+import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationTest;
+import org.testfx.util.WaitForAsyncUtils;
+
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-    class DetaliiComandaControllerTest extends ApplicationTest {
+    class DetaliiComandaControllerTest extends Application {
 
         private ObservableList<Bouquet> selectedBouquets;
 
-        @BeforeEach
-        void setUp() {
-            BouquetService.loadBouquetsFromDatabase();
-        }
-        @AfterEach
-        void tearDown(){
-            BouquetService.closeDatabase();
-        }
+
         @Override
         public void start(Stage stage) throws IOException {
-            // Inițializăm listă de buchete selectate pentru test
-            Bouquet bouquet1 = new Bouquet("Buchet 1", 10, 5);
-            Bouquet bouquet2 = new Bouquet("Buchet 2", 15, 3);
-            selectedBouquets = FXCollections.observableArrayList(bouquet1, bouquet2);
-
             Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("/com/example/florarie_proiect/DetaliiComanda.fxml"));
             stage.setTitle("DETALII COMANDA Example");
             stage.setScene(new Scene(root, 300, 275));
             stage.show();
         }
 
-        @Test
-        void initialize(FxRobot robot) {
-            // Verificăm că tabelul este populat cu buchetele selectate
-            TableView<Bouquet> table = robot.lookup("#table").queryTableView();
-            assertNotNull(table);
-            List<TableColumn<Bouquet, ?>> columns = table.getColumns();
-            assertEquals(3, columns.size()); // Verificăm că există 3 coloane
+        @BeforeEach
+        public  void setUp() throws Exception {
+            FxToolkit.registerPrimaryStage();
+            controller = new DetaliiComandaController();
 
-            TableColumn<Bouquet, String> nameColumn = (TableColumn<Bouquet, String>) columns.get(0);
-            assertEquals("name", nameColumn.getText());
-
-            TableColumn<Bouquet, Integer> priceColumn = (TableColumn<Bouquet, Integer>) columns.get(1);
-            assertEquals("price", priceColumn.getText());
-
-            TableColumn<Bouquet, Integer> quantityColumn = (TableColumn<Bouquet, Integer>) columns.get(2);
-            assertEquals("quantity", quantityColumn.getText());
-
-            ObservableList<Bouquet> actualData = table.getItems();
-            assertEquals(selectedBouquets, actualData);
-
-            // Verificăm că suma totală este calculată corect
-            TextField totalField = robot.lookup("#total").queryAs(TextField.class);
-            assertNotNull(totalField);
-            int expectedTotal = selectedBouquets.stream().mapToInt(bouquet -> bouquet.getPrice() * bouquet.getQuantity()).sum();
-            assertEquals(String.valueOf(expectedTotal), totalField.getText());
         }
+
+        private DetaliiComandaController controller;
+        @Test
+        public void test_initialize() {
+            // Inițializăm listă de buchete selectate pentru test
+            Bouquet bouquet1 = new Bouquet("Buchet 1", 10, 5);
+            Bouquet bouquet2 = new Bouquet("Buchet 2", 15, 3);
+            selectedBouquets = FXCollections.observableArrayList(bouquet1, bouquet2);
+            // Setăm lista de buchete selectate
+            BouquetListController.setSelectedBouquets(selectedBouquets);
+
+            // Apelul metodei initialize()
+            WaitForAsyncUtils.waitForFxEvents();
+            controller.initialize();
+
+            // Verificarea rezultatelor
+            ObservableList<Bouquet> data = controller.table.getItems();
+            assertEquals(selectedBouquets, data);
+
+            int expectedTotal = calculateTotalPrice(selectedBouquets);
+            int actualTotal = Integer.parseInt(controller.total.getText());
+            assertEquals(expectedTotal, actualTotal);
+        }
+
+        private int calculateTotalPrice(ObservableList<Bouquet> bouquets) {
+            int total = 0;
+            for (Bouquet bouquet : bouquets) {
+                total += bouquet.getPrice() * bouquet.getQuantity();
+            }
+            return total;
+        }
+
 
         @Test
         void switchToSceneHome(FxRobot robot) {

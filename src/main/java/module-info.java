@@ -2,12 +2,11 @@ module com.example.florarie_proiect {
     requires javafx.controls;
     requires javafx.fxml;
     requires nitrite;
-    requires org.apache.commons.io;
-    requires org.junit.platform.commons;
-    requires org.testfx;
-    requires org.testfx.junit5;
-    requires hamcrest.core;
+
     requires org.slf4j;
+    requires org.testfx.junit5;
+
+
 
     opens com.example.florarie_proiect;
     exports com.example.florarie_proiect;

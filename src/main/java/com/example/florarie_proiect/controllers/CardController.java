@@ -10,6 +10,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -22,25 +23,22 @@ import java.util.List;
 public class CardController {
 
     @FXML
-    private TextField numarCardField;
+    public TextField numarCardField;
 
     @FXML
-    private TextField numeDetinatorField;
+    public TextField numeDetinatorField;
 
     @FXML
-    private DatePicker dataExpirareField;
+    public DatePicker dataExpirareField;
     @FXML
-    private TextField codSecuritateField;
+    public TextField codSecuritateField;
 
     @FXML
-    private Button sendButton;
+    public Button sendButton;
 
+@FXML
+public Text mesaj;
 
-
-  /*  public void sendButton(ActionEvent e)
-    {
-        System.out.println("send");
-    }*/
     @FXML
     public void sendButton(ActionEvent event) throws IOException {
         String numarCard = numarCardField.getText();
@@ -51,10 +49,7 @@ public class CardController {
         boolean isDataValid = isCardDataValid(numarCard, numeDetinator, dataExpirare, codSecuritateField.getText());
 
         if (isDataValid) {
-            // daca datele sunt valide, ne intoarcem la pagina de home
-            // aici puteti inlocui "Home.fxml" cu numele fisierului FXML al paginii home din aplicatia voastra
-            // SceneChanger.changeScene(sendButton, "Home.fxml");
-            System.out.println("VALID");
+            mesaj.setText("VALID");
 
             Parent homeRoot = FXMLLoader.load(getClass().getResource("/com/example/florarie_proiect/DetaliiComanda.fxml"));
             Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
@@ -65,15 +60,18 @@ public class CardController {
 
         } else {
             // daca datele sunt invalide, afisam un mesaj de eroare
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setTitle("Invalid card data");
-            alert.setHeaderText(null);
-            alert.setContentText("Datele cardului sunt invalide!");
-            alert.showAndWait();
+           // Alert alert = new Alert(Alert.AlertType.ERROR);
+          //  alert.setTitle("Invalid card data");
+           // alert.setHeaderText(null);
+           // alert.setContentText("Datele cardului sunt invalide!");
+            //alert.showAndWait();
+            mesaj.setText("Date card invalide");
         }
     }
 
-
+    public String getMesaj() {
+        return mesaj.getText();
+    }
 
     private boolean isCardDataValid(String numarCard, String numeDetinator, String dataExpirare, String codSecuritate) {
         // verificam daca toate campurile sunt completate
@@ -94,14 +92,6 @@ public class CardController {
         }
 
         // verificam daca data de expirare este valida
-      //  try {
-            // parsam data in formatul "MM/ZZ/YYYY"
-      /*  String month = dataExpirare.substring(0, 2);
-        if (month.endsWith("/")) {
-            month = month.substring(0, month.length() - 1);
-        }
-        int expMonth = Integer.parseInt(month);
-            int expYear = Integer.parseInt(dataExpirare.substring(8));*/
         LocalDate selectedDate = dataExpirareField.getValue();
         int expYear, expMonth;
         if (selectedDate != null) {
@@ -119,10 +109,6 @@ public class CardController {
                 return false;
             }
         }
-       // } catch (NumberFormatException | StringIndexOutOfBoundsException e) {
-            // daca data nu poate fi parsata, inseamna ca nu e valida
-         //   return false;
-       // }
 
         // daca toate verificarile au trecut, inseamna ca datele sunt valide
         return true;
