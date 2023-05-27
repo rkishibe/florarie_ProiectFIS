@@ -63,6 +63,9 @@ private String name;
         return price;
     }
 
+    public AddBouquetController() {
+    }
+
     public Text getMesaj() {
         return mesaj;
     }
